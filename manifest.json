@@ -1,0 +1,46 @@
+{
+    "manifest_version": 3,
+    "name": "Voxels",
+    "description": "The best tool for Pixels. Essential and easy to use for every Web3 Gamer. Currently in Beta.",
+    "version": "0.0.2",
+    "icons": {
+        "128": "icons/icon128.png"
+    },
+    "action": {
+        "default_icon": "icons/icon128.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://play.pixels.xyz/*"
+            ],
+            "css": [
+                "assets/style.css"
+            ],
+            "js": [
+                "jquery-3.6.0.js",
+                "Content.js",
+                "assets/utils.js",
+                "assets/functions.js"
+            ],
+            "type": "module"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "images/*"
+            ],
+            "matches": [
+                "https://play.pixels.xyz/*"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage"
+    ]
+}
