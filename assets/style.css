@@ -390,3 +390,77 @@
 .voxels-popup a:hover {
   color: #fff;
 }
+
+/**
+* Inventory styling
+*/
+.voxels-inventory-price {
+  position: absolute;
+  z-index: 50;
+  color: #fff;
+  font-size: 5.5px;
+  background: rgba(65, 64, 62, 0.9);
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 1px;
+  align-items: center;
+  border-radius: 2px;
+  pointer-events: none;
+  left: 2px;
+  top: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.voxels-inventory-price:hover {
+  filter: brightness(2);
+}
+
+.voxels-inventory-price img {
+  width: 8px !important;
+  height: 8px !important;
+  margin: 1px 2px 1px 1px;
+}
+
+@keyframes voxels-blink {
+  0% {
+    filter: brightness(100%);
+  }
+  50% {
+    filter: brightness(150%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}
+
+.voxels-blinking {
+  animation: voxels-blink 0.5s ease-out;
+}
+
+/**
+* Market styling
+*/
+
+.voxels-market-create-price {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  font-family: "Press Start 2P";
+  font-size: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2px;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+}
+
+.voxels-market-create-price img {
+  width: 20px !important;
+  height: 20px !important;
+  margin: 0;
+  margin-left: 4px;
+  padding: 1px;
+}

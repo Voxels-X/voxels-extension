@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Voxels",
     "description": "The best tool for Pixels. Essential and easy to use for every Web3 Gamer. Currently in Beta.",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "icons": {
         "128": "icons/icon128.png"
     },
@@ -22,7 +22,9 @@
                 "jquery-3.6.0.js",
                 "Content.js",
                 "assets/utils.js",
-                "assets/functions.js"
+                "assets/functions.js",
+                "assets/market_prices.js",
+                "assets/inventory.js"
             ],
             "type": "module"
         }
