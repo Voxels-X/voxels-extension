@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Voxels",
-    "description": "The best tool for Pixels. Essential and easy to use for every Web3 Gamer. Currently in Beta.",
-    "version": "0.0.3",
+    "name": "Voxels - The Pixels Extension",
+    "description": "The Pixels Extension is a tool made for every pixels enthusiast. Essential and easy to use for every Web3 Gamer. Currently in Beta.",
+    "version": "0.0.4",
     "icons": {
         "128": "icons/icon128.png"
     },
@@ -24,7 +24,12 @@
                 "assets/utils.js",
                 "assets/functions.js",
                 "assets/market_prices.js",
-                "assets/inventory.js"
+                "assets/inventory.js",
+                "assets/tasks.js",
+                "pages/timer_page.js",
+                "pages/storage_page.js",
+                "pages/tasks_page.js",
+                "pages/premium_page.js"
             ],
             "type": "module"
         }
