@@ -19,7 +19,6 @@
                 "assets/style.css"
             ],
             "js": [
-                "jquery-3.6.0.js",
                 "Content.js",
                 "assets/utils.js",
                 "assets/functions.js",
