@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Voxels</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="" />
+  <style>
+    body {
+      position: relative;
+      margin: 0;
+      font-family: "Pixelify Sans", sans-serif;
+      background-color: transparent;
+      background: linear-gradient(168deg,
+          rgba(98, 42, 255, 1) 0%,
+          rgb(72, 30, 186) 100%);
+    }
+
+    .main {
+      position: relative;
+      min-height: 100%;
+      width: 90%;
+      padding: 0 5%;
+      background: linear-gradient(168deg,
+          rgba(98, 42, 255, 1) 0%,
+          rgb(72, 30, 186) 100%);
+    }
+
+    .main_image {
+      position: relative;
+      height: 250px;
+    }
+
+    .main_image img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(calc(-50% + 0.5px), calc(-50% + 0.5px));
+      transform: translate(calc(-50% + 0.5px), calc(-50% + 0.5px));
+      height: 200px;
+    }
+
+    .main .title {
+      text-align: center;
+      font-size: 2.5rem;
+      text-shadow: rgb(0 0 0 / 75%) 3px 3px 2px;
+      margin: 10px 0;
+      color: white;
+    }
+
+    .main form {
+      position: relative;
+      display: block;
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    .main form * {
+      margin-bottom: 20px;
+    }
+
+    .main form input {
+      position: relative;
+      height: 40px;
+      width: 100%;
+      display: block;
+      box-sizing: border-box;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: white;
+      border-radius: 8px;
+      color: black;
+    }
+
+    .main form input:focus-visible {
+      outline: none;
+      border-color: rgb(201, 201, 201);
+    }
+
+    .input_err {
+      border-color: rgb(255, 0, 0);
+    }
+
+    .main .log_button {
+      position: relative;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      padding: 10px 40px;
+      color: white;
+      box-shadow: none;
+      border: none;
+      border-radius: 2px;
+      text-align: center;
+      font-weight: bold;
+      background-color: transparent;
+      background-image: linear-gradient(61deg,
+          rgba(189, 206, 2, 1) 0%,
+          rgba(165, 180, 0, 1) 100%);
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+    }
+
+    .main .log_button:hover {
+      background-color: transparent;
+      background-image: linear-gradient(239deg,
+          rgba(189, 206, 2, 1) 0%,
+          rgba(165, 180, 0, 1) 100%);
+    }
+
+    .main .log_button:not(:disabled):hover {
+      filter: brightness(115%);
+    }
+
+    .main .log_button::placeholder {
+      color: #b1b1b1;
+    }
+
+    .main .link {
+      text-align: center;
+      height: 30px;
+    }
+
+    .main .link a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /**
+        * Input name
+        */
+    #nameInput {
+      margin-top: 10px;
+    }
+
+    #submitBtn {
+      margin-top: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    /**
+        * Slider
+        */
+
+    #settings {
+      padding: 10px 0 30px 0;
+      text-align: center;
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 45px;
+      height: 25px;
+    }
+
+    #switch_text {
+      top: 7px;
+      position: relative;
+      padding-left: 10px;
+      font-size: 18px;
+      color: white;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      border-radius: 34px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 19px;
+      width: 19px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+
+    input:checked+.slider {
+      background-color: #41ca4b;
+    }
+
+    input:focus+.slider {
+      box-shadow: 0 0 1px #41ca4b;
+    }
+
+    input:checked+.slider:before {
+      -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+      transform: translateX(20px);
+    }
+
+    /* Errors */
+    #error-message {
+      background-color: #ff7f7f;
+      /* Red background color */
+      color: #ffffff;
+      /* White text color */
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      text-align: center;
+      font-family: 'Arial Black', sans-serif;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body style="width: 350px; height: 500px">
+  <div class="main">
+    <div class="main_image">
+      <img src="images/Icon.png" />
+    </div>
+    <div class="title">Voxels</div>
+    <div class="title" id="userName"></div>
+    <form>
+      <input type="text" name="username" id="username" placeholder="Enter username from pixels" required />
+      <button class="log_button" type="submit" value="Login">LOGIN</button>
+    </form>
+    <div id="error-message" class="hidden"></div>
+  </div>
+  <script src="./popup-script.js"></script>
+</body>
+
+</html>
