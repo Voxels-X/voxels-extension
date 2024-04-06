@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Voxels - The Pixels Extension",
     "description": "The Pixels Extension is a tool made for every pixels enthusiast. Essential and easy to use for every Web3 Gamer. Currently in Beta.",
-    "version": "0.0.4.1",
+    "version": "0.0.4.2",
     "icons": {
         "128": "icons/icon128.png"
     },

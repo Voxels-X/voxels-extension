@@ -9,6 +9,7 @@
   --main-storage-bg: #65432c;
   --main-grid-red: #be6464;
   --main-new-bg: #e3ff36;
+  --main-success-dark: #254420;
   --button-bg: #44b2cc;
 }
 
@@ -615,7 +616,8 @@
 * Error styling
 */
 
-.voxels-popup {
+.voxels-popup,
+.voxels-popup-storage {
   border: 5px solid #f00;
   border-radius: 6px;
   position: absolute;
@@ -665,6 +667,62 @@
   border-radius: 4px;
   background-color: #d14d77;
   border: 2px solid #791d5c;
+}
+
+.voxels-quick-message-popup {
+  position: fixed;
+  top: -100px; /* Start hidden above the screen */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--pixel-bg);
+  color: var(--main-new-bg);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1000;
+  padding-top: 10px;
+  animation: voxels-slideIn 0.5s forwards;
+}
+
+.voxels-quick-message-popup.voxels-error .voxels-progress-bar {
+  background-color: var(--main-grid-red);
+}
+
+.voxels-quick-message-popup p {
+  margin: 0;
+  font-size: 16px;
+  padding: 5px 15px;
+}
+
+.voxels-quick-message-popup p.voxels-quick-info {
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+.voxels-progress-bar {
+  height: 5px;
+  width: 0%;
+  border-bottom-left-radius: 5px;
+}
+
+@keyframes voxels-slideIn {
+  to {
+    top: 20px; /* Visible position */
+  }
+}
+
+@keyframes voxels-slideOut {
+  from {
+    top: 20px;
+  }
+  to {
+    top: -100px;
+  }
+}
+
+@keyframes voxels-progressBarAnimation {
+  to {
+    width: 100%;
+  }
 }
 
 /**
@@ -981,7 +1039,11 @@
   border: 4px solid #292842;
   border-radius: 2px;
   min-height: 170px;
-  padding: 20px 5px 10px;
+  padding: 10px 5px;
+}
+
+.voxels-task-item.voxels-task-achievable {
+  background-color: var(--main-success-dark);
 }
 
 .voxels-task-item-visual {
@@ -993,6 +1055,12 @@
 
 .voxels-task-item-visual img {
   height: 40px;
+}
+
+.voxels-task-quantity-container {
+  display: flex;
+  color: #fff;
+  gap: 3px;
 }
 
 .voxels-task-quantity {
@@ -1012,7 +1080,7 @@
   color: #fff;
   font-size: 10px;
   padding: 0 5px;
-  margin: 20px auto 10px;
+  margin: 10px auto;
   text-overflow: ellipsis;
   word-wrap: break-word;
   display: inline-block;
@@ -1022,9 +1090,15 @@
 .voxels-task-total-cost {
   font-size: 9px;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
   font-family: "Press Start 2P";
-  color: #fff;
+  color: rgb(255, 255, 255);
+}
+
+.voxels-task-total-container {
+  display: flex;
+  align-items: flex-end;
 }
 
 .voxels-task-total-cost img {
