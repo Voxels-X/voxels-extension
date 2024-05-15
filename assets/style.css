@@ -15,6 +15,7 @@
   --main-grid-red: #be6464;
   --main-new-bg: #e3ff36;
   --main-pixels-color: #5ff600;
+  --success: #4CAF50;
   --main-success-dark: #254420;
   --button-bg: #44b2cc;
 }
@@ -265,6 +266,193 @@
   text-overflow: ellipsis;
 }
 
+/* Style the main filter container */
+.voxels-filter-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Style the input field */
+.voxels-filter-container {
+  display: flex;
+  justify-content: space-between;
+  height: 34px;
+  margin-bottom: 8px;
+}
+
+.voxels-filter-container .voxels-farm-filter-input {
+  border: none;
+  font-size: 10px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--main-new-bg);
+}
+
+.voxels-filter-container .voxels-farm-filter-input::placeholder {
+  color: #fff;
+}
+
+.voxels-filter-dropdown-container,
+.voxels-farm-dropdown-container {
+  height: 100%;
+}
+
+.voxels-farm-dropdown-container {
+  position: relative;
+}
+
+.voxels-farm-dropdown-container {
+  display: flex;
+  align-items: center;
+  grid-column: 2 / 4;
+}
+
+/* Style the dropdown button */
+.voxels-filter-dropdown-button,
+.voxels-farm-dropdown-button {
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  background: rgba(0, 0, 0, 0.7);
+  aspect-ratio: 1/1;
+  position: relative;
+  vertical-align: top;
+}
+
+.voxels-farm-dropdown-button {
+  aspect-ratio: auto;
+  font-size: 10px;
+  color: #fff;
+  vertical-align: top;
+  position: relative;
+  padding-right: 40px;
+  margin-bottom: 5px;
+}
+
+.voxels-farm-dropdown-button::after {
+  content: '';
+  position: absolute;
+  right: 4px;
+  ;
+  top: 35%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #fff;
+}
+
+.voxels-filter-dropdown-button img {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  transform: translate(-50%, -50%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.voxels-filter-dropdown-button:focus,
+.voxels-farm-dropdown-button:focus {
+  outline: none;
+}
+
+/* Style for the triangle in the button */
+.triangle {
+  display: inline-block;
+}
+
+/* Style for the dropdown content */
+.voxels-filter-dropdown-content,
+.voxels-farm-dropdown-content {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  gap: 10px;
+  top: 100%;
+  margin-top: 8px;
+  padding: 8px;
+  right: 0;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  z-index: 1000;
+  overflow-y: scroll;
+  max-height: 120px;
+}
+
+.voxels-farm-dropdown-content {
+  top: 1.4em;
+  left: 0;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 200px;
+}
+
+.voxels-farm-dropdown-content::-webkit-scrollbar,
+.voxels-filter-dropdown-content::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 5px;
+}
+
+.voxels-farm-dropdown-content::-webkit-scrollbar-thumb,
+.voxels-filter-dropdown-content::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+.voxels-farm-dropdown-content::-webkit-scrollbar-track,
+.voxels-filter-dropdown-content::-webkit-scrollbar-track {
+  background: none;
+}
+
+.voxels-farm-section-title {
+  font-size: 8px;
+  margin-bottom: 4px;
+}
+
+.voxels-farm-dropdown-content .voxels-main-farm-icon {
+  margin-right: 7px;
+}
+
+.voxels-farm-dropdown-content .voxels-main-farm-icon:last-child {
+  margin-right: 0;
+}
+
+/* Style each label in the dropdown to handle interactions */
+.voxels-filter-dropdown-content label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex: 0 0 calc(26% - 10px);
+}
+
+.voxels-filter-dropdown-content label:hover {
+  background: var(--pixel-border-2);
+  border-radius: 5px;
+}
+
+/* Style the checkboxes to hide them visually but keep them functional */
+.voxels-filter-dropdown-content input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.voxels-filter-dropdown-content input[type="checkbox"]:checked+img {
+  background: var(--pixel-border-2);
+  border-radius: 5px;
+}
+
+/* Style the icons within labels */
+.voxels-filter-farm-icon {
+  width: 100%;
+  padding: 4px;
+}
+
 .voxels-main-farm-cell {
   position: relative;
   display: grid;
@@ -425,6 +613,57 @@
   align-items: center;
 }
 
+.voxels-pricing-container {
+  width: 100%;
+  display: flex;
+  color: var(--main-new-bg);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.voxels-subscription-option {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 30%;
+  font-size: 9px;
+  /* Set the width of the squares */
+  height: auto;
+  /* Set the height of the squares */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.voxels-premium-price-active {
+  background: var(--main-grid-bg);
+}
+
+.voxels-subscription-option:not(.voxels-premium-price-active):hover {
+  background: #233b53;
+}
+
+.voxels-price-duration {
+  text-align: center;
+  margin-bottom: 5px;
+  text-transform: lowercase;
+}
+
+.voxels-price-amount {
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.voxels-price-saving {
+  color: #5ff600;
+  letter-spacing: -1px;
+  font-size: 10px;
+}
+
 .voxels-main-premium ul {
   font-size: 10px;
   list-style: none;
@@ -485,16 +724,12 @@
   vertical-align: sub;
 }
 
-.voxels-premium-main .voxels-premium-content p.voxels-premium-copy {
+.voxels-premium-main .voxels-premium-content p.voxels-premium-copy,
+.voxels-premium-main .voxels-premium-content p.voxels-premium-reload {
   text-transform: none;
   display: flex;
   justify-content: center;
   margin: 30px 0;
-}
-
-#voxels-copy,
-.voxels-premium-reload {
-  cursor: pointer;
 }
 
 .voxels-premium-copy img,
@@ -502,13 +737,6 @@
   height: 12px;
   filter: invert(79%) sepia(61%) saturate(503%) hue-rotate(20deg) brightness(112%) contrast(105%);
   margin-left: 5px;
-}
-
-.voxels-premium-main .voxels-premium-content p.voxels-premium-reload {
-  text-transform: none;
-  display: flex;
-  justify-content: center;
-  margin: 30px 0;
 }
 
 .voxels-premium-spacer {
@@ -520,6 +748,16 @@
 
 .voxels-premium-faq ol li {
   margin: 10px 0;
+}
+
+.voxels-premium-pass p {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.voxels-premium-pass img {
+  height: 25px;
 }
 
 .voxels-premium-code .voxels-input-container {
@@ -741,8 +979,13 @@
   background-color: var(--main-grid-red);
 }
 
-.voxels-quick-message-popup.voxels-news .voxels-progress-bar {
+.voxels-quick-message-popup.voxels-news .voxels-progress-bar,
+.voxels-quick-message-popup.voxels-info .voxels-progress-bar {
   background-color: var(--pixel-border-2);
+}
+
+.voxels-quick-message-popup.voxels-success .voxels-progress-bar {
+  background-color: var(--main-grid-bg);
 }
 
 .voxels-quick-message-popup p {
@@ -1216,6 +1459,56 @@
   height: 20px;
 }
 
+#voxels-toggle-voxels-button {
+  position: absolute;
+  display: none;
+  z-index: 1500;
+  display: none;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  right: 20px;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+
+.voxels-toggle-voxels-button-icon {
+  position: relative;
+  z-index: 1500;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.voxels-toggle-voxels-button-icon img {
+  height: 95%;
+  width: 95%;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(314deg) brightness(105%) contrast(103%);
+}
+
+#voxels-toggle-voxels-button:hover {
+  opacity: 1;
+  filter: brightness(1.25);
+}
+
+#voxels-toggle-voxels-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: url('chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
 /* bubble UI */
 
@@ -1226,7 +1519,7 @@
   height: 70px;
   width: 64px;
   bottom: 70px;
-  right: 40px;
+  right: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1332,15 +1625,15 @@
 .voxels-sub-nav-button:nth-child(1),
 .voxels-sub-nav-button:nth-child(1)::after,
 .voxels-sub-nav-button:nth-child(1) .voxels-sub-nav-button-icon img {
-  transform: rotate(135deg);
-  transition-delay: .1s
+  transform: rotate(155deg);
+  transition-delay: .1s;
 }
 
 .voxels-sub-nav-button:nth-child(2),
 .voxels-sub-nav-button:nth-child(2)::after,
 .voxels-sub-nav-button:nth-child(2) .voxels-sub-nav-button-icon img {
-  transform: rotate(100deg);
-  transition-delay: 0.2s
+  transform: rotate(120deg);
+  transition-delay: 0.2s;
 }
 
 .voxels-sub-nav-button:nth-child(2)::after {
@@ -1352,8 +1645,8 @@
 .voxels-sub-nav-button:nth-child(3),
 .voxels-sub-nav-button:nth-child(3)::after,
 .voxels-sub-nav-button:nth-child(3) .voxels-sub-nav-button-icon img {
-  transform: rotate(65deg);
-  transition-delay: 0.3s
+  transform: rotate(85deg);
+  transition-delay: 0.3s;
 }
 
 .voxels-sub-nav-button:nth-child(3)::after {
@@ -1365,8 +1658,8 @@
 .voxels-sub-nav-button:nth-child(4),
 .voxels-sub-nav-button:nth-child(4)::after,
 .voxels-sub-nav-button:nth-child(4) .voxels-sub-nav-button-icon img {
-  transform: rotate(30deg);
-  transition-delay: 0.4s
+  transform: rotate(50deg);
+  transition-delay: 0.4s;
 }
 
 .voxels-sub-nav-button:nth-child(4)::after {
@@ -1378,12 +1671,25 @@
 .voxels-sub-nav-button:nth-child(5),
 .voxels-sub-nav-button:nth-child(5)::after,
 .voxels-sub-nav-button:nth-child(5) .voxels-sub-nav-button-icon img {
-  transform: rotate(-5deg);
-  transition-delay: 0.5s
+  transform: rotate(15deg);
+  transition-delay: 0.5s;
 }
 
 .voxels-sub-nav-button:nth-child(5)::after {
   background: url('chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--yellow.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.voxels-sub-nav-button:nth-child(6),
+.voxels-sub-nav-button:nth-child(6)::after,
+.voxels-sub-nav-button:nth-child(6) .voxels-sub-nav-button-icon img {
+  transform: rotate(-20deg);
+  transition-delay: 0.6s;
+}
+
+.voxels-sub-nav-button:nth-child(6)::after {
+  background: url('chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--darkblue.png');
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -1456,8 +1762,664 @@
   right: 15px;
 }
 
-/* Bubble UI animation */
+/* 
+Full page styling
+*/
+#voxels-full-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2010;
+  display: none;
+  flex-direction: column;
+  height: 70vh;
+  width: 70vw;
+  background: var(--pixel-bg);
+  border-radius: 20px;
+  border: 4px solid var(--pixel-border-2);
+  box-shadow: 0 0 0 4px var(--pixel-border);
+}
 
+.voxels-full-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  height: 15%;
+  padding: 10px;
+  margin: 0 auto;
+  color: var(--main-new-bg);
+}
+
+.voxels-full-nav-item {
+  flex-grow: 1;
+  text-align: center;
+  border-right: 2px solid var(--main-new-bg);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.voxels-full-nav-item .voxels-nav-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.voxels-full-nav-item:last-child {
+  border-right: none;
+}
+
+.voxels-full-nav-item.active {
+  text-decoration: underline;
+}
+
+.voxels-full-nav-item:hover {
+  text-decoration: underline;
+}
+
+#voxels-full-page .voxels-exit-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.voxels-full-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: var(--main-new-bg);
+}
+
+.voxels-full-title span {
+  margin-top: 8px;
+}
+
+.voxels-full-title-icon {
+  margin: 0 20px;
+  height: 30px;
+}
+
+/**
+* Guild styling
+*/
+#voxels-guild-home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.voxels-guild-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 5px;
+}
+
+.voxels-guild-home-icon {
+  margin-right: 10px;
+  width: 20px;
+  filter: invert(79%) sepia(61%) saturate(503%) hue-rotate(20deg) brightness(112%) contrast(105%);
+}
+
+.voxels-guild-dropdown-button {
+  position: relative;
+  border-radius: 5px;
+  border: none;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--main-new-bg);
+  font-size: 10px;
+  padding: 3px;
+}
+
+.voxels-guild-dropdown {
+  position: relative;
+}
+
+.voxels-guild-dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.voxels-guild-dropdown.active .voxels-guild-dropdown-content {
+  display: block;
+  right: 0;
+  margin-top: 5px;
+}
+
+.voxels-guild-dropdown-element {
+  padding: 7px 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.voxels-guild-dropdown-element:hover {
+  background: var(--main-new-bg);
+  color: #000;
+}
+
+#voxels-guild-main-area,
+#voxels-guild-owner-area {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.voxels-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.voxels-scroll::-webkit-scrollbar-thumb {
+  background-color: #e3ff36;
+}
+
+.voxels-scroll::-webkit-scrollbar-track {
+  background: none;
+}
+
+.voxels-guild-row {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  background: #161626;
+  border: 1px solid var(--pixel-border-2);
+  margin-bottom: 10px;
+  border-radius: 12px;
+  color: var(--main-new-bg);
+  font-size: 12px;
+}
+
+.voxels-guild-row:hover {
+  background: #1b1b33;
+}
+
+.voxels-guild-emblem {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.voxels-guild-place,
+.voxels-guild-emblem,
+.voxels-guild-name,
+.voxels-guild-level,
+.voxels-guild-price {
+  flex-shrink: 0;
+}
+
+.voxels-guild-place {
+  width: 60px;
+}
+
+.voxels-guild-name {
+  max-width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 20px;
+  flex-grow: 1;
+}
+
+.voxels-guild-level {
+  width: 20%;
+  margin-left: auto;
+  text-align: right;
+  flex-grow: 1;
+}
+
+.voxels-guild-price {
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.voxels-guild-price img {
+  width: 20px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+/*
+* Guild page
+*/
+/* Top section styling */
+.voxels-guildpage-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 20px;
+  color: var(--main-new-bg);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.voxels-guildpage-emblem {
+  width: 100px;
+  height: auto;
+  border-radius: 5%;
+}
+
+.voxels-guildpage-name {
+  position: relative;
+  font-size: 14px;
+}
+
+.voxels-guildpage-owner-settings {
+  height: 15px;
+  position: absolute;
+  top: -10px;
+  right: -20px;
+}
+
+.voxels-guildpage-level {
+  font-size: 9px;
+}
+
+.voxels-guildpage-level .pixels-icon {
+  height: 15px;
+  margin: 0 5px;
+}
+
+.voxels-guildpage-member-name {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  padding-right: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+  display: inline-block;
+}
+
+.voxels-guildpage-member-name .premium-icon {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 0;
+}
+
+.voxels-guildpage-description {
+  color: #fff;
+}
+
+.voxels-guildpage-description,
+.voxels-guildpage-discord,
+.voxels-guildpage-lands {
+  width: 100%;
+  text-align: center;
+  font-size: 9px;
+}
+
+/* Member list section styling */
+.voxels-guildpage-members {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.voxels-guildpage-legend {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 9px;
+  background: var(--pixel-border-2);
+  color: #fff;
+  font-weight: bold;
+}
+
+.voxels-guildpage-member-row {
+  font-size: 9px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.voxels-guildpage-member-row.voxels-guildpage-member-current {
+  background-color: var(--main-new-bg);
+}
+
+.premium-icon {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.voxels-guildpage-member-row>span,
+.voxels-guildpage-legend>span {
+  flex: 1 0 15%;
+  text-align: center;
+}
+
+.voxels-guildpage-member-row .voxels-guildpage-member-name,
+.voxels-guildpage-legend .voxels-guildpage-legend-name {
+  flex: 1 0 calc(40% - 20px);
+  overflow: hidden;
+  margin-right: 20px;
+  text-align: left;
+}
+
+#voxels-guild-owner-area .voxels-guildpage-member-row .voxels-guildpage-member-name,
+#voxels-guild-owner-area .voxels-guildpage-legend .voxels-guildpage-legend-name {
+  flex: 1 0 calc(20% - 20px);
+}
+
+#voxels-guild-owner-area .voxels-guildpage-member-row>span,
+#voxels-guild-owner-area .voxels-guildpage-legend>span {
+  flex: 1 0 10%;
+}
+
+#voxels-guild-owner-area .voxels-guildpage-member-row {
+  font-size: 7px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: inherit;
+  border: inherit;
+  border-bottom: 1px solid var(--main-new-bg);
+}
+
+.voxels-guildpage-premium-info {
+  color: #fff;
+  text-align: center;
+  line-height: 1.2em;
+  margin-top: 10px;
+  font-size: 9px;
+}
+
+.voxels-guildpage-premium-info:last-child {
+  margin-bottom: 30px;
+}
+
+.voxels-guildpage-premium-info img {
+  height: 20px;
+  margin-right: 16px;
+}
+
+.voxels-guildpage-premium-info a {
+  color: var(--main-new-bg);
+}
+
+.voxels-guildpage-premium-info a:hover {
+  color: var(--main-new-bg);
+  filter:brightness(1.25);
+}
+
+/* Response Guilds */
+@media screen and (max-width: 880px) {
+  .voxels-guild-name {
+    max-width: 30%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .voxels-guild-name {
+    max-width: 40%;
+  }
+}
+
+/**
+* Pass styling
+*/
+#voxels-pass-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  color: #fff;
+  max-width: 600px;
+  gap: 10px;
+  font-size: 12px;
+  margin: 20px auto;
+}
+
+#voxels-pass-main h2 {
+  color: var(--main-new-bg);
+}
+
+#voxels-pass-main span {
+  color: var(--main-new-bg);
+}
+
+/* Main settings container styling */
+#voxels-full-page-main {
+  width: 100%;
+  padding: 20px;
+  overflow-y: scroll;
+  padding: 0 5%;
+}
+
+#voxels-full-page-main::-webkit-scrollbar {
+  width: 6px;
+}
+
+#voxels-full-page-main::-webkit-scrollbar-thumb {
+  background-color: #e3ff36;
+}
+
+#voxels-full-page-main::-webkit-scrollbar-track {
+  background: none;
+}
+
+#voxels-full-page-main.voxels-full-guilds {
+  height: 85%;
+  overflow-y: visible;
+}
+
+#voxels-full-page-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+  border-radius: 20px;
+  color: var(--main-new-bg);
+  display: none;
+}
+
+#voxels-full-overlay-top {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+#voxels-full-overlay-top button {
+  padding: 8px;
+  font-size: 14px;
+  color: var(--main-new-bg);
+  background: var(--pixel-bg);
+  border: 1px solid var(--pixel-border-2);
+  border-radius: 12px;
+}
+
+#voxels-full-overlay-main {
+  height: 80%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+#voxels-full-overlay-main::-webkit-scrollbar {
+  width: 6px;
+}
+
+#voxels-full-overlay-main::-webkit-scrollbar-thumb {
+  background-color: #e3ff36;
+}
+
+#voxels-full-overlay-main::-webkit-scrollbar-track {
+  background: none;
+}
+
+.voxels-guild-premium-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.voxels-guild-premium-top img {
+  width: 40px;
+  height: auto;
+  margin: 0 15px;
+}
+
+.voxels-guild-premium-explanation {
+  padding: 20px;
+  text-align: center;
+}
+
+.voxels-guild-premium-explanation img {
+  height: 20px;
+  margin: 0 10px;
+}
+
+.voxels-guild-premium-explanation p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.voxels-guild-premium-explanation p span {
+  color: var(--main-new-bg);
+}
+
+.voxels-guild-premium-explanation p.voxels-premium-copy,
+.voxels-guild-premium-explanation .voxels-premium-reload,
+.voxels-pass-copy,
+.voxels-pass-reload {
+  text-transform: none;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.voxels-guild-premium-explanation .voxels-premium-copy img,
+.voxels-guild-premium-explanation .voxels-premium-reload img,
+.voxels-pass-copy img,
+.voxels-pass-reload img {
+  height: 12px;
+  filter: invert(79%) sepia(61%) saturate(503%) hue-rotate(20deg) brightness(112%) contrast(105%);
+  margin-left: 5px;
+}
+
+.voxels-guild-spacer,
+.voxels-pass-spacer {
+  border: none;
+  background-color: var(--main-new-bg);
+  height: 2px;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.voxels-pass-spacer {
+  margin: 20px 0;
+}
+
+#voxels-my-passes-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.voxels-pass {
+  display: flex;
+  flex-direction: column;
+  background: var(--pixel-bg);
+  border: 1px solid var(--pixel-border-2);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.pass-details {
+  margin-bottom: 5px;
+}
+
+/* General style for each setting */
+#voxels-setting-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.voxels-setting {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  font-size: 9px;
+  width: 100%;
+  color: var(--main-new-bg);
+}
+
+.voxels-setting-label {
+  font-size: 9px;
+  margin: 0;
+}
+
+/* Toggle button styling */
+.voxels-setting-toggle {
+  padding: 5px 15px;
+  border: none;
+  background-color: var(--success);
+  /* Green background */
+  color: white;
+  border-radius: 20px;
+  /* Rounded borders for toggle appearance */
+  cursor: pointer;
+  outline: none;
+}
+
+.voxels-setting-toggle.js-is-inactive {
+  background-color: var(--main-grid-red);
+}
+
+.voxels-setting-toggle:active {
+  background-color: var(--main-grid-bg);
+  outline: none;
+  border: none;
+}
+
+.voxels-setting-toggle:focus {
+  outline: none;
+  border: none;
+}
+
+/* Hide button styling */
+.voxels-hide-button {
+  padding: 8px 15px;
+  margin-top: 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Bubble UI animation */
 .js-voxels-active #voxels-sub-nav {
   visibility: visible;
 }
@@ -1472,43 +2434,51 @@
 }
 
 .voxels-sub-nav-button:nth-child(1) {
-  transform: rotate(-155deg);
+  transform: rotate(-175deg);
 }
 
 .voxels-sub-nav-button:nth-child(2) {
-  transform: rotate(-120deg);
+  transform: rotate(-140deg);
 }
 
 .voxels-sub-nav-button:nth-child(3) {
-  transform: rotate(-85deg);
+  transform: rotate(-105deg);
 }
 
 .voxels-sub-nav-button:nth-child(4) {
-  transform: rotate(-50deg);
+  transform: rotate(-80deg);
 }
 
 .voxels-sub-nav-button:nth-child(5) {
-  transform: rotate(-15deg);
+  transform: rotate(-45deg);
+}
+
+.voxels-sub-nav-button:nth-child(6) {
+  transform: rotate(-5deg);
 }
 
 .js-voxels-active .voxels-sub-nav-button:nth-child(1) {
-  transform: rotate(-135deg);
+  transform: rotate(-155deg);
 }
 
 .js-voxels-active .voxels-sub-nav-button:nth-child(2) {
-  transform: rotate(-100deg);
+  transform: rotate(-120deg);
 }
 
 .js-voxels-active .voxels-sub-nav-button:nth-child(3) {
-  transform: rotate(-65deg);
+  transform: rotate(-85deg);
 }
 
 .js-voxels-active .voxels-sub-nav-button:nth-child(4) {
-  transform: rotate(-30deg);
+  transform: rotate(-50deg);
 }
 
 .js-voxels-active .voxels-sub-nav-button:nth-child(5) {
-  transform: rotate(5deg);
+  transform: rotate(-15deg);
+}
+
+.js-voxels-active .voxels-sub-nav-button:nth-child(6) {
+  transform: rotate(20deg);
 }
 
 /* Main modal animation */
@@ -1712,6 +2682,10 @@
   color: var(--main-new-bg);
 }
 
+.voxels-filter-container .voxels-farm-filter-input:focus {
+  outline: none;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 540px) {
@@ -1735,6 +2709,11 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .voxels-farm-dropdown-container {
+    width: 100%;
+    height: auto;
   }
 
   .voxels-main-farm-icon {
@@ -1799,5 +2778,87 @@
 
   #voxels-main-modal-header {
     display: none;
+  }
+
+  .voxels-subscription-option {
+    width: 100%;
+  }
+
+  .voxels-guild-name {
+    max-width: 35%;
+  }
+
+  .voxels-guild-emblem {
+    display: none;
+  }
+
+  .voxels-guildpage-legend,
+  .voxels-guildpage-member-row {
+    font-size: 6px;
+  }
+
+  .voxels-guild-premium-explanation {
+    text-align: left;
+  }
+}
+
+/* Responsive for full page */
+
+@media screen and (max-width: 780px) {
+  .voxels-quick-message-popup {
+    width: 90%;
+  }
+
+  .voxels-quick-message-popup p.voxels-quick-info {
+    font-size: 10px;
+    padding-bottom: 15px;
+  }
+
+  .voxels-full-title {
+    font-size: 14px;
+  }
+
+  .voxels-full-title-guilds {
+    height: 40px;
+  }
+
+  .voxels-full-nav-item .voxels-nav-text {
+    display: none;
+  }
+
+  .voxels-full-nav-item.active .voxels-nav-icon {
+    background: linear-gradient(to bottom, transparent 80%, currentColor 80%, currentColor 100%);
+    background-size: 100% 120%;
+  }
+
+  .voxels-guild-row {
+    font-size: 8px;
+  }
+
+  .voxels-guild-place {
+    width: auto;
+    margin-right: 5px;
+  }
+
+  #voxels-full-page {
+    width: 90vw;
+  }
+
+  .voxels-guild-level {
+    margin-right: 15px;
+  }
+
+  .voxels-guildpage-member-row>span,
+  .voxels-guildpage-legend>span {
+    flex: 1 0 10%;
+    text-align: center;
+  }
+
+  .voxels-guildpage-member-row .voxels-guildpage-member-name,
+  .voxels-guildpage-legend .voxels-guildpage-legend-name {
+    flex: 1 0 calc(30% - 20px);
+    overflow: hidden;
+    margin-right: 20px;
+    text-align: left;
   }
 }
