@@ -15,9 +15,10 @@
   --main-grid-red: #be6464;
   --main-new-bg: #e3ff36;
   --main-pixels-color: #5ff600;
-  --success: #4CAF50;
+  --success: #4caf50;
   --main-success-dark: #254420;
   --button-bg: #44b2cc;
+  --panel-bg: #161626;
 }
 
 .voxels-main-container {
@@ -97,11 +98,13 @@
   img {
     height: 100%;
     width: 100%;
-    filter: invert(21%) sepia(66%) saturate(7282%) hue-rotate(256deg) brightness(101%) contrast(110%);
+    filter: invert(21%) sepia(66%) saturate(7282%) hue-rotate(256deg)
+      brightness(101%) contrast(110%);
   }
 
   :hover {
-    filter: invert(100%) sepia(23%) saturate(5954%) hue-rotate(14deg) brightness(107%) contrast(104%);
+    filter: invert(100%) sepia(23%) saturate(5954%) hue-rotate(14deg)
+      brightness(107%) contrast(104%);
   }
 }
 
@@ -109,7 +112,8 @@
   z-index: 1;
 
   .voxels-tab-icon img {
-    filter: invert(100%) sepia(23%) saturate(5954%) hue-rotate(14deg) brightness(107%) contrast(104%);
+    filter: invert(100%) sepia(23%) saturate(5954%) hue-rotate(14deg)
+      brightness(107%) contrast(104%);
   }
 }
 
@@ -201,8 +205,8 @@
   padding: 0 12px;
   box-shadow:
 
-    /* Inner Background Color */
-    0 calc(var(--pixel) * -3) 0 calc(var(--pixel) * -1) var(--main-grid-bg),
+    /* Inner Background Color */ 0 calc(var(--pixel) * -3) 0
+      calc(var(--pixel) * -1) var(--main-grid-bg),
     0 calc(var(--pixel) * 3) 0 calc(var(--pixel) * -1) var(--main-grid-bg),
     0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -2) var(--main-grid-bg),
     0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -2) var(--main-grid-bg),
@@ -210,8 +214,8 @@
     0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -4) var(--main-grid-bg),
     0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -6) var(--main-grid-bg),
     0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -6) var(--main-grid-bg),
-    /* Pixel Border Layer 1 */
-    calc(var(--pixel) * -1) 0 0 0 var(--pixel-border-4),
+    /* Pixel Border Layer 1 */ calc(var(--pixel) * -1) 0 0 0
+      var(--pixel-border-4),
     var(--pixel) 0 0 0 var(--pixel-border-4),
     0 calc(var(--pixel) * -2) 0 0 var(--pixel-border-4),
     0 calc(var(--pixel) * 2) 0 0 var(--pixel-border-4),
@@ -230,8 +234,8 @@
 
   box-shadow:
 
-    /* Inner Background Color */
-    0 calc(var(--pixel) * -3) 0 calc(var(--pixel) * -1) var(--main-grid-red),
+    /* Inner Background Color */ 0 calc(var(--pixel) * -3) 0
+      calc(var(--pixel) * -1) var(--main-grid-red),
     0 calc(var(--pixel) * 3) 0 calc(var(--pixel) * -1) var(--main-grid-red),
     0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -2) var(--main-grid-red),
     0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -2) var(--main-grid-red),
@@ -239,8 +243,8 @@
     0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -4) var(--main-grid-red),
     0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -6) var(--main-grid-red),
     0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -6) var(--main-grid-red),
-    /* Pixel Border Layer 1 */
-    calc(var(--pixel) * -1) 0 0 0 var(--pixel-border-4),
+    /* Pixel Border Layer 1 */ calc(var(--pixel) * -1) 0 0 0
+      var(--pixel-border-4),
     var(--pixel) 0 0 0 var(--pixel-border-4),
     0 calc(var(--pixel) * -2) 0 0 var(--pixel-border-4),
     0 calc(var(--pixel) * 2) 0 0 var(--pixel-border-4),
@@ -276,14 +280,31 @@
 }
 
 /* Style the input field */
-.voxels-filter-container {
+
+.voxels-player-input-container {
+  width: 90%; /* Takes up 90% of the width */
+}
+
+.voxels-player-input {
+  width: calc(
+    100% - 50px
+  ); /* Takes up 100% minus space for the submit button */
+}
+
+.voxels-filter-container,
+.voxels-player-input-container {
   display: flex;
   justify-content: space-between;
   height: 34px;
+}
+
+.voxels-filter-container {
   margin-bottom: 8px;
 }
 
-.voxels-filter-container .voxels-farm-filter-input {
+.voxels-filter-container .voxels-farm-filter-input,
+.voxels-player-input-container .voxels-player-input,
+.voxels-player-submit-button {
   border: none;
   font-size: 10px;
   padding: 8px 10px;
@@ -293,8 +314,12 @@
   color: var(--main-new-bg);
 }
 
-.voxels-filter-container .voxels-farm-filter-input::placeholder {
+.voxels-filter-container .voxels-farm-filter-input::placeholder,
+.voxels-player-input-container .voxels-player-input::placeholder {
   color: #fff;
+}
+
+.voxels-player-submit-button {
 }
 
 .voxels-filter-dropdown-container,
@@ -335,10 +360,9 @@
 }
 
 .voxels-farm-dropdown-button::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 4px;
-  ;
   top: 35%;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
@@ -346,14 +370,15 @@
 }
 
 .voxels-filter-dropdown-button img {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   width: 15px;
   height: 15px;
   transform: translate(-50%, -50%);
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
 }
 
 .voxels-filter-dropdown-button:focus,
@@ -442,7 +467,7 @@
   z-index: -1;
 }
 
-.voxels-filter-dropdown-content input[type="checkbox"]:checked+img {
+.voxels-filter-dropdown-content input[type="checkbox"]:checked + img {
   background: var(--pixel-border-2);
   border-radius: 5px;
 }
@@ -735,7 +760,8 @@
 .voxels-premium-copy img,
 .voxels-premium-reload img {
   height: 12px;
-  filter: invert(79%) sepia(61%) saturate(503%) hue-rotate(20deg) brightness(112%) contrast(105%);
+  filter: invert(79%) sepia(61%) saturate(503%) hue-rotate(20deg)
+    brightness(112%) contrast(105%);
   margin-left: 5px;
 }
 
@@ -785,7 +811,8 @@
 }
 
 .voxels-premium-help img {
-  filter: invert(79%) sepia(61%) saturate(503%) hue-rotate(20deg) brightness(112%) contrast(105%);
+  filter: invert(79%) sepia(61%) saturate(503%) hue-rotate(20deg)
+    brightness(112%) contrast(105%);
   width: 30px;
 }
 
@@ -1087,7 +1114,11 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  background: radial-gradient(circle, rgb(55, 164, 223) 0%, rgb(46, 96, 210) 100%);
+  background: radial-gradient(
+    circle,
+    rgb(55, 164, 223) 0%,
+    rgb(46, 96, 210) 100%
+  );
   padding: 1px;
   box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px;
   outline: rgb(59, 106, 168) dashed 1px;
@@ -1133,8 +1164,8 @@
   background: var(--pixel-bg);
   box-shadow:
 
-    /* Inner Background Color */
-    0 calc(var(--pixel) * -3) 0 calc(var(--pixel) * -1) var(--pixel-bg),
+    /* Inner Background Color */ 0 calc(var(--pixel) * -3) 0
+      calc(var(--pixel) * -1) var(--pixel-bg),
     0 calc(var(--pixel) * 3) 0 calc(var(--pixel) * -1) var(--pixel-bg),
     0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -2) var(--pixel-bg),
     0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -2) var(--pixel-bg),
@@ -1142,8 +1173,7 @@
     0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -4) var(--pixel-bg),
     0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -6) var(--pixel-bg),
     0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -6) var(--pixel-bg),
-    /* Pixel Border Layer 1 */
-    calc(var(--pixel) * -1) 0 0 0 var(--pixel-border),
+    /* Pixel Border Layer 1 */ calc(var(--pixel) * -1) 0 0 0 var(--pixel-border),
     var(--pixel) 0 0 0 var(--pixel-border),
     0 calc(var(--pixel) * -2) 0 0 var(--pixel-border),
     0 calc(var(--pixel) * 2) 0 0 var(--pixel-border),
@@ -1155,8 +1185,8 @@
     0 calc(var(--pixel) * 10) 0 calc(var(--pixel) * -4) var(--pixel-border),
     0 calc(var(--pixel) * -13) 0 calc(var(--pixel) * -6) var(--pixel-border),
     0 calc(var(--pixel) * 13) 0 calc(var(--pixel) * -6) var(--pixel-border),
-    /* Pixel Border Layer 2 */
-    calc(var(--pixel) * -2) 0 0 0 var(--pixel-border-2),
+    /* Pixel Border Layer 2 */ calc(var(--pixel) * -2) 0 0 0
+      var(--pixel-border-2),
     calc(var(--pixel) * 2) 0 0 0 var(--pixel-border-2),
     0 calc(var(--pixel) * -1) 0 var(--pixel) var(--pixel-border-2),
     0 var(--pixel) 0 var(--pixel) var(--pixel-border-2),
@@ -1170,8 +1200,8 @@
     0 calc(var(--pixel) * 11) 0 calc(var(--pixel) * -4) var(--pixel-border-2),
     0 calc(var(--pixel) * -14) 0 calc(var(--pixel) * -6) var(--pixel-border-2),
     0 calc(var(--pixel) * 14) 0 calc(var(--pixel) * -6) var(--pixel-border-2),
-    /* Border Layer 3: --pixel-border-3 */
-    calc(var(--pixel) * -3) 0 0 0 var(--pixel-border-3),
+    /* Border Layer 3: --pixel-border-3 */ calc(var(--pixel) * -3) 0 0 0
+      var(--pixel-border-3),
     calc(var(--pixel) * 3) 0 0 0 var(--pixel-border-3),
     0 0 0 calc(var(--pixel) * 2) var(--pixel-border-3),
     0 calc(var(--pixel) * -3) 0 var(--pixel) var(--pixel-border-3),
@@ -1221,8 +1251,8 @@
   padding: 0 12px;
   background: var(--main-storage-bg);
   box-shadow:
-    /* Inner Background Color */
-    0 calc(var(--pixel) * -3) 0 calc(var(--pixel) * -1) var(--main-storage-bg),
+    /* Inner Background Color */ 0 calc(var(--pixel) * -3) 0
+      calc(var(--pixel) * -1) var(--main-storage-bg),
     0 calc(var(--pixel) * 3) 0 calc(var(--pixel) * -1) var(--main-storage-bg),
     0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -2) var(--main-storage-bg),
     0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -2) var(--main-storage-bg),
@@ -1230,8 +1260,8 @@
     0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -4) var(--main-storage-bg),
     0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -6) var(--main-storage-bg),
     0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -6) var(--main-storage-bg),
-    /* Pixel Border Layer 1 */
-    calc(var(--pixel) * -1) 0 0 0 var(--pixel-border-4),
+    /* Pixel Border Layer 1 */ calc(var(--pixel) * -1) 0 0 0
+      var(--pixel-border-4),
     var(--pixel) 0 0 0 var(--pixel-border-4),
     0 calc(var(--pixel) * -2) 0 0 var(--pixel-border-4),
     0 calc(var(--pixel) * 2) 0 0 var(--pixel-border-4),
@@ -1268,15 +1298,21 @@
   flex: 1 0 calc(16.6666% - 10px);
   margin: 5px;
   background: rgb(55, 164, 223);
-  background: -moz-radial-gradient(circle,
-      rgba(55, 164, 223, 1) 0%,
-      rgba(46, 96, 210, 1) 100%);
-  background: -webkit-radial-gradient(circle,
-      rgba(55, 164, 223, 1) 0%,
-      rgba(46, 96, 210, 1) 100%);
-  background: radial-gradient(circle,
-      rgba(55, 164, 223, 1) 0%,
-      rgba(46, 96, 210, 1) 100%);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(55, 164, 223, 1) 0%,
+    rgba(46, 96, 210, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(55, 164, 223, 1) 0%,
+    rgba(46, 96, 210, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(55, 164, 223, 1) 0%,
+    rgba(46, 96, 210, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#37a4df", endColorstr="#2e60d2", GradientType=1);
   width: 100%;
   position: relative;
@@ -1315,7 +1351,8 @@
 .voxels-stats-update {
   cursor: pointer;
   width: 20px;
-  filter: invert(100%) sepia(23%) saturate(5954%) hue-rotate(14deg) brightness(107%) contrast(104%);
+  filter: invert(100%) sepia(23%) saturate(5954%) hue-rotate(14deg)
+    brightness(107%) contrast(104%);
 }
 
 .voxels-item-name {
@@ -1488,7 +1525,8 @@
 .voxels-toggle-voxels-button-icon img {
   height: 95%;
   width: 95%;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(314deg) brightness(105%) contrast(103%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(314deg)
+    brightness(105%) contrast(103%);
 }
 
 #voxels-toggle-voxels-button:hover {
@@ -1497,7 +1535,7 @@
 }
 
 #voxels-toggle-voxels-button::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1505,7 +1543,7 @@
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  background: url('chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button.png');
+  background: url("chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -1534,14 +1572,14 @@
   z-index: 1500;
   height: 50px;
   width: 50px;
-  background: url('chrome-extension://__MSG_@@extension_id__/images/hud/sprite__main-nav-button.png');
+  background: url("chrome-extension://__MSG_@@extension_id__/images/hud/sprite__main-nav-button.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  transition: opacity .4s;
+  transition: opacity 0.4s;
 }
 
 #voxels-main-nav-inner::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1549,7 +1587,7 @@
   z-index: 1050;
   height: 95%;
   width: 95%;
-  background: url('chrome-extension://__MSG_@@extension_id__/images/logo.png');
+  background: url("chrome-extension://__MSG_@@extension_id__/images/logo.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -1603,7 +1641,8 @@
 .voxels-sub-nav-button-icon img {
   height: 95%;
   width: 95%;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(314deg) brightness(105%) contrast(103%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(314deg)
+    brightness(105%) contrast(103%);
 }
 
 .voxels-sub-nav-button:hover {
@@ -1611,10 +1650,10 @@
 }
 
 .voxels-sub-nav-button::after {
-  content: '';
+  content: "";
   position: absolute;
   border-radius: 50%;
-  background: url('chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button.png');
+  background: url("chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button.png");
   background-repeat: no-repeat;
   background-size: 100%;
   width: calc(var(--r) / 2);
@@ -1626,7 +1665,7 @@
 .voxels-sub-nav-button:nth-child(1)::after,
 .voxels-sub-nav-button:nth-child(1) .voxels-sub-nav-button-icon img {
   transform: rotate(155deg);
-  transition-delay: .1s;
+  transition-delay: 0.1s;
 }
 
 .voxels-sub-nav-button:nth-child(2),
@@ -1637,7 +1676,7 @@
 }
 
 .voxels-sub-nav-button:nth-child(2)::after {
-  background: url('chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--brown.png');
+  background: url("chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--brown.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -1650,7 +1689,7 @@
 }
 
 .voxels-sub-nav-button:nth-child(3)::after {
-  background: url('chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--blue.png');
+  background: url("chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--blue.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -1663,7 +1702,7 @@
 }
 
 .voxels-sub-nav-button:nth-child(4)::after {
-  background: url('chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--red.png');
+  background: url("chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--red.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -1676,7 +1715,7 @@
 }
 
 .voxels-sub-nav-button:nth-child(5)::after {
-  background: url('chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--yellow.png');
+  background: url("chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--yellow.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -1689,7 +1728,7 @@
 }
 
 .voxels-sub-nav-button:nth-child(6)::after {
-  background: url('chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--darkblue.png');
+  background: url("chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--darkblue.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -1738,7 +1777,7 @@
   margin: 0 15px 10px;
   cursor: move;
   z-index: 10;
-  background: url('chrome-extension://__MSG_@@extension_id__/images/icons/icon__grabbable.svg');
+  background: url("chrome-extension://__MSG_@@extension_id__/images/icons/icon__grabbable.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px;
@@ -1845,16 +1884,18 @@ Full page styling
 }
 
 /**
-* Guild styling
+* Guild and Player styling
 */
-#voxels-guild-home {
+#voxels-guild-home,
+#voxels-player-home {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
 
-.voxels-guild-top-row {
+.voxels-guild-top-row,
+.voxels-player-top-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1862,20 +1903,21 @@ Full page styling
   margin: 10px 5px;
 }
 
-.voxels-guild-home-icon {
+.voxels-guild-home-icon,
+.voxels-player-home-icon {
   margin-right: 10px;
   width: 20px;
-  filter: invert(79%) sepia(61%) saturate(503%) hue-rotate(20deg) brightness(112%) contrast(105%);
+  filter: invert(79%) sepia(61%) saturate(503%) hue-rotate(20deg)
+    brightness(112%) contrast(105%);
 }
 
 .voxels-guild-dropdown-button {
   position: relative;
-  border-radius: 5px;
   border: none;
   background: rgba(0, 0, 0, 0.7);
   color: var(--main-new-bg);
   font-size: 10px;
-  padding: 3px;
+  padding: 7px 10px;
 }
 
 .voxels-guild-dropdown {
@@ -1934,16 +1976,17 @@ Full page styling
   display: flex;
   align-items: center;
   padding: 8px 15px;
-  background: #161626;
+  background: var(--panel-bg);
   border: 1px solid var(--pixel-border-2);
   margin-bottom: 10px;
   border-radius: 12px;
   color: var(--main-new-bg);
   font-size: 12px;
+  transition: 0.14s all ease-out;
 }
 
 .voxels-guild-row:hover {
-  background: #1b1b33;
+  background: #432a71;
 }
 
 .voxels-guild-emblem {
@@ -2066,7 +2109,8 @@ Full page styling
 }
 
 /* Member list section styling */
-.voxels-guildpage-members {
+.voxels-guildpage-members,
+.voxels-player-leaderboard-rows {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -2077,22 +2121,32 @@ Full page styling
   justify-content: space-between;
   padding: 10px;
   font-size: 9px;
-  background: var(--pixel-border-2);
-  color: #fff;
+  color: var(--main-new-bg);
   font-weight: bold;
 }
 
-.voxels-guildpage-member-row {
+.voxels-guildpage-member-row,
+#voxels-player-main-area .voxels-player-leaderboard-row {
   font-size: 9px;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  padding: 9px 10px;
+  background: var(--panel-bg);
+  border: 1px solid var(--pixel-border-2);
+  border-radius: 12px;
+  color: var(--main-new-bg);
+  transition: 0.14s all ease-out;
 }
 
-.voxels-guildpage-member-row.voxels-guildpage-member-current {
-  background-color: var(--main-new-bg);
+.voxels-guildpage-member-row:hover,
+#voxels-player-main-area .voxels-player-leaderboard-row:hover {
+  background-color: #432a71;
+}
+
+.voxels-guildpage-member-row.voxels-guildpage-member-current,
+#voxels-player-main-area
+  .voxels-player-leaderboard-row.voxels-player-leaderboard-row-current {
+  background-color: #432a71;
 }
 
 .premium-icon {
@@ -2100,10 +2154,25 @@ Full page styling
   vertical-align: middle;
 }
 
-.voxels-guildpage-member-row>span,
-.voxels-guildpage-legend>span {
+.voxels-guildpage-member-row > span,
+.voxels-guildpage-legend > span,
+#voxels-player-main-area .voxels-player-leaderboard-row > div,
+.voxels-player-leaderboard-header > div {
   flex: 1 0 15%;
   text-align: center;
+}
+
+#voxels-player-main-area .voxels-player-leaderboard-row div:first-child,
+.voxels-player-leaderboard-header div:first-child {
+  flex: 1;
+  text-align: left;
+}
+
+#voxels-player-main-area .voxels-player-leaderboard-row div:nth-child(2),
+.voxels-player-leaderboard-header div:nth-child(2) {
+  flex: 5;
+  display: flex;
+  align-items: flex-start;
 }
 
 .voxels-guildpage-member-row .voxels-guildpage-member-name,
@@ -2114,13 +2183,17 @@ Full page styling
   text-align: left;
 }
 
-#voxels-guild-owner-area .voxels-guildpage-member-row .voxels-guildpage-member-name,
-#voxels-guild-owner-area .voxels-guildpage-legend .voxels-guildpage-legend-name {
+#voxels-guild-owner-area
+  .voxels-guildpage-member-row
+  .voxels-guildpage-member-name,
+#voxels-guild-owner-area
+  .voxels-guildpage-legend
+  .voxels-guildpage-legend-name {
   flex: 1 0 calc(20% - 20px);
 }
 
-#voxels-guild-owner-area .voxels-guildpage-member-row>span,
-#voxels-guild-owner-area .voxels-guildpage-legend>span {
+#voxels-guild-owner-area .voxels-guildpage-member-row > span,
+#voxels-guild-owner-area .voxels-guildpage-legend > span {
   flex: 1 0 10%;
 }
 
@@ -2157,10 +2230,10 @@ Full page styling
 
 .voxels-guildpage-premium-info a:hover {
   color: var(--main-new-bg);
-  filter:brightness(1.25);
+  filter: brightness(1.25);
 }
 
-/* Response Guilds */
+/* Responsive Guilds */
 @media screen and (max-width: 880px) {
   .voxels-guild-name {
     max-width: 30%;
@@ -2171,6 +2244,558 @@ Full page styling
   .voxels-guild-name {
     max-width: 40%;
   }
+}
+
+/**
+* Player leaderboard styling
+*/
+
+.voxels-custom-select {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+}
+
+.voxels-custom-select-selected {
+  position: relative;
+  padding: 7px 24px 7px 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--main-new-bg);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  text-align: left;
+  font-size: 9px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.voxels-custom-select-items {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  top: 100%;
+  color: #fff;
+  font-size: 9px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.voxels-custom-select-items li {
+  text-align: left;
+  cursor: pointer;
+  list-style: none;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 7px 10px 7px 7px;
+  display: flex;
+}
+
+.voxels-custom-select-items li img,
+.voxels-custom-select-selected img {
+  width: 14px;
+  margin-right: 7px;
+}
+
+.voxels-custom-select-items li:hover {
+  background: var(--main-new-bg);
+  color: #000;
+}
+
+.voxels-custom-select-hide {
+  display: none;
+}
+
+.voxels-custom-select-selected:after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 7px;
+}
+
+.voxels-custom-select-arrow-active:after {
+  content: "▲";
+}
+
+/* Player leaderboard section styling */
+#voxels-player-main-area {
+  width: 100%;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.voxels-player-leaderboard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  height: 100%;
+}
+
+.voxels-player-leaderboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 3px;
+  font-size: 9px;
+  color: var(--main-new-bg);
+  text-transform: capitalize;
+}
+
+.voxels-player-leaderboard-row > div {
+  flex: 1 0 25%;
+  text-align: center;
+}
+
+/**
+* Player page styling
+*/
+.voxels-playerpage-container {
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 9px;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+.voxels-playerpage-card {
+  display: flex;
+  justify-content: center;
+}
+
+/* Top section */
+.voxels-playerpage-top-section {
+  padding: 14px 10px;
+}
+
+.voxels-playerpage-top-section p {
+  color: var(--main-new-bg);
+  margin-bottom: 10px;
+}
+
+.voxels-playerpage-header {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.voxels-playerpage-iconlevel {
+  display: inline-flex;
+  align-items: center;
+}
+
+.voxels-playerpage-levelicon {
+  font-size: 12px;
+  color: var(--main-new-bg);
+  margin-left: 7px;
+}
+
+.voxels-playerpage-levelicon-prefix {
+  vertical-align: top;
+  font-size: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Player icon */
+.voxels-playerpage-icon {
+  width: 75px;
+  height: 75px;
+  position: relative;
+  display: block;
+  box-shadow: -3px 0 0 0 var(--main-new-bg), 3px 0 0 0 var(--main-new-bg),
+    0 -3px 0 0 var(--main-new-bg), 0 3px 0 0 var(--main-new-bg);
+  margin: 3px;
+}
+
+.voxels-playerpage-username {
+  position: relative;
+  height: 3px;
+  background: var(--main-new-bg);
+  margin: 24px 0 40px;
+}
+
+.voxels-playerpage-username h2 {
+  position: absolute;
+  left: 50%;
+  top: -3px;
+  transform: translate(-50%, -50%);
+  margin: 4px;
+  color: var(--pixel-bg);
+  background: var(--main-new-bg);
+  box-shadow: -3px 0 0 0 var(--main-new-bg), 3px 0 0 0 var(--main-new-bg),
+    0 -3px 0 0 var(--main-new-bg), 0 3px 0 0 var(--main-new-bg);
+  padding: 7px 10px;
+}
+
+.voxels-playerpage-profile-balance {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10%;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.voxels-playerpage-balance-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.voxels-playerpage-balance-currency {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 8px;
+}
+
+.voxels-playerpage-balance-currency img {
+  width: 15px;
+}
+
+/* Info sections */
+.voxels-playerpage-info-section {
+  font-size: 9px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.voxels-playerpage-info-header {
+  padding: 10px 20px;
+}
+
+.voxels-playerpage-meta {
+  font-size: 8px;
+}
+
+.voxels-playerpage-meta a {
+  word-break: break-word;
+}
+
+/* Skills list */
+.voxels-playerpage-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 40px;
+  background: var(--panel-bg);
+  border: 1px solid var(--pixel-border-2);
+  border-radius: 12px;
+  padding: 40px 20px;
+}
+
+.voxels-playerpage-skill-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 calc(47% - 80px);
+  min-width: 0;
+}
+
+.voxels-playerpage-skill-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 3px 0;
+}
+
+.voxels-playerpage-skill-level {
+  color: var(--main-new-bg);
+  display: flex;
+  gap: 4px;
+  margin-right: 7px;
+}
+
+.voxels-playerpage-skill-tooltip {
+  position: absolute;
+  display: none;
+  background-color: var(--pixel-bg);
+  color: #fff;
+  font-size: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--main-new-bg);
+  z-index: 3000;
+}
+
+.voxels-playerpage-skill-tooltip span {
+  color: var(--main-new-bg);
+}
+
+.voxels-playerpage-skill-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.voxels-playerpage-skill-progress-bar {
+  width: 100%;
+  height: 15px;
+  border: 1px solid var(--main-new-bg);
+  border-radius: 12px;
+  padding: 1px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.voxels-playerpage-skill-progress-bar-inner {
+  height: 100%;
+  background-color: var(--main-new-bg);
+  border-radius: 12px;
+  color: var(--pixel-bg);
+}
+
+.voxels-playerpage-skill-details {
+  font-size: 8px;
+  color: #fff;
+  line-height: 3em;
+}
+
+.voxels-playerpage-skill-title {
+  color: var(--main-new-bg);
+  font-size: 10px;
+}
+
+.voxels-playerpage-skill-title::first-letter {
+  text-transform: uppercase;
+}
+
+/* Subsections, Reputations, Premium */
+
+.voxels-playerpage-premium-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--pixel-bg);
+  border: 1px solid var(--main-new-bg);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.voxels-playerpage-premium-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--main-new-bg);
+}
+
+.voxels-playerpage-premium-text {
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+.voxels-playerpage-premium-link {
+  color: var(--main-new-bg);
+  text-decoration: underline;
+}
+
+.voxels-playerpage-premium-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.voxels-playerpage-info-content {
+  flex: 1 0 calc(47% - 10px);
+  padding: 34px 24px 0;
+  background: var(--panel-bg);
+  border: 1px solid var(--pixel-border-2);
+  border-radius: 12px;
+  max-height: 240px;
+  overflow-y: scroll;
+}
+
+.voxels-playerpage-info-content-title {
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  color: var(--main-new-bg);
+  flex: 0 0 100%;
+}
+
+.voxels-playerpage-info-subsection {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.voxels-playerpage-info-panels {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.voxels-playerpage-info-panel {
+  color: var(--panel-bg);
+  background: var(--panel-bg);
+  box-shadow: -3px 0 0 0 var(--panel-bg), 3px 0 0 0 var(--panel-bg),
+    0 -3px 0 0 var(--panel-bg), 0 3px 0 0 var(--panel-bg);
+  padding: 10% 5px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  flex: 1 0 27%;
+  margin: 10px;
+  max-width: 90px;
+  aspect-ratio: 1/1;
+}
+
+.voxels-playerpage-info-panel:nth-child(1) {
+  background: var(--button-bg);
+  box-shadow: -3px 0 0 0 var(--button-bg), 3px 0 0 0 var(--button-bg),
+    0 -3px 0 0 var(--button-bg), 0 3px 0 0 var(--button-bg);
+}
+
+.voxels-playerpage-info-panel:nth-child(2) {
+  background: #edbf08;
+  box-shadow: -3px 0 0 0 #edbf08, 3px 0 0 0 #edbf08, 0 -3px 0 0 #edbf08,
+    0 3px 0 0 #edbf08;
+}
+
+.voxels-playerpage-info-panel:nth-child(3) {
+  background: #25a085;
+  box-shadow: -3px 0 0 0 #25a085, 3px 0 0 0 #25a085, 0 -3px 0 0 #25a085,
+    0 3px 0 0 #25a085;
+}
+
+.voxels-playerpage-info-panel-number {
+  font-size: 8px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.voxels-playerpage-info-panel-text {
+  font-size: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.voxels-playerpage-info-subheader {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.voxels-playerpage-info-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-new-bg);
+  font-size: 8px;
+  line-height: 2em;
+  padding: 7px 10px;
+}
+
+.voxels-playerpage-info-subsection-header-title-row {
+  display: flex;
+  margin-bottom: 10px;
+  color: var(--main-new-bg);
+  font-size: 9px;
+}
+
+.voxels-playerpage-info-subsection-header-title-row-points,
+.voxels-playerpage-info-subsection-header-title-row-status {
+  font-size: 7px;
+}
+
+.voxels-playerpage-info-subsection-header-title-row-name {
+  flex: 5;
+}
+
+.voxels-playerpage-info-name {
+  flex: 5;
+  color: var(--main-grid-red);
+}
+
+.voxels-playerpage-info-content-guild .voxels-playerpage-info-name {
+  color: var(--main-new-bg);
+}
+
+.voxels-playerpage-info-points,
+.voxels-playerpage-info-subsection-header-title-row-points {
+  flex: 3;
+  text-align: center;
+}
+
+.voxels-playerpage-info-completed,
+.voxels-playerpage-info-subsection-header-title-row-status {
+  flex: 1;
+  text-align: right;
+}
+
+.voxels-playerpage-info-completed img {
+  height: 12px;
+  filter: invert(50%) sepia(11%) saturate(2141%) hue-rotate(313deg)
+    brightness(91%) contrast(85%);
+}
+
+.voxels-playerpage-info-completed.js-completed img {
+  filter: invert(53%) sepia(62%) saturate(449%) hue-rotate(73deg)
+    brightness(98%) contrast(85%);
+}
+
+.voxels-playerpage-info-name.js-completed {
+  color: var(--success);
+}
+
+.voxels-playerpage-info-count {
+  flex: 3;
+  text-align: right;
+}
+
+.voxels-playerpage-info-emblem {
+  margin-right: 10px;
+}
+
+#playerGraph {
+  padding: 40px 24px;
+  background: var(--panel-bg);
+  border: 1px solid var(--pixel-border-2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.voxels-playerpage-info-empty-message {
+  color: var(--main-new-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 /**
@@ -2316,7 +2941,8 @@ Full page styling
 .voxels-pass-copy img,
 .voxels-pass-reload img {
   height: 12px;
-  filter: invert(79%) sepia(61%) saturate(503%) hue-rotate(20deg) brightness(112%) contrast(105%);
+  filter: invert(79%) sepia(61%) saturate(503%) hue-rotate(20deg)
+    brightness(112%) contrast(105%);
   margin-left: 5px;
 }
 
@@ -2419,6 +3045,35 @@ Full page styling
   outline: none;
 }
 
+.voxels-settings-button {
+  padding: 8px 15px;
+  margin-top: 20px;
+  background: rgb(22, 22, 38);
+  border: 1px solid var(--pixel-border-2);
+  color: var(--main-new-bg);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Auth area */
+#voxels-auth-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  color: rgb(255, 255, 255);
+  max-width: 600px;
+  font-size: 12px;
+  gap: 10px;
+  margin: 20px auto;
+}
+
+#voxels-auth-area span {
+  color: var(--main-new-bg);
+}
+
 /* Bubble UI animation */
 .js-voxels-active #voxels-sub-nav {
   visibility: visible;
@@ -2486,6 +3141,30 @@ Full page styling
 .js-voxels-main-modal-active #voxels-main-modal {
   display: block;
   opacity: 1;
+}
+
+/**
+* Player About Link
+*/
+.aboutToVoxelsLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  background-color: var(--pixel-bg);
+  box-shadow: -3px 0 0 0 var(--main-new-bg), 3px 0 0 0 var(--main-new-bg),
+    0 -3px 0 0 var(--main-new-bg), 0 3px 0 0 var(--main-new-bg);
+  padding: 10px;
+  width: 220px;
+}
+
+.aboutToVoxelsLink:hover {
+  background-color: #494686;
+}
+
+.aboutToVoxelsLink img {
+  width: 35px;
+  margin-right: 10px;
 }
 
 /**
@@ -2688,7 +3367,173 @@ Full page styling
 
 /* Responsive */
 
+@media screen and (max-width: 1350px) {
+  .voxels-playerpage-skill-container {
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .voxels-playerpage-skill-details {
+    font-size: 7px;
+  }
+  .voxels-playerpage-level-up select {
+    font-size: 8px;
+  }
+  .voxels-custom-select-selected {
+    padding-right: 20px;
+    font-size: 6px;
+    width: 130px;
+    padding-right: 24px;
+  }
+
+  .voxels-custom-select-items {
+    width: 130px;
+  }
+
+  .voxels-playerpage-header {
+    flex: 1 0 100%;
+    justify-content: center;
+  }
+
+  .voxels-playerpage-info-panels {
+    flex-wrap: wrap;
+  }
+
+  .voxels-playerpage-info-panel {
+    flex: 1;
+    font-size: 14px;
+  }
+
+  .voxels-playerpage-card {
+    flex-wrap: wrap;
+  }
+
+  .voxels-playerpage-username {
+    text-wrap: nowrap;
+  }
+
+  .voxels-playerpage-username h2 {
+    font-size: 9px;
+  }
+
+  .voxels-playerpage-info-section {
+    flex-wrap: wrap;
+  }
+
+  .voxels-playerpage-info-content {
+    flex: 1 0 100%;
+  }
+
+  .voxels-playerpage-profile-balance {
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+  }
+
+  #voxels-player-main-area .voxels-player-leaderboard-row div:first-child,
+  .voxels-player-leaderboard-header div:first-child {
+    flex: 1;
+  }
+
+  #voxels-player-main-area .voxels-player-leaderboard-row div:nth-child(2),
+  .voxels-player-leaderboard-header div:nth-child(2) {
+    flex: 2;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .voxels-quick-message-popup {
+    width: 90%;
+  }
+
+  .voxels-quick-message-popup p.voxels-quick-info {
+    font-size: 10px;
+    padding-bottom: 15px;
+  }
+
+  .voxels-full-title {
+    font-size: 14px;
+  }
+
+  .voxels-full-title-guilds {
+    height: 40px;
+  }
+
+  .voxels-full-nav-item .voxels-nav-text {
+    display: none;
+  }
+
+  .voxels-full-nav-item.active .voxels-nav-icon {
+    background: linear-gradient(
+      to bottom,
+      transparent 80%,
+      currentColor 80%,
+      currentColor 100%
+    );
+    background-size: 100% 120%;
+  }
+
+  .voxels-guild-row {
+    font-size: 8px;
+  }
+
+  .voxels-guild-place {
+    width: auto;
+    margin-right: 5px;
+  }
+
+  #voxels-full-page {
+    width: 90vw;
+  }
+
+  .voxels-guild-level {
+    margin-right: 15px;
+  }
+
+  .voxels-guildpage-member-row > span,
+  .voxels-guildpage-legend > span {
+    flex: 1 0 10%;
+    text-align: center;
+  }
+
+  .voxels-guildpage-member-row .voxels-guildpage-member-name,
+  .voxels-guildpage-legend .voxels-guildpage-legend-name {
+    flex: 1 0 calc(30% - 20px);
+    overflow: hidden;
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  .voxels-custom-select-selected {
+    max-width: 120px;
+    padding-right: 20px;
+    font-size: 6px;
+  }
+
+  .voxels-custom-select-selected img {
+    display: none;
+  }
+
+  .voxels-custom-select-items {
+    max-width: 120px;
+  }
+
+  .voxels-custom-select-items li {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 7px 10px 7px 10px;
+    font-size: 7px;
+  }
+
+  .voxels-custom-select-items li img {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 540px) {
+  .voxels-playerpage-container {
+    max-width: 95%;
+  }
   #voxels-main-modal {
     top: 50%;
     left: 50%;
@@ -2798,67 +3643,6 @@ Full page styling
   }
 
   .voxels-guild-premium-explanation {
-    text-align: left;
-  }
-}
-
-/* Responsive for full page */
-
-@media screen and (max-width: 780px) {
-  .voxels-quick-message-popup {
-    width: 90%;
-  }
-
-  .voxels-quick-message-popup p.voxels-quick-info {
-    font-size: 10px;
-    padding-bottom: 15px;
-  }
-
-  .voxels-full-title {
-    font-size: 14px;
-  }
-
-  .voxels-full-title-guilds {
-    height: 40px;
-  }
-
-  .voxels-full-nav-item .voxels-nav-text {
-    display: none;
-  }
-
-  .voxels-full-nav-item.active .voxels-nav-icon {
-    background: linear-gradient(to bottom, transparent 80%, currentColor 80%, currentColor 100%);
-    background-size: 100% 120%;
-  }
-
-  .voxels-guild-row {
-    font-size: 8px;
-  }
-
-  .voxels-guild-place {
-    width: auto;
-    margin-right: 5px;
-  }
-
-  #voxels-full-page {
-    width: 90vw;
-  }
-
-  .voxels-guild-level {
-    margin-right: 15px;
-  }
-
-  .voxels-guildpage-member-row>span,
-  .voxels-guildpage-legend>span {
-    flex: 1 0 10%;
-    text-align: center;
-  }
-
-  .voxels-guildpage-member-row .voxels-guildpage-member-name,
-  .voxels-guildpage-legend .voxels-guildpage-legend-name {
-    flex: 1 0 calc(30% - 20px);
-    overflow: hidden;
-    margin-right: 20px;
     text-align: left;
   }
 }

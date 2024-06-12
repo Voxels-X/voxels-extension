@@ -1,1 +1,267 @@
-let inventoryLoaded=!1,inventoryArray=[],checkInterval,checkHudInterval;const imageBlobToNameMap=new Map([[876,"mine"],[791,"coop"],[1210,"hutch"],[832,"apiary"]]);let imageHashMap,userPremium;function mainInterval(e,t){let n,r,l=!1;function i(){let e=document.querySelectorAll(nodeNames.hudQuantities);e.length>0&&(clearInterval(checkHudInterval),setTimeout(c,400),n=new Date)}imageHashMap=t,userPremium=e;var a=0;function c(){var e=Date.now();e-a>2e3&&(loadInventoryPrices(),a=e),checkHudInterval=setInterval(()=>{let e=document.querySelectorAll(nodeNames.hudQuantities);if(0===e.length)clearInterval(checkHudInterval),checkHudInterval=setInterval(i,100);else{var t=Date.now();if(!location.href.endsWith("/gridcraft")){let c=document.querySelectorAll(".voxels-inventory-price");0===c.length&&t-a>1e4&&(loadInventoryPrices(),a=t)}r=checkForWindow(r,nodeNames.market_place,".voxels-market-create-price",fetchMarketPrices),userPremium?(l=checkForWindow(l,nodeNames.tasksCard,".voxels-tasks-prices",addTaskPrices),checkInventoryChange(),checkEnergyChange(),l&&checkTasks()):loadTasksF&&(l=checkForWindow(l,nodeNames.tasksCard,".voxels-tasks-prices",addTaskPrices))&&checkTasks();let u=new Date,o=(u-n)/1e3;o>=50&&(n=new Date,loadInventoryPrices(),r&&fetchMarketPrices(".voxels-market-create-price"),l&&addTaskPrices(".voxels-tasks-prices"),userPremium&&setTasksCost())}},500)}checkHudInterval=setInterval(i,100)}function checkForWindow(e,t,n,r){let l=document.querySelectorAll(t);if(e){if(0===l.length)return!1;let i=document.querySelectorAll(n);return 0===i.length&&r(n),!0}return l.length>0&&(r(n),!0)}function checkInventoryChange(){let e=getCurrentInventory(!1);if(0===inventoryArray.length||0===e.length){inventoryArray=e;return}let t=compareInventories(inventoryArray,e);!1!==t?(startTimerType(t),inventoryArray=getCurrentInventory(!0)):inventoryArray=e}function getCurrentInventory(e){let t=document.querySelectorAll(nodeNames.hudItems),n=[];return t.forEach(t=>{let r=t.querySelector(nodeNames.hudItemImage),l=t.querySelector(nodeNames.hudQuantities),i=parseInt(t.querySelector(nodeNames.hudShortcut).textContent)-1;if(r&&l&&e){let a=r.src;fetch(a,{method:"GET"}).then(e=>e.headers.get("Content-Length")).then(e=>{let t=l.textContent.replace("x",""),r=parseInt(t)||1;n[i]={length:e,quantity:r}}).catch(e=>console.error("Error fetching blob:",e))}else if(l){let c=l.textContent.replace("x",""),u=parseInt(c)||1;n[i]={length:null,quantity:u}}else n[i]=null}),n}function compareInventories(e,t){for(let n=0;n<t.length;n++){let r=t[n],l=e[n];if(null!==r&&(null===l&&r.quantity>=1&&r.quantity<=10||null!==l&&r.quantity>l.quantity&&r.quantity<=l.quantity+10)){let i=fetchImageAndCheckContent(n);if(!1!==i)return i}}return!1}function fetchImageAndCheckContent(e){let t=[].slice.call(document.querySelectorAll(nodeNames.hudShortcut)).filter(function(t){return t.innerHTML.trim()===String(e+1)}),n=t[0].parentElement,r=n.querySelector(nodeNames.hudItemImage);if(r){let l=calculateAverageColor(r);if(imageHashMap[l])return imageHashMap[l]}return!1}function isEqual(e,t){return JSON.stringify(e)===JSON.stringify(t)}
+let inventoryLoaded = false;
+let inventoryArray = []; // Array to store inventory slots
+let checkInterval;
+let checkHudInterval;
+
+// Define image blobs and corresponding names
+const imageBlobToNameMap = new Map([
+    [876, 'mine'],
+    [791, 'coop'],
+    [1210, 'hutch'],
+    [832, 'apiary']
+]);
+
+let imageHashMap;
+let userPremium;
+
+// Interval
+function mainInterval(premium, map) {
+
+    // Timers for actions
+    let twentyTimer;
+    let marketPlaceLoaded, tasksLoaded = false;
+    imageHashMap = map;
+    userPremium = premium;
+
+    function checkHudQuantities() {
+        const hudQuantities = document.querySelectorAll(nodeNames['hudQuantities']);
+        if (hudQuantities.length > 0) {
+            clearInterval(checkHudInterval);
+            setTimeout(functionWhenLoaded, 400);
+            twentyTimer = new Date();
+        }
+    }
+
+    var lastPriceUpdate = 0;
+    function functionWhenLoaded() {
+
+        var currentTime1 = Date.now();
+
+        var elapsedTime = currentTime1 - lastPriceUpdate;
+        if (elapsedTime > 2000) {
+            loadInventoryPrices(); // Call it immediately before starting the interval
+            lastPriceUpdate = currentTime1;
+        }
+
+        checkHudInterval = setInterval(() => {
+
+            const hudQuantities = document.querySelectorAll(nodeNames['hudQuantities']);
+            if (hudQuantities.length === 0) {
+
+                clearInterval(checkHudInterval);
+                checkHudInterval = setInterval(checkHudQuantities, 100);
+
+            } else {
+                // Every 0.5s
+                var currentTime2 = Date.now();
+                // Check for existing inventory
+                if (!location.href.endsWith('/gridcraft')) {
+                    const existingInventory = document.querySelectorAll('.voxels-inventory-price');
+
+                    if (existingInventory.length === 0) {
+                        var elapsedTime = currentTime2 - lastPriceUpdate;
+                        if (elapsedTime > 10000) {
+                            loadInventoryPrices();
+                            lastPriceUpdate = currentTime2;
+                        }
+                    }
+                }
+
+                // Check if in market
+                marketPlaceLoaded = checkForWindow(marketPlaceLoaded, nodeNames['market_place'], '.voxels-market-create-price', fetchMarketPrices);
+
+                // Check for about page
+                checkForAboutPage();
+
+                // Premium features
+                if (userPremium) {
+                    // Check if in task overview
+                    tasksLoaded = checkForWindow(tasksLoaded, nodeNames['tasksCard'], '.voxels-tasks-prices', addTaskPrices);
+                    checkInventoryChange();
+                    checkEnergyChange();
+                    if (tasksLoaded) {
+                        checkTasks();
+                    }
+                } else {
+                    if (loadTasksF) {
+                        tasksLoaded = checkForWindow(tasksLoaded, nodeNames['tasksCard'], '.voxels-tasks-prices', addTaskPrices);
+                        if (tasksLoaded) {
+                            checkTasks();
+                        }
+                    }
+                }
+
+                // Every 50s
+                const currentTime = new Date();
+                const timeDifference = (currentTime - twentyTimer) / 1000;
+
+                if (timeDifference >= 50) {
+                    twentyTimer = new Date();
+
+                    // Reload inventory prices
+                    loadInventoryPrices();
+
+                    // If in market reload prices
+                    if (marketPlaceLoaded)
+                        fetchMarketPrices('.voxels-market-create-price');
+
+                    // If in tasks
+                    if (tasksLoaded)
+                        addTaskPrices('.voxels-tasks-prices');
+
+                    if (userPremium) {
+                        setTasksCost();
+                    }
+                }
+
+            }
+        }, 500);
+    }
+
+
+    checkHudInterval = setInterval(checkHudQuantities, 100);
+}
+
+// Function checking for current screen
+function checkForWindow(switch_var, ingame_node, created_node, action) {
+    const ingameElements = document.querySelectorAll(ingame_node);
+    if (!switch_var) {
+        if (ingameElements.length > 0) {
+            action(created_node);
+            return true;
+        }
+        return false;
+    } else {
+        if (ingameElements.length === 0) {
+            return false;
+        }
+        const createdElement = document.querySelectorAll(created_node);
+        if (createdElement.length === 0) {
+            action(created_node);
+        }
+        return true;
+    }
+}
+
+// Check inventory changes
+function checkInventoryChange() {
+    const currentInventory = getCurrentInventory(false);
+
+    // Check if either inventoryArray or currentInventory is empty
+    if (inventoryArray.length === 0 || currentInventory.length === 0) {
+        // If either is empty, set inventoryArray to currentInventory and exit
+        inventoryArray = currentInventory;
+        return;
+    }
+
+    // Compare currentInventory with the stored inventoryArray
+    const response = compareInventories(inventoryArray, currentInventory);
+
+    if (response !== false) {
+        // Change eligible
+        startTimerType(response);
+        inventoryArray = getCurrentInventory(true);
+    } else {
+        inventoryArray = currentInventory;
+    }
+}
+
+// Get representation of current inventory
+function getCurrentInventory(fetchImages) {
+    const hudItems = document.querySelectorAll(nodeNames['hudItems']);
+
+    // Reset inventory array
+    let newInventoryArray = [];
+
+    // Add observer to each Hud_item element
+    hudItems.forEach(item => {
+        const imageElement = item.querySelector(nodeNames['hudItemImage']);
+        const quantityElement = item.querySelector(nodeNames['hudQuantities']);
+        const slotNumber = parseInt(item.querySelector(nodeNames['hudShortcut']).textContent) - 1;
+
+        if (imageElement && quantityElement && fetchImages) {
+            const imageSrc = imageElement.src;
+
+            fetch(imageSrc, { method: 'GET' })
+                .then(response => response.headers.get('Content-Length'))
+                .then(contentLength => {
+                    const quantityText = quantityElement.textContent.replace('x', '');
+                    const quantity = parseInt(quantityText) || 1;
+
+                    newInventoryArray[slotNumber] = {
+                        length: contentLength,
+                        quantity: quantity
+                    };
+                })
+                .catch(error => console.error('Error fetching blob:', error));
+
+        } else if (quantityElement) {
+            // If fetchImages is false or if imageElement is not present, only fetch quantities
+            const quantityText = quantityElement.textContent.replace('x', '');
+            const quantity = parseInt(quantityText) || 1;
+
+            newInventoryArray[slotNumber] = {
+                length: null,
+                quantity: quantity
+            };
+        } else {
+            newInventoryArray[slotNumber] = null;
+        }
+    });
+
+    // Display the inventory array
+    return newInventoryArray;
+}
+
+// Function to compare inventories and find differences
+function compareInventories(oldInventory, newInventory) {
+    for (let i = 0; i < newInventory.length; i++) {
+        const newItem = newInventory[i];
+        const oldItem = oldInventory[i];
+
+        if (newItem !== null) {
+            // Check if the quantities for a slot are within the eligible parameters
+            if (
+                (oldItem === null && newItem.quantity >= 1 && newItem.quantity <= 10) ||
+                (oldItem !== null && newItem.quantity > oldItem.quantity && newItem.quantity <= oldItem.quantity + 10)
+            ) {
+                // Fetch the file and check if it matches the content length
+                const itemName = fetchImageAndCheckContent(i);
+
+                if (itemName !== false) {
+                    // At least one eligible change found
+                    return itemName;
+                }
+            }
+        }
+    }
+
+    // No eligible changes found
+    return false;
+}
+
+// Function to fetch the file and check if its length is in the imageBlobToNameMap
+function fetchImageAndCheckContent(slotNumber) {
+    const hudShortcutElement = [].slice.call(document.querySelectorAll(nodeNames['hudShortcut'])).filter(function (div) {
+        return div.innerHTML.trim() === String(slotNumber + 1);
+    });
+    const hudItemElement = hudShortcutElement[0].parentElement;
+    const imageElement = hudItemElement.querySelector(nodeNames['hudItemImage']);
+
+    if (imageElement) {
+        const color = calculateAverageColor(imageElement);
+
+        if (imageHashMap[color]) {
+            // At least one eligible change found
+            return imageHashMap[color];
+        }
+    }
+
+    // No eligible changes found
+    return false;
+}
+
+// Function to check if two objects are equal
+function isEqual(obj1, obj2) {
+    return JSON.stringify(obj1) === JSON.stringify(obj2);
+}

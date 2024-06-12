@@ -1,59 +1,60 @@
 {
-    "manifest_version": 3,
-    "name": "Voxels - The Pixels Extension",
-    "description": "The Pixels Extension is a tool made for every pixels enthusiast. Essential and easy to use for every Web3 Gamer. Currently in beta.",
-    "version": "0.0.4.4",
-    "icons": {
-        "128": "icons/icon128.png"
-    },
-    "action": {
-        "default_icon": "icons/icon128.png",
-        "default_popup": "popup.html"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-                "https://play.pixels.xyz/*"
-            ],
-            "css": [
-                "assets/style.css"
-            ],
-            "js": [
-                "Content.js",
-                "assets/utils.js",
-                "assets/functions.js",
-                "assets/market_prices.js",
-                "assets/inventory.js",
-                "assets/tasks.js",
-                "assets/charts/dist/chart.umd.js",
-                "assets/charts/dist/chart_tooltip.js",
-                "pages/timer_page.js",
-                "pages/storage_page.js",
-                "pages/tasks_page.js",
-                "pages/premium_page.js",
-                "pages/stats_page.js",
-                "full_pages/guilds_page.js",
-                "full_pages/pass_page.js",
-                "full_pages/settings_page.js"
-            ],
-            "type": "module"
-        }
-    ],
-    "web_accessible_resources": [
-        {
-            "resources": [
-                "images/*"
-            ],
-            "matches": [
-                "https://play.pixels.xyz/*"
-            ]
-        }
-    ],
-    "background": {
-        "service_worker": "background.js"
-    },
-    "permissions": [
-        "storage",
-        "notifications"
-    ]
+  "manifest_version": 3,
+  "name": "Voxels - The Pixels Extension",
+  "description": "The Pixels Extension is a tool made for every pixels enthusiast. Essential and easy to use for every Web3 Gamer. Currently in beta.",
+  "version": "0.0.4.6",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": "icons/icon128.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://play.pixels.xyz/*"
+      ],
+      "css": [
+        "assets/style.css"
+      ],
+      "js": [
+        "Content.js",
+        "assets/utils.js",
+        "assets/functions.js",
+        "assets/market_prices.js",
+        "assets/inventory.js",
+        "assets/tasks.js",
+        "assets/charts/dist/chart.umd.js",
+        "assets/charts/dist/chart_tooltip.js",
+        "pages/timer_page.js",
+        "pages/storage_page.js",
+        "pages/tasks_page.js",
+        "pages/premium_page.js",
+        "pages/stats_page.js",
+        "full_pages/guilds_page.js",
+        "full_pages/pass_page.js",
+        "full_pages/player_page.js",
+        "full_pages/settings_page.js"
+      ],
+      "type": "module"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/*"
+      ],
+      "matches": [
+        "https://play.pixels.xyz/*"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "notifications"
+  ]
 }
