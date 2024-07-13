@@ -282,13 +282,13 @@
 /* Style the input field */
 
 .voxels-player-input-container {
-  width: 90%; /* Takes up 90% of the width */
+  width: 90%;
+  /* Takes up 90% of the width */
 }
 
 .voxels-player-input {
-  width: calc(
-    100% - 50px
-  ); /* Takes up 100% minus space for the submit button */
+  width: calc(100% - 50px);
+  /* Takes up 100% minus space for the submit button */
 }
 
 .voxels-filter-container,
@@ -1384,6 +1384,11 @@
 * Task page style
 */
 
+.voxels-main-tasks {
+  color: #fff;
+  padding: 20px;
+}
+
 .voxels-task-items-container {
   width: 94%;
   margin: 0 auto;
@@ -1397,6 +1402,7 @@
 .voxels-task-item {
   flex: 1 0 calc(33% - 10px);
   margin: 5px;
+  position: relative;
   display: flex;
   min-width: 0;
   align-items: center;
@@ -1406,6 +1412,33 @@
   border-radius: 2px;
   min-height: 170px;
   padding: 10px 5px;
+}
+
+.voxels-task-item.vip {
+  border: 4px solid #28248c;
+}
+
+.voxels-task-item.landowner {
+  border: 4px solid #55331c;
+}
+
+.voxels-task-type-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.voxels-task-type-indicator.vip {
+  background-color: #28248c;
+  /* VIP color */
+}
+
+.voxels-task-type-indicator.landowner {
+  background-color: #55331c;
+  /* Landowner color */
 }
 
 .voxels-task-item.voxels-task-achievable {
@@ -2619,6 +2652,7 @@ Full page styling
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -3269,8 +3303,214 @@ Full page styling
   border-top: 1px solid var(--main-new-bg);
 }
 
+.voxels-stats-earnings-graph {
+  width: 90%;
+  margin: 20px auto;
+}
+
 .voxels-stats-earnings span {
   color: #fff;
+}
+
+.voxels-stats-last-task {
+  margin: 10px 0;
+  font-size: 10px;
+  color: #fff;
+}
+
+.voxels-stats-last-task span {
+  color: var(--main-new-bg);
+}
+
+.voxels-stats-min-section-title {
+  border-top: 1px solid var(--main-new-bg);
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 10px;
+  color: var(--main-new-bg);
+}
+
+.voxels-stats-tasks-section {
+  color: #fff;
+  border: 2px solid #676767;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.voxels-stats-tasks-section-title {
+  border-bottom: 2px solid rgb(103, 103, 103);
+  position: relative;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.voxels-stats-tasks-section-title img {
+  width: 24px;
+}
+
+.voxels-stats-tasks-section-totals {
+  border-bottom: 2px solid rgb(103, 103, 103);
+  position: relative;
+  height: 100%;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.voxels-stats-tasks-section-totals > div {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.voxels-stats-tasks-section-totals img {
+  width: 20px;
+}
+
+.voxels-stats-tasks-section-totals .pixel-image {
+  width: 15px;
+}
+
+/* Table styles */
+.voxels-stats-tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Header row styles */
+.voxels-stats-tasks-table th {
+  border-bottom: 2px solid #444;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Body row styles */
+.voxels-stats-tasks-table td {
+  border-bottom: 1px solid #333;
+  padding: 8px;
+  vertical-align: middle;
+}
+
+.voxels-stats-tasks-table td:first-child {
+  max-width: 170px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Vertically center only the last three td elements in each row */
+.voxels-stats-tasks-table tr td:nth-last-child(-n + 3) {
+  text-align: center;
+}
+
+/* Image styles */
+.voxels-stats-tasks-table .task-item-image,
+.voxels-stats-tasks-table .header-image {
+  vertical-align: middle;
+  width: 25px;
+}
+
+.voxels-stats-tasks-table .header-pixels {
+  width: 20px;
+  vertical-align: text-top;
+}
+
+.voxels-stats-tasks-table .pixel-image,
+.voxels-stats-tasks-table .coin-image,
+.voxels-stats-skill-table .pixel-image {
+  width: 15px;
+}
+
+/* Add some space between item image and text */
+.voxels-stats-tasks-table td img {
+  margin-right: 4px;
+}
+
+/* Even row styles */
+.voxels-stats-tasks-table tr:nth-child(even) {
+  background-color: #2a2a3d;
+}
+
+/* Odd row styles */
+.voxels-stats-tasks-table tr:nth-child(odd) {
+  background-color: #23233a;
+}
+
+/* Table styles */
+.voxels-stats-skill-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Header row styles */
+.voxels-stats-skill-table th {
+  border-bottom: 2px solid #444;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Body row styles */
+.voxels-stats-skill-table td {
+  border-bottom: 1px solid #333;
+  padding: 8px;
+  vertical-align: middle;
+}
+
+.voxels-stats-skill-table td:first-child {
+  max-width: 170px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Vertically center only the last two td elements in each row */
+.voxels-stats-skill-table tr td:nth-last-child(-n + 2) {
+  text-align: center;
+}
+
+/* Image styles */
+.voxels-stats-skill-table .task-item-image,
+.voxels-stats-skill-table .header-image {
+  vertical-align: middle;
+  width: 25px;
+}
+
+/* Add some space between item image and text */
+.voxels-stats-skill-table td img {
+  margin-right: 4px;
+}
+
+/* Even row styles */
+.voxels-stats-skill-table tr:nth-child(even) {
+  background-color: #2a2a3d;
+}
+
+/* Odd row styles */
+.voxels-stats-skill-table tr:nth-child(odd) {
+  background-color: #23233a;
+}
+
+/* Skill section styles */
+.voxels-stats-skill-section {
+  margin: 20px;
+  text-transform: none;
+}
+
+/* Skill title styles */
+.voxels-stats-skill-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.voxels-stats-skill-title img {
+  margin-right: 10px;
 }
 
 .voxels-leaderboard,
@@ -3299,14 +3539,68 @@ Full page styling
 .voxels-season-row {
   display: flex;
   padding: 5px;
-  border-bottom: 1px solid var(--main-new-bg);
   text-transform: none;
+}
+
+.voxels-leaderboard-table .voxels-leaderboard-row:not(:first-child),
+.voxels-leaderboard-table .voxels-season-row:not(:first-child) {
+  border-top: 1px solid var(--main-new-bg);
 }
 
 .voxels-leaderboard-column {
   text-align: left;
   padding: 5px;
   text-align: center;
+}
+
+.voxels-details-container {
+  margin: 0 20px;
+}
+
+.voxels-details-row {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  text-transform: none;
+}
+
+.voxels-details-calc {
+  justify-content: flex-start;
+}
+
+.voxels-details-calc-number {
+  color: var(--main-new-bg);
+}
+
+.voxels-details-row img {
+  width: 17px;
+}
+
+.voxels-details-vip {
+  display: flex;
+  align-items: center;
+}
+
+.voxels-details-vip img {
+  height: 12px;
+  filter: invert(50%) sepia(11%) saturate(2141%) hue-rotate(313deg)
+    brightness(91%) contrast(85%);
+}
+
+.voxels-details-vip.js-completed img {
+  filter: invert(53%) sepia(62%) saturate(449%) hue-rotate(73deg)
+    brightness(98%) contrast(85%);
+}
+
+.voxels-details-button {
+  display: flex;
+  justify-content: center;
+}
+
+.voxels-details-button button {
+  background: var(--main-new-bg);
+  color: var(--panel-bg);
+  padding: 4px;
 }
 
 .voxels-leaderboard-column:first-child {
@@ -3345,11 +3639,11 @@ Full page styling
   color: #ffd700;
 }
 
-.voxels-leaderboard-row:nth-child(2) .voxels-leaderboard-column:nth-child(2) {
+.voxels-leaderboard-row:nth-child(3) .voxels-leaderboard-column:nth-child(2) {
   color: #a8a9ad;
 }
 
-.voxels-leaderboard-row:nth-child(3) .voxels-leaderboard-column:nth-child(2) {
+.voxels-leaderboard-row:nth-child(5) .voxels-leaderboard-column:nth-child(2) {
   color: #cd7f32;
 }
 
@@ -3377,9 +3671,11 @@ Full page styling
   .voxels-playerpage-skill-details {
     font-size: 7px;
   }
+
   .voxels-playerpage-level-up select {
     font-size: 8px;
   }
+
   .voxels-custom-select-selected {
     padding-right: 20px;
     font-size: 6px;
@@ -3534,6 +3830,7 @@ Full page styling
   .voxels-playerpage-container {
     max-width: 95%;
   }
+
   #voxels-main-modal {
     top: 50%;
     left: 50%;
