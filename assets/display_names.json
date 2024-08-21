@@ -825,11 +825,6 @@
         "display_name": "Giant Wooden Chair"
     },
     {
-        "item": "itm_energyDrink_zero",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//dd10863a-ddca-42e0-ae31-84a1007c6c2b.png",
-        "display_name": "Energy Drink Zero"
-    },
-    {
         "item": "itm_Steel",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//b9cc9e01-79bc-465b-b1f0-d98a133a341b.png",
         "display_name": "Steel"
@@ -1573,11 +1568,6 @@
         "item": "itm_sleeping-bag-03-decoration",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//ecaa6875-1dee-4bc0-a593-ee367f3f74bd.png",
         "display_name": "Red Sleeping Bag"
-    },
-    {
-        "item": "itm_contentqueen-decoration",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//c8211032-fa39-4fbc-bbd8-b8a20e17b53e.png",
-        "display_name": "Content Queen"
     },
     {
         "item": "itm_WoodWell",
@@ -2538,11 +2528,6 @@
         "item": "itm_spacebbqblueprints",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_spacebbqblueprints/7cc00338-5da7-4358-853b-256fd18f9ca4.png",
         "display_name": "Galactic Grill BBQ Kit"
-    },
-    {
-        "item": "itm_drop1000",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_drop1000/8ad73cb1-8f36-445b-b8bd-185f2a7b9cec.png",
-        "display_name": "1,000 Coin Dropper"
     },
     {
         "item": "itm_dry_salt_encrusted_scarrot_skewers",
@@ -4415,11 +4400,6 @@
         "display_name": "Joybean"
     },
     {
-        "item": "itm_robe_luke",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_robe_luke/a3497af7-5cfe-4ec9-9ab8-e5e7fdfc46d8.png",
-        "display_name": "Luke's Robe"
-    },
-    {
         "item": "itm_jeans",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_jeans/7ee12b6e-5eb0-4c2f-a26c-a50355306349.png",
         "display_name": "Pixels Jeans"
@@ -4545,11 +4525,6 @@
         "display_name": "Butterberry Seeds"
     },
     {
-        "item": "itm_cubecumer_seeds",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//aa18c9f1-971c-4cb1-bc30-6dda2f39b684.png",
-        "display_name": "Cubecumber Seeds"
-    },
-    {
         "item": "itm_popberrySeeds",
         "image": "https://d31ss916pli4td.cloudfront.net/items/v2/inventory_icon_seed_popberry.png",
         "display_name": "Popberry Seeds"
@@ -4560,34 +4535,9 @@
         "display_name": "Egg"
     },
     {
-        "item": "itm_heartbeetSeeds",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//f1af2e48-8ccc-4306-b49c-d12bbc7c3675.png",
-        "display_name": "Heartbeet Seeds"
-    },
-    {
-        "item": "itm_wintermintSeeds",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//b7e7982d-e41d-43da-a5e8-4c43beb7880a.png",
-        "display_name": "Watermint Seeds"
-    },
-    {
         "item": "itm_abomSeeds",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//9a261530-ae6a-43ad-9e29-d7f7064246cf.png",
         "display_name": "Abomination Fruit Seeds"
-    },
-    {
-        "item": "itm_hotatoseed",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//0809fb08-5d5f-4b2b-bd75-6802236e9371.png",
-        "display_name": "Hotato Seeds"
-    },
-    {
-        "item": "itm_napricot_seeds",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//c11502e2-e9f3-49e6-8204-8518fdffba51.png",
-        "display_name": "Napricot Seeds"
-    },
-    {
-        "item": "itm_coffeeseed",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_coffeeseed/f32ccc8d-8108-464d-9ec0-5722e5927815.png",
-        "display_name": "Coffee Fruit Seed"
     },
     {
         "item": "itm_goldenPopberrySeeds",
@@ -4595,24 +4545,9 @@
         "display_name": "Golden Popberry Seeds"
     },
     {
-        "item": "itm_tentacactus",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//5521ae52-bfe2-4bea-963c-b1df62c6f379.png",
-        "display_name": "Astracactus Seeds"
-    },
-    {
         "item": "itm_tatoseeds",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_tatoseeds/f3bacb7b-ea78-419c-ae96-33d41d83f2bc.png",
         "display_name": "Tato Seeds"
-    },
-    {
-        "item": "itm_scarrotSeeds",
-        "image": "https://d31ss916pli4td.cloudfront.net/items/v2/inventory_icon_seed_scarrot.png",
-        "display_name": "Scarrot Seeds"
-    },
-    {
-        "item": "itm_slothmato_seeds",
-        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets//1fa3d23b-fe79-4f52-ac8e-a3fdafc96be4.png",
-        "display_name": "Slothmato Seeds"
     },
     {
         "item": "itm_grump",
@@ -4790,19 +4725,9 @@
         "display_name": "Cotton Candy Seeds"
     },
     {
-        "item": "itm_muckchuckSeeds",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//a3266c4b-f1f6-4ed4-8014-83713a598554.png",
-        "display_name": "Muckchuck Seeds"
-    },
-    {
         "item": "itm_grumpkinSeeds",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//c5ea32c4-d292-46d3-a7fb-bfa1781e6c7a.png",
         "display_name": "Blue Grumpkin Seeds"
-    },
-    {
-        "item": "itm_cloverSeeds",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//6b686e07-c5d1-44f1-b82b-8377637a4371.png",
-        "display_name": "Clover Seeds"
     },
     {
         "item": "itm_perfectPopberrySeeds",
@@ -4823,5 +4748,170 @@
         "item": "itm_vipcoupon_3days",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_vipcoupon_3days/f6605ba5-b484-4169-a2bb-62b38cde0ab5.png",
         "display_name": "Pixels VIP (3 Days)"
+    },
+    {
+        "item": "itm_pixels_x",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_pixels_x/5cca9570-6f19-4317-88e4-ce6955cdc0fe.png",
+        "display_name": "Century of Progress Model X"
+    },
+    {
+        "item": "itm_pixels_maze_trophy",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_pixels_maze_trophy/db82626b-009d-4639-8308-4f47987f62db.png",
+        "display_name": "Pixels Maze Trophy"
+    },
+    {
+        "item": "itm_tentacactus",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//5521ae52-bfe2-4bea-963c-b1df62c6f379.png",
+        "display_name": "Astracactus Seeds"
+    },
+    {
+        "item": "itm_wintermintSeeds",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//b7e7982d-e41d-43da-a5e8-4c43beb7880a.png",
+        "display_name": "Watermint Seeds"
+    },
+    {
+        "item": "itm_muckchuckSeeds",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//a3266c4b-f1f6-4ed4-8014-83713a598554.png",
+        "display_name": "Muckchuck Seeds"
+    },
+    {
+        "item": "itm_cloverSeeds",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//6b686e07-c5d1-44f1-b82b-8377637a4371.png",
+        "display_name": "Clover Seeds"
+    },
+    {
+        "item": "itm_coffeeseed",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_coffeeseed/f32ccc8d-8108-464d-9ec0-5722e5927815.png",
+        "display_name": "Coffee Fruit Seed"
+    },
+    {
+        "item": "itm_cubecumer_seeds",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//aa18c9f1-971c-4cb1-bc30-6dda2f39b684.png",
+        "display_name": "Cubecumber Seeds"
+    },
+    {
+        "item": "itm_heartbeetSeeds",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//f1af2e48-8ccc-4306-b49c-d12bbc7c3675.png",
+        "display_name": "Heartbeet Seeds"
+    },
+    {
+        "item": "itm_slothmato_seeds",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets//1fa3d23b-fe79-4f52-ac8e-a3fdafc96be4.png",
+        "display_name": "Slothmato Seeds"
+    },
+    {
+        "item": "itm_scarrotSeeds",
+        "image": "https://d31ss916pli4td.cloudfront.net/items/v2/inventory_icon_seed_scarrot.png",
+        "display_name": "Scarrot Seeds"
+    },
+    {
+        "item": "itm_hotatoseed",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//0809fb08-5d5f-4b2b-bd75-6802236e9371.png",
+        "display_name": "Hotato Seeds"
+    },
+    {
+        "item": "itm_napricot_seeds",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//c11502e2-e9f3-49e6-8204-8518fdffba51.png",
+        "display_name": "Napricot Seeds"
+    },
+    {
+        "item": "itm_contentqueen-decoration",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//c8211032-fa39-4fbc-bbd8-b8a20e17b53e.png",
+        "display_name": "Content Queen"
+    },
+    {
+        "item": "itm_mushroomFruit_01",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomFruit_01/d659a079-6eca-4a7c-9735-f07cbe4d27b8.png",
+        "display_name": "Blue Bolete (+1)"
+    },
+    {
+        "item": "itm_mushroomFruit_02",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomFruit_02/b167140e-fdfe-46ed-b653-82111d9815c3.png",
+        "display_name": "Purple Parasol (+3)"
+    },
+    {
+        "item": "itm_mushroomFruit_03",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomFruit_03/4f7ba4a9-2868-4031-a4b3-535380881e94.png",
+        "display_name": "Green Gomphus (+5)"
+    },
+    {
+        "item": "itm_energyDrink_power",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_energyDrink_power/d9517478-2b30-4c85-b00e-2186ed4e9048.png",
+        "display_name": "Voidburst Energy Drink"
+    },
+    {
+        "item": "itm_cave_fertilizer_01",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cave_fertilizer_01/3bb2dd49-64d3-498d-a5fd-7536231b2035.png",
+        "display_name": "Voidbat Guano (Basic)"
+    },
+    {
+        "item": "itm_cave_fertilizer_02",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cave_fertilizer_02/1552812b-6ada-4f84-880b-e936ef2bb343.png",
+        "display_name": "Voidbat Guano (Enhanced)"
+    },
+    {
+        "item": "itm_cave_fertilizer_03",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cave_fertilizer_03/12dd2cb9-4442-4770-972e-c0a8bcb911b4.png",
+        "display_name": "Voidbat Guano (Super)"
+    },
+    {
+        "item": "itm_soilDryer_01",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_soilDryer_01/c4136b31-5086-433d-8ecf-be07a1ba2a88.png",
+        "display_name": "Evil Goo (Basic)"
+    },
+    {
+        "item": "itm_soilDryer",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_soilDryer/1ebba3ab-bb06-4cb3-acc1-22fca5f2a3a5.png",
+        "display_name": "Evil Goo (Super)"
+    },
+    {
+        "item": "itm_soilDryer_02",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_soilDryer_02/b2f2b35d-ba17-4126-a817-b4bfc0cb02bd.png",
+        "display_name": "Evil Goo (Enhanced)"
+    },
+    {
+        "item": "itm_mushroomSeeds_01",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomSeeds_01/b645faa2-7f34-47d7-96d7-73e3dc58718d.png",
+        "display_name": "+1 Spores (Blue Bolete)"
+    },
+    {
+        "item": "itm_mushroomSeeds_02",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomSeeds_02/d94b0d91-89fc-4987-98e4-371da15c6720.png",
+        "display_name": "+3 Spores (Purple Parasol)"
+    },
+    {
+        "item": "itm_mushroomSeeds_03",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomSeeds_03/86086e9c-78c8-42d7-96f8-481c1b366d93.png",
+        "display_name": "+5 Spores (Green Gomphus)"
+    },
+    {
+        "item": "itm_drop1000",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_drop1000/8ad73cb1-8f36-445b-b8bd-185f2a7b9cec.png",
+        "display_name": "1,000 Coin Dropper"
+    },
+    {
+        "item": "itm_cake_01",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cake_01/328dd2d0-ea68-428e-9f4f-f995bf5c4b44.png",
+        "display_name": "Funky Bday Cake"
+    },
+    {
+        "item": "itm_cakerecipe_01",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cakerecipe_01/b8c7d022-853e-453d-a7e8-5ef472b0a2a9.png",
+        "display_name": "Funky Bday Cake Recipe"
+    },
+    {
+        "item": "itm_surfboard_01",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_surfboard_01/0a3c7260-bb52-4857-b703-5a1d114e03ac.png",
+        "display_name": "Luke Express Surfboard"
+    },
+    {
+        "item": "itm_robe_luke",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_robe_luke/a3497af7-5cfe-4ec9-9ab8-e5e7fdfc46d8.png",
+        "display_name": "Luke's Robe"
+    },
+    {
+        "item": "itm_energyDrink_zero",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//dd10863a-ddca-42e0-ae31-84a1007c6c2b.png",
+        "display_name": "Energy Drink Zero"
     }
 ]
