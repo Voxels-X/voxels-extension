@@ -263,6 +263,7 @@
 }
 
 .voxels-storages-hover-cell img {
+  max-width: 34px;
   height: 34px;
   margin-bottom: 2px;
 }
@@ -372,7 +373,14 @@
   display: flex;
   align-items: center;
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 8px auto;
+  position: relative;
+}
+
+.voxels-networth-filter-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
   position: relative;
 }
 
@@ -389,17 +397,15 @@
 }
 
 .voxels-filter-container,
+.voxels-networth-filter-container,
 .voxels-player-input-container {
   display: flex;
   justify-content: space-between;
   height: 34px;
 }
 
-.voxels-filter-container {
-  margin-bottom: 8px;
-}
-
-.voxels-filter-container .voxels-farm-filter-input,
+.voxels-networth-filter-container .voxels-filter-input,
+.voxels-filter-container .voxels-filter-input,
 .voxels-player-input-container .voxels-player-input,
 .voxels-player-submit-button {
   border: none;
@@ -411,12 +417,10 @@
   color: var(--main-new-bg);
 }
 
-.voxels-filter-container .voxels-farm-filter-input::placeholder,
+.voxels-networth-filter-container .voxels-filter-input::placeholder,
+.voxels-filter-container .voxels-filter-input::placeholder,
 .voxels-player-input-container .voxels-player-input::placeholder {
   color: #fff;
-}
-
-.voxels-player-submit-button {
 }
 
 .voxels-filter-dropdown-container,
@@ -735,6 +739,40 @@
   align-items: center;
 }
 
+.voxels-main-check {
+  position: relative;
+  margin-top: 20px;
+  z-index: 10;
+  display: flex;
+  font-size: 9px;
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  padding: 15px 15px 5px 15px;
+  background: var(--pixel-bg);
+  border: 1px solid var(--pixel-border-2);
+  border-radius: 12px;
+  transition: 0.14s ease-out;
+}
+
+.voxels-main-check:hover {
+  filter: brightness(1.5);
+}
+
+.voxels-main-check-title {
+  color: var(--main-new-bg);
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: "Press Start 2P";
+  font-weight: 800;
+  text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 0px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.voxels-main-check-image {
+  margin: 10px;
+}
+
 .voxels-pricing-container {
   width: 100%;
   display: flex;
@@ -836,7 +874,7 @@
 .voxels-premium-feature-image {
   display: block;
   margin: 20px auto;
-  width: 85%;
+  width: 100%;
   height: auto;
 }
 
@@ -1099,6 +1137,27 @@
   animation: voxels-slideIn 0.5s forwards;
 }
 
+.dismiss-pop-up {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  background-color: #6626ff;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2d0097;
+  border-image: initial;
+  z-index: 1;
+}
+
 .voxels-quick-message-popup.voxels-error .voxels-progress-bar {
   background-color: var(--main-grid-red);
 }
@@ -1157,7 +1216,7 @@
 */
 .voxels-inventory-price {
   position: absolute;
-  z-index: 50;
+  z-index: 100;
   color: #fff;
   font-size: 4.5px;
   background: rgba(65, 64, 62, 0.9);
@@ -1617,10 +1676,32 @@
   width: 100%;
 }
 
+.voxels-task-name img {
+  height: 9px;
+  filter: invert(96%) sepia(100%) saturate(0%) hue-rotate(277deg)
+    brightness(101%) contrast(104%);
+  margin-left: 5px;
+}
+
+.voxels-task-name:hover img {
+  filter: invert(79%) sepia(61%) saturate(503%) hue-rotate(20deg)
+    brightness(112%) contrast(105%);
+}
+
 .voxels-task-name-text {
+  font-size: 8px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  @supports (-webkit-line-clamp: 2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
 }
 
 .voxels-task-total-cost {
@@ -1756,6 +1837,7 @@
   flex: 100%;
   margin: 4px auto;
 }
+
 #voxels-toggle-voxels-button {
   position: absolute;
   display: none;
@@ -3439,6 +3521,570 @@ Full page styling
 }
 
 /**
+* Voxels networth
+*/
+
+.voxels-networth-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.voxels-networth-header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-new-bg);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.voxels-networth-header-stats {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: var(--panel-bg);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(60, 60, 60);
+  border-radius: 12px;
+  padding: 9px 7px;
+}
+
+.voxels-networth-header-stats-main-statistic {
+  color: #fff;
+  font-weight: 800;
+  padding: 4px 7px;
+  text-align: center;
+  margin-right: 68px;
+}
+
+.voxels-networth-header-stats-main-statistic-name {
+  font-size: 7px;
+  color: var(--main-new-bg);
+  text-transform: uppercase;
+  margin: 4px 0 0;
+}
+
+.voxels-networth-header-stats-main-statistic-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  gap: 5px;
+}
+
+.voxels-networth-header-stats-sub-statistics {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 9px;
+  padding: 9px 7px;
+}
+
+.voxels-networth-header-stats-sub-statistics-coinbalance,
+.voxels-networth-header-stats-sub-statistics-inventoryvalue,
+.voxels-networth-header-stats-sub-statistics-petinventoryvalue,
+.voxels-networth-header-stats-sub-statistics-entitiestotal,
+.voxels-networth-header-stats-sub-statistics-storagestotal,
+.voxels-networth-header-stats-sub-statistics-marketlistingsvalue {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.voxels-networth-marketlistings-modal {
+  position: absolute;
+  padding: 9px 7px;
+  border-radius: 5px;
+  z-index: 20000;
+  width: 270px;
+  background: var(--panel-bg);
+  border: 1px solid var(--pixel-border-2);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.voxels-networth-marketlistings-modal-title {
+  color: #fff;
+  font-size: 9px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.voxels-networth-marketlistings-modal-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.voxels-networth-marketlistings-modal-item-icon {
+  position: relative;
+  flex: 1 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 60px;
+  aspect-ratio: 1/1;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.voxels-networth-marketlistings-modal-item-name {
+  font-size: 7px;
+  color: var(--main-new-bg);
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 8;
+}
+
+.voxels-networth-marketlistings-modal-empty-content {
+  color: var(--main-new-bg);
+  font-size: 7px;
+  text-align: center;
+  margin: 7px 0 7px;
+}
+
+.voxels-networth-marketlistings-modal-item-price {
+  font-size: 7px;
+  color: #fff;
+  flex: 2;
+  text-align: right;
+  margin-right: 4px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.voxels-networth-header-stats-sub-statistics-item-title {
+  color: var(--main-new-bg);
+}
+
+.voxels-networth-header-stats-sub-statistics-item-number {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.coin-image {
+  height: 12px;
+}
+
+.voxels-networth-header-tools {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.voxels-networth-add-btn,
+.voxels-found-add-land-button,
+.voxels-networth-refresh-btn,
+.voxels-networth-header-stats-expand-btn,
+.voxels-close-button,
+.voxels-toggle-button,
+.voxels-networth-landsearch-text {
+  cursor: pointer;
+  font-size: 16px;
+  width: 56px;
+  height: 56px;
+  position: relative;
+  border: 1px solid rgb(60, 60, 60);
+  border-radius: 12px;
+  transition: 0.14s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #17191c;
+  box-shadow: -4px -2px 16px rgba(195, 200, 205, 0.05),
+    4px 4px 18px rgba(0, 0, 0, 0.4);
+}
+
+.voxels-networth-add-btn::before,
+.voxels-networth-add-btn::after,
+.voxels-found-add-land-button::before,
+.voxels-found-add-land-button::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background: var(--main-new-bg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.voxels-networth-add-btn::before,
+.voxels-found-add-land-button::before {
+  width: 2px;
+  height: 10px;
+}
+
+.voxels-networth-header-stats-expand-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 7px;
+  right: 7px;
+  background: linear-gradient(133.71deg, #32383e -30.53%, #17191c 126.55%);
+  box-shadow: none;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.14s ease-out;
+  transform: rotate(180deg);
+}
+
+.voxels-networth-header-stats-expand-btn::before,
+.voxels-networth-header-stats-expand-btn::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background: var(--main-new-bg);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.voxels-networth-header-stats-expand-btn::before {
+  transform: rotate(45deg);
+  margin-right: 4px;
+}
+
+.voxels-networth-header-stats-expand-btn::after {
+  transform: rotate(-45deg);
+  margin-left: 4px;
+}
+
+/* Dropdown classes */
+.voxels-networth-header-stats.hidden {
+  height: 56px;
+}
+
+.voxels-networth-header-stats.hidden
+  .voxels-networth-header-stats-sub-statistics {
+  display: none;
+}
+
+.voxels-networth-header-stats.hidden .voxels-networth-header-stats-expand-btn {
+  transform: rotate(0);
+}
+
+/* Other tools */
+.voxels-networth-land-tools {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  top: 7px;
+  right: 7px;
+  height: 40px;
+  z-index: 10;
+}
+
+.voxels-toggle-button {
+  color: var(--main-new-bg);
+  text-transform: uppercase;
+  font-size: 8px;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+}
+
+.voxels-close-button,
+.voxels-networth-refresh-btn,
+.voxels-found-add-land-button {
+  width: 40px;
+  height: 40px;
+}
+
+.voxels-networth-landsearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.voxels-networth-found-title {
+  padding: 9px 7px;
+  text-transform: uppercase;
+}
+
+.voxels-networth-found-lands {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(60, 60, 60);
+  border-radius: 12px;
+  background: #17191c;
+  box-shadow: -4px -2px 16px rgba(195, 200, 205, 0.05),
+    4px 4px 18px rgba(0, 0, 0, 0.4);
+}
+
+.voxels-networth-found-land-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.voxels-found-land-items {
+  flex: 0 0 60%;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.voxels-found-item-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.voxels-found-item-image-container:hover .item-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.voxels-found-item-image {
+  width: 30px;
+}
+
+.voxels-found-item-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 100%;
+  /* Position the tooltip above the image */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 10;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.voxels-networth-landsearch-text {
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  color: var(--main-new-bg);
+}
+
+.voxels-close-button-icon {
+  height: 20px;
+  width: 20px;
+  filter: invert(100%) sepia(23%) saturate(5954%) hue-rotate(14deg)
+    brightness(107%) contrast(104%);
+}
+
+.voxels-networth-add-btn:hover,
+.voxels-networth-refresh-btn:hover,
+.voxels-close-button:hover,
+.voxels-networth-header-stats-expand-btn:hover,
+.voxels-toggle-button:hover,
+.voxels-networth-landsearch-text:hover,
+.voxels-found-add-land-button:hover {
+  border: 1px solid var(--pixel-border-2);
+}
+
+.voxels-networth-refresh-btn-icon {
+  height: 17px;
+  width: 17px;
+  filter: invert(100%) sepia(23%) saturate(5954%) hue-rotate(14deg)
+    brightness(107%) contrast(104%);
+}
+
+.voxels-networth-location,
+.voxels-networth-found-lands {
+  position: relative;
+  margin-top: 20px;
+  z-index: 10;
+  display: flex;
+  font-size: 9px;
+  color: #fff;
+  flex-direction: column;
+  padding: 9px 7px;
+  background: var(--pixel-bg);
+  border: 1px solid var(--pixel-border-2);
+  border-radius: 12px;
+  transition: all 0.14s ease-out 0s;
+}
+
+.voxels-networth-location-title {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 4px 0 10px;
+  color: var(--main-new-bg);
+}
+
+.voxels-networth-location-title-icon {
+  width: 20px;
+}
+
+.voxels-networth-content {
+  position: relative;
+  z-index: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.voxels-networth-entity,
+.voxels-networth-storage,
+.voxels-found-item-image-container {
+  position: relative;
+  flex: 1 0 15%;
+  background: var(--panel-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--pixel-border-2);
+  border-radius: 12px;
+  padding: 2px;
+  max-width: 60px;
+  aspect-ratio: 1/1;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.voxels-found-item-image-container {
+  max-width: 45px;
+}
+
+.voxels-networth-entity-image,
+.voxels-networth-storage-image {
+  width: 32px;
+  height: 32px;
+}
+
+.voxels-networth-entity-count,
+.voxels-networth-storage-count {
+  position: absolute;
+  background-color: rgba(65, 64, 62, 0.9);
+  padding: 0 2px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 6px;
+  right: 3px;
+  bottom: 5px;
+}
+
+.voxels-networth-item-hidden {
+  display: none;
+}
+
+.voxels-networth-land {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 9px 7px;
+  background: var(--pixel-bg);
+  border: 1px solid rgb(60, 60, 60);
+  border-radius: 12px;
+}
+
+.voxels-networth-land-container {
+  color: #fff;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 8px;
+}
+
+.voxels-networth-land-number-icon {
+  height: 12px;
+}
+
+.voxels-networth-land-number,
+.voxels-found-land-number {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--main-new-bg);
+  padding: 9px 7px;
+  font-size: 12px;
+}
+
+.voxels-networth-price {
+  position: absolute;
+  z-index: 100;
+  color: #fff;
+  font-size: 6px;
+  background: rgba(65, 64, 62, 0.9);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-radius: 2px;
+  pointer-events: none;
+  right: 0px;
+  top: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.voxels-networth-hover {
+  position: absolute;
+  background-color: rgb(51, 51, 51);
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 20000;
+  width: max-content;
+}
+
+.voxels-networth-hover-name {
+  color: var(--main-new-bg);
+  font-size: 11px;
+  font-weight: 800;
+  font-family: "Press Start\ 2P", sans-serif;
+}
+
+.voxels-networth-hover-price {
+  font-size: 7px;
+  font-weight: 800;
+  font-family: "Press Start\ 2P", sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.voxels-networth-price-icon {
+  height: 9px;
+  margin: 0 3px 0 4px;
+}
+
+.voxels-networth-storage:hover .voxels-networth-hover,
+.voxels-networth-entity:hover .voxels-networth-hover {
+  display: block;
+}
+
+.voxels-networth-location-title-price {
+  font-size: 7px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+/**
 * Voxels stats
 */
 
@@ -3929,7 +4575,8 @@ Full page styling
   color: var(--main-new-bg);
 }
 
-.voxels-filter-container .voxels-farm-filter-input:focus {
+.voxels-networth-filter-container .voxels-filter-input:focus,
+.voxels-filter-container .voxels-filter-input:focus {
   outline: none;
 }
 
