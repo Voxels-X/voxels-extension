@@ -673,7 +673,8 @@
 .voxels-main-new,
 .voxels-main-setup,
 .voxels-main-info,
-.voxels-main-stats {
+.voxels-main-stats,
+.voxels-main-gw {
   width: 94%;
   margin: 30px auto;
   color: #fff;
@@ -685,6 +686,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.voxels-main-gw {
+  margin: 10px auto;
+}
+
+.voxels-gw-info {
+  margin: 10px auto;
+  text-transform: none;
+  line-height: 24px;
 }
 
 .voxels-main-new::after {
@@ -747,7 +758,7 @@
   font-size: 9px;
   color: rgb(255, 255, 255);
   flex-direction: column;
-  padding: 15px 15px 5px 15px;
+  padding: 15px;
   background: var(--pixel-bg);
   border: 1px solid var(--pixel-border-2);
   border-radius: 12px;
@@ -2085,9 +2096,29 @@
   background-size: 100%;
 }
 
+.voxels-sub-nav-button:nth-child(7),
+.voxels-sub-nav-button:nth-child(7)::after,
+.voxels-sub-nav-button:nth-child(7) .voxels-sub-nav-button-icon img {
+  transform: rotate(0deg);
+  transition-delay: 0.7s;
+}
+
+.voxels-sub-nav-button:nth-child(7)::after {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--purple.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.voxels-sub-nav-button:nth-child(8),
+.voxels-sub-nav-button:nth-child(8)::after,
+.voxels-sub-nav-button:nth-child(8) .voxels-sub-nav-button-icon img {
+  transform: rotate(30deg);
+  transition-delay: 0.8s;
+}
+
 #voxels-main-modal {
   position: absolute;
-  z-index: 2000;
+  z-index: 6000;
   top: 70px;
   left: 20px;
   display: none;
@@ -2893,7 +2924,8 @@ Full page styling
   margin-right: 10px;
 }
 
-.voxels-playerpage-skill-progress-bar {
+.voxels-playerpage-skill-progress-bar,
+.voxels-limits-progress-bar-container {
   width: 100%;
   height: 15px;
   border: 1px solid var(--main-new-bg);
@@ -2903,11 +2935,16 @@ Full page styling
   position: relative;
 }
 
-.voxels-playerpage-skill-progress-bar-inner {
+.voxels-playerpage-skill-progress-bar-inner,
+.voxels-limits-progress {
   height: 100%;
   background-color: var(--main-new-bg);
   border-radius: 12px;
   color: var(--pixel-bg);
+}
+
+.voxels-limits-progress {
+  transition: width 0.5s ease-in-out;
 }
 
 .voxels-playerpage-skill-details {
@@ -3465,6 +3502,19 @@ Full page styling
   transform: rotate(-5deg);
 }
 
+.voxels-sub-nav-button:nth-child(7) {
+  height: calc(var(--r) * 1.2 + 50px);
+}
+
+.voxels-sub-nav-button:nth-child(8) {
+  transform: rotate(-60deg);
+  height: calc(var(--r) * 1.2 + 50px);
+}
+
+.voxels-sub-nav-button:nth-child(7) {
+  transform: rotate(0deg);
+}
+
 .js-voxels-active .voxels-sub-nav-button:nth-child(1) {
   transform: rotate(-155deg);
 }
@@ -3487,6 +3537,14 @@ Full page styling
 
 .js-voxels-active .voxels-sub-nav-button:nth-child(6) {
   transform: rotate(20deg);
+}
+
+.js-voxels-active .voxels-sub-nav-button:nth-child(7) {
+  transform: rotate(0deg);
+}
+
+.js-voxels-active .voxels-sub-nav-button:nth-child(8) {
+  transform: rotate(-30deg);
 }
 
 /* Main modal animation */
@@ -4085,33 +4143,102 @@ Full page styling
 }
 
 /**
-* Voxels stats
+* Voxels Inventory hover
 */
-
-.voxels-main-stats {
-  flex-direction: column;
-}
-
-.voxels-stats-page {
-  width: 100%;
-}
-
-.voxels-stats-header {
+.voxels-tooltip-recipe-container,
+.voxels-networth-hover-recipe-container {
   display: flex;
-  width: 90%;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 7px 0;
 }
 
-.voxels-stats-navigator {
+.voxels-tooltip-recipe-header,
+.voxels-networth-hover-recipe-header {
+  display: flex;
+  width: 100%;
+  color: var(--main-new-bg);
+  font-size: 9px;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.voxels-tooltip-recipe-item,
+.voxels-networth-hover-recipe-item {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: var(--panel-bg);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  flex-direction: column;
+  border: 1px solid var(--pixel-border-2);
+  border-radius: 12px;
+  padding: 2px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.voxels-tooltip-recipe-count,
+.voxels-networth-hover-recipe-count {
+  position: absolute;
+  background-color: rgba(65, 64, 62, 0.9);
+  padding: 0 2px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 10px;
+  right: 3px;
+  bottom: 2px;
+}
+
+.voxels-networth-hover-recipe-image {
+  width: 24px;
+}
+
+.voxels-networth-hover-recipe-count {
+  font-size: 6px;
+}
+
+/**
+* Voxels stats
+*/
+
+.voxels-main-stats,
+.voxels-main-gw {
+  flex-direction: column;
+}
+
+.voxels-stats-page,
+.voxels-gw-page {
+  width: 100%;
+}
+
+.voxels-stats-header,
+.voxels-gw-header {
+  display: flex;
+  width: 90%; /* Default width for both headers */
+  align-items: center;
+}
+
+.voxels-gw-header {
+  width: 100%; /* Override to 100% for gw-header */
+}
+
+.voxels-stats-navigator,
+.voxels-gw-navigator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%; /* Default width for stats navigator */
   height: auto;
   border: 2px solid var(--main-new-bg);
   border-radius: 12px;
   overflow: hidden;
   color: var(--main-new-bg);
+}
+
+.voxels-gw-navigator {
+  width: 100%; /* Override to 100% for gw-navigator */
 }
 
 .voxels-stats-update {
@@ -4120,7 +4247,8 @@ Full page styling
   margin-left: auto;
 }
 
-.voxels-stats-nav-item {
+.voxels-stats-nav-item,
+.voxels-gw-nav-item {
   flex: 1;
   height: 100%;
   display: flex;
@@ -4130,13 +4258,14 @@ Full page styling
   background: var(--pixel-bg);
 }
 
-.voxels-stats-active {
+.voxels-stats-active,
+.voxels-gw-active {
   background: var(--main-new-bg);
   color: var(--pixel-bg);
 }
 
 .voxels-nav-divider {
-  height: 100%;
+  height: 18px;
   width: 2px;
   background-color: var(--main-new-bg);
 }
@@ -4580,6 +4709,196 @@ Full page styling
   outline: none;
 }
 
+/**
+* Voxels Guild War
+*/
+.voxels-gw-leaderboard-container {
+  margin: 20px auto;
+}
+
+/* Container for the leaderboard entry */
+.voxels-gw-leaderboard-entry {
+  display: flex;
+  width: 100%; /* Ensure the entry takes up the full available width */
+  padding: 5px 0; /* Optional: Add some spacing for readability */
+  box-sizing: border-box; /* To include padding in the width calculation */
+}
+
+/* Rank: Takes up 5% of the available width */
+.voxels-gw-rank {
+  width: 10%;
+  text-align: left; /* Center the rank text */
+  font-weight: bold; /* Make the rank bold */
+}
+
+/* Username: Takes up 45% of the available width, with ellipsis for overflow */
+.voxels-gw-username {
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Ensure the text does not wrap */
+  padding-left: 5px; /* Optional: Some space between rank and username */
+  text-transform: none;
+  color: var(--main-new-bg);
+}
+
+.voxels-gw-score {
+  width: 30%;
+  text-align: right; /* Center the score text */
+}
+
+/* Seasonal points: Takes up 20% of the available width */
+.voxels-gw-seasonal-points {
+  width: auto;
+  margin-left: auto;
+  text-align: right;
+  font-style: italic;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  color: var(--main-new-bg);
+}
+
+.voxels-gw-stats-container {
+  display: flex;
+  text-transform: none;
+  font-size: 10px;
+  flex-direction: column;
+}
+
+.voxels-gw-stats-container span {
+  color: var(--main-new-bg);
+}
+
+.voxels-gw-stats-details {
+  position: relative;
+  display: flex;
+  row-gap: 5px;
+  justify-content: flex-start;
+  padding: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid var(--pixel-border-2);
+  border-radius: 12px;
+}
+
+.voxels-gw-stats-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(227, 255, 54);
+  font-size: 11px;
+  text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 0px;
+  text-decoration: none;
+}
+
+.voxels-gw-stats-details-info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: inherit;
+}
+
+.voxels-gw-stats-details-balances {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  color: #fff;
+}
+
+.voxels-gw-stats-details-balances img {
+  width: 18px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.voxels-gw-stats-details-80 {
+  width: 80%;
+}
+
+.voxels-gw-stats-mixer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.voxels-gw-stats-mixer {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  gap: 20px;
+}
+
+.voxels-gw-stats-mixer img {
+  height: auto;
+  width: 40px;
+  margin-right: 5px;
+}
+
+.voxels-gw-stats-mixer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.voxels-gw-stats-details .voxels-gw-leaderboard-container {
+  margin: 5px auto;
+  width: 90%;
+}
+
+.voxels-gw-stats-details .voxels-gw-username {
+  width: 60%;
+}
+
+/**
+* Voxels Canvas
+*/
+#voxels-canvas {
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+}
+
+/**
+* Limits
+*/
+.voxels-limits-container {
+  margin: 15px;
+}
+
+.voxels-limits-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.voxels-limits-title {
+  flex: 1;
+  text-align: left;
+  color: var(--main-new-bg);
+}
+
+.voxels-limits-numbers {
+  flex: 1;
+  text-align: center;
+}
+
+.voxels-limits-percentage {
+  flex: 1;
+  text-align: right;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1350px) {
@@ -4887,6 +5206,10 @@ Full page styling
 
   .voxels-task-name {
     text-align: left;
+  }
+
+  .voxels-networth-header {
+    margin-top: 32px;
   }
 }
 

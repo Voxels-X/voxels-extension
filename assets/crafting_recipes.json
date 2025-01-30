@@ -1,0 +1,3687 @@
+[
+    {
+        "item": "itm_popberryLoaf",
+        "requiredItems": [
+            {
+                "id": "itm_jam_popberry",
+                "quantity": 3
+            },
+            {
+                "id": "itm_flour",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_textilemillblueprints",
+        "requiredItems": [
+            {
+                "id": "itm_woodenbeam",
+                "quantity": 3
+            },
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 24
+            },
+            {
+                "id": "itm_Glue",
+                "quantity": 8
+            },
+            {
+                "id": "itm_silkrope",
+                "quantity": 12
+            },
+            {
+                "id": "itm_silkcloth",
+                "quantity": 16
+            }
+        ]
+    },
+    {
+        "item": "itm_Wooden_Stool",
+        "requiredItems": [
+            {
+                "id": "itm_stick",
+                "quantity": 6
+            }
+        ]
+    },
+    {
+        "item": "itm_popberryPie",
+        "requiredItems": [
+            {
+                "id": "itm_jam_popberry",
+                "quantity": 2
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_woodenbeam",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_02",
+                "quantity": 8
+            },
+            {
+                "id": "itm_beeswax",
+                "quantity": 8
+            }
+        ]
+    },
+    {
+        "item": "itm_Glue",
+        "requiredItems": [
+            {
+                "id": "itm_tree_sap",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_silkrope",
+        "requiredItems": [
+            {
+                "id": "itm_silkfiber",
+                "quantity": 4
+            },
+            {
+                "id": "itm_silkslugslime",
+                "quantity": 4
+            }
+        ]
+    },
+    {
+        "item": "itm_silkcloth",
+        "requiredItems": [
+            {
+                "id": "itm_silkfiber",
+                "quantity": 7
+            },
+            {
+                "id": "itm_silkslugslime",
+                "quantity": 4
+            },
+            {
+                "id": "itm_beeswax",
+                "quantity": 4
+            }
+        ]
+    },
+    {
+        "item": "itm_constructionPowder",
+        "requiredItems": [
+            {
+                "id": "itm_silicates_01",
+                "quantity": 3
+            },
+            {
+                "id": "itm_roughstone_01",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_plaster",
+        "requiredItems": [
+            {
+                "id": "itm_stonepowder01",
+                "quantity": 2
+            },
+            {
+                "id": "itm_tree_sap",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_limestone_paving_stones",
+        "requiredItems": [
+            {
+                "id": "itm_roughstone_02",
+                "quantity": 36
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_small_puprle_rug",
+        "requiredItems": [
+            {
+                "id": "itm_silkcloth",
+                "quantity": 7
+            },
+            {
+                "id": "itm_silkslugslime",
+                "quantity": 4
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 3
+            },
+            {
+                "id": "itm_grumpkinFruit",
+                "quantity": 12
+            }
+        ]
+    },
+    {
+        "item": "itm_waterland_statue",
+        "requiredItems": [
+            {
+                "id": "itm_roughstone_01",
+                "quantity": 30
+            },
+            {
+                "id": "itm_roughstone_02",
+                "quantity": 24
+            },
+            {
+                "id": "itm_constructionPowder",
+                "quantity": 10
+            },
+            {
+                "id": "itm_beeswax",
+                "quantity": 50
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 15
+            }
+        ]
+    },
+    {
+        "item": "itm_fireplace-pot-decoration",
+        "requiredItems": [
+            {
+                "id": "itm_metalbar_03",
+                "quantity": 12
+            },
+            {
+                "id": "itm_stick",
+                "quantity": 12
+            },
+            {
+                "id": "itm_silkrope",
+                "quantity": 3
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_cunstruction_cone",
+        "requiredItems": [
+            {
+                "id": "itm_Plastic",
+                "quantity": 3
+            },
+            {
+                "id": "itm_scarrotFruit",
+                "quantity": 24
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_log_decoration2",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_01",
+                "quantity": 24
+            },
+            {
+                "id": "itm_stick",
+                "quantity": 6
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_Plastic",
+        "requiredItems": [
+            {
+                "id": "itm_constructionPowder",
+                "quantity": 1
+            },
+            {
+                "id": "itm_silkslugslime",
+                "quantity": 4
+            }
+        ]
+    },
+    {
+        "item": "itm_Small_Fountain_04",
+        "requiredItems": [
+            {
+                "id": "itm_roughstone_02",
+                "quantity": 18
+            },
+            {
+                "id": "itm_beeswax",
+                "quantity": 4
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 10
+            },
+            {
+                "id": "itm_constructionPowder",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_turquoise_Couch",
+        "requiredItems": [
+            {
+                "id": "itm_silkcloth",
+                "quantity": 20
+            },
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 24
+            },
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 12
+            },
+            {
+                "id": "itm_Glue",
+                "quantity": 1
+            },
+            {
+                "id": "itm_silkrope",
+                "quantity": 6
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 10
+            }
+        ]
+    },
+    {
+        "item": "itm_Small_Fountain_03",
+        "requiredItems": [
+            {
+                "id": "itm_roughstone_02",
+                "quantity": 6
+            },
+            {
+                "id": "itm_beeswax",
+                "quantity": 12
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 8
+            },
+            {
+                "id": "itm_constructionPowder",
+                "quantity": 1
+            },
+            {
+                "id": "itm_Plastic",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_Fireplace",
+        "requiredItems": [
+            {
+                "id": "itm_brick_01",
+                "quantity": 8
+            },
+            {
+                "id": "itm_scarrotFruit",
+                "quantity": 24
+            },
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 24
+            },
+            {
+                "id": "itm_silkcloth",
+                "quantity": 10
+            },
+            {
+                "id": "itm_Glue",
+                "quantity": 2
+            },
+            {
+                "id": "itm_stick",
+                "quantity": 30
+            },
+            {
+                "id": "itm_constructionPowder",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_tent-v1-01-decoration",
+        "requiredItems": [
+            {
+                "id": "itm_silkcloth",
+                "quantity": 10
+            },
+            {
+                "id": "itm_silkrope",
+                "quantity": 6
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 5
+            }
+        ]
+    },
+    {
+        "item": "itm_popberryPie",
+        "requiredItems": [
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_popberryLoaf",
+        "requiredItems": [
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_dry_maple_glazed_grumpkin_slabs",
+        "requiredItems": [
+            {
+                "id": "itm_grumpkinFruit",
+                "quantity": 6
+            },
+            {
+                "id": "itm_grainbow",
+                "quantity": 1
+            },
+            {
+                "id": "itm_syrup",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_dry_honey_kissed_popberry_chops",
+        "requiredItems": [
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 6
+            },
+            {
+                "id": "itm_grainbow",
+                "quantity": 1
+            },
+            {
+                "id": "itm_honey",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_dry_salt_encrusted_scarrot_skewers",
+        "requiredItems": [
+            {
+                "id": "itm_scarrotFruit",
+                "quantity": 8
+            },
+            {
+                "id": "itm_grainbow",
+                "quantity": 1
+            },
+            {
+                "id": "itm_salt",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_dry_pulled_muckchuck_platter",
+        "requiredItems": [
+            {
+                "id": "itm_muckchuck",
+                "quantity": 4
+            },
+            {
+                "id": "itm_grainbow",
+                "quantity": 1
+            },
+            {
+                "id": "itm_traditional_bbq_sauce",
+                "quantity": 1
+            },
+            {
+                "id": "itm_4_leaf_cloveregano",
+                "quantity": 8
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_dry_baby_back_butterberry_ribs",
+        "requiredItems": [
+            {
+                "id": "itm_butterberry",
+                "quantity": 4
+            },
+            {
+                "id": "itm_grainbow",
+                "quantity": 1
+            },
+            {
+                "id": "itm_honey_bbq_sauce",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_traditional_bbq_sauce",
+        "requiredItems": [
+            {
+                "id": "itm_beeswax",
+                "quantity": 1
+            },
+            {
+                "id": "itm_salt",
+                "quantity": 1
+            },
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 1
+            },
+            {
+                "id": "itm_hotato",
+                "quantity": 6
+            }
+        ]
+    },
+    {
+        "item": "itm_hot_sauce",
+        "requiredItems": [
+            {
+                "id": "itm_salt",
+                "quantity": 1
+            },
+            {
+                "id": "itm_tree_sap",
+                "quantity": 1
+            },
+            {
+                "id": "itm_Vinegar",
+                "quantity": 2
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            },
+            {
+                "id": "itm_hotato_hotka",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_spicy_bbq_sauce",
+        "requiredItems": [
+            {
+                "id": "itm_beeswax",
+                "quantity": 1
+            },
+            {
+                "id": "itm_salt",
+                "quantity": 1
+            },
+            {
+                "id": "itm_hot_sauce",
+                "quantity": 1
+            },
+            {
+                "id": "itm_hotato",
+                "quantity": 12
+            }
+        ]
+    },
+    {
+        "item": "itm_hardwood_smoked_bbq_sauce",
+        "requiredItems": [
+            {
+                "id": "itm_beeswax",
+                "quantity": 1
+            },
+            {
+                "id": "itm_salt",
+                "quantity": 1
+            },
+            {
+                "id": "itm_hotato",
+                "quantity": 12
+            },
+            {
+                "id": "itm_woodlog_02",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_honey_bbq_sauce",
+        "requiredItems": [
+            {
+                "id": "itm_beeswax",
+                "quantity": 1
+            },
+            {
+                "id": "itm_salt",
+                "quantity": 1
+            },
+            {
+                "id": "itm_honey",
+                "quantity": 1
+            },
+            {
+                "id": "itm_hotato",
+                "quantity": 12
+            }
+        ]
+    },
+    {
+        "item": "itm_growthlabkit",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_02",
+                "quantity": 6
+            },
+            {
+                "id": "itm_metalore_03",
+                "quantity": 2
+            },
+            {
+                "id": "itm_silkfiber",
+                "quantity": 10
+            },
+            {
+                "id": "itm_brick_01",
+                "quantity": 2
+            },
+            {
+                "id": "itm_constructionPowder",
+                "quantity": 3
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_landbbqblueprints",
+        "requiredItems": [
+            {
+                "id": "itm_metalbar_03",
+                "quantity": 6
+            },
+            {
+                "id": "itm_woodenbeam",
+                "quantity": 6
+            },
+            {
+                "id": "itm_plaster",
+                "quantity": 6
+            },
+            {
+                "id": "itm_clover4LeafFruit",
+                "quantity": 1
+            },
+            {
+                "id": "itm_constructionPowder",
+                "quantity": 2
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_runningShoe_basic",
+        "requiredItems": [
+            {
+                "id": "itm_silkcloth",
+                "quantity": 12
+            }
+        ]
+    },
+    {
+        "item": "itm_starry_grilled_hotato_kielbasa",
+        "requiredItems": [
+            {
+                "id": "itm_hotato",
+                "quantity": 16
+            },
+            {
+                "id": "itm_tenta",
+                "quantity": 5
+            },
+            {
+                "id": "itm_hot_sauce",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_starry_butterberry_brisket",
+        "requiredItems": [
+            {
+                "id": "itm_butterberry",
+                "quantity": 4
+            },
+            {
+                "id": "itm_tenta",
+                "quantity": 5
+            },
+            {
+                "id": "itm_woodlog_02",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            },
+            {
+                "id": "itm_4_leaf_cloveregano",
+                "quantity": 8
+            }
+        ]
+    },
+    {
+        "item": "itm_starry_honey_kissed_scarrot_chops",
+        "requiredItems": [
+            {
+                "id": "itm_scarrotFruit",
+                "quantity": 8
+            },
+            {
+                "id": "itm_tenta",
+                "quantity": 5
+            },
+            {
+                "id": "itm_honey",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_starry_salt_encrusted_grumpkin_skewers",
+        "requiredItems": [
+            {
+                "id": "itm_grumpkinFruit",
+                "quantity": 6
+            },
+            {
+                "id": "itm_tenta",
+                "quantity": 5
+            },
+            {
+                "id": "itm_salt",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_starry_maple_glazed_popberry_slabs",
+        "requiredItems": [
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 6
+            },
+            {
+                "id": "itm_tenta",
+                "quantity": 5
+            },
+            {
+                "id": "itm_syrup",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_moist_broiled_muckchuck_burgers",
+        "requiredItems": [
+            {
+                "id": "itm_muckchuck",
+                "quantity": 4
+            },
+            {
+                "id": "itm_wintermintFruit",
+                "quantity": 3
+            },
+            {
+                "id": "itm_spicy_bbq_sauce",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_moist_scarrot_butterberry_kebabs",
+        "requiredItems": [
+            {
+                "id": "itm_scarrotFruit",
+                "quantity": 4
+            },
+            {
+                "id": "itm_butterberry",
+                "quantity": 3
+            },
+            {
+                "id": "itm_wintermintFruit",
+                "quantity": 1
+            },
+            {
+                "id": "itm_tangy_bbq_sauce",
+                "quantity": 1
+            },
+            {
+                "id": "itm_4_leaf_cloveregano",
+                "quantity": 8
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_moist_salt_encrusted_popberry_skewers",
+        "requiredItems": [
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 6
+            },
+            {
+                "id": "itm_wintermintFruit",
+                "quantity": 4
+            },
+            {
+                "id": "itm_salt",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_moist_honey_kissed_grumpkin_chops",
+        "requiredItems": [
+            {
+                "id": "itm_grumpkinFruit",
+                "quantity": 6
+            },
+            {
+                "id": "itm_wintermintFruit",
+                "quantity": 4
+            },
+            {
+                "id": "itm_honey",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_moist_maple_glazed_scarrot_slabs",
+        "requiredItems": [
+            {
+                "id": "itm_scarrotFruit",
+                "quantity": 8
+            },
+            {
+                "id": "itm_wintermintFruit",
+                "quantity": 4
+            },
+            {
+                "id": "itm_syrup",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_capneo",
+        "requiredItems": [
+            {
+                "id": "itm_mocaneo",
+                "quantity": 1
+            },
+            {
+                "id": "itm_eggsplosive",
+                "quantity": 1
+            },
+            {
+                "id": "itm_Iron_Bar",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_connexa",
+        "requiredItems": [
+            {
+                "id": "itm_mocaconnector",
+                "quantity": 1
+            },
+            {
+                "id": "itm_Shrapnel",
+                "quantity": 1
+            },
+            {
+                "id": "itm_silkfiber",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_angelite",
+        "requiredItems": [
+            {
+                "id": "itm_mocaangel",
+                "quantity": 1
+            },
+            {
+                "id": "itm_tree_sap",
+                "quantity": 1
+            },
+            {
+                "id": "itm_potionBlueSmall",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_dreamix",
+        "requiredItems": [
+            {
+                "id": "itm_mocadreamer",
+                "quantity": 1
+            },
+            {
+                "id": "itm_silkslugspider",
+                "quantity": 1
+            },
+            {
+                "id": "itm_flour",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_builda",
+        "requiredItems": [
+            {
+                "id": "itm_mocabuilder",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cottoncandyFruit_blue",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cottoncandyFruit_pink",
+                "quantity": 1
+            },
+            {
+                "id": "itm_clay",
+                "quantity": 1
+            },
+            {
+                "id": "itm_beeswax",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_mocastar",
+        "requiredItems": [
+            {
+                "id": "itm_dreamix",
+                "quantity": 1
+            },
+            {
+                "id": "itm_capneo",
+                "quantity": 1
+            },
+            {
+                "id": "itm_connexa",
+                "quantity": 1
+            },
+            {
+                "id": "itm_builda",
+                "quantity": 1
+            },
+            {
+                "id": "itm_angelite",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_hay",
+        "requiredItems": [
+            {
+                "id": "itm_grainbow",
+                "quantity": 1
+            },
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_petfood",
+        "requiredItems": [
+            {
+                "id": "itm_cookingMix",
+                "quantity": 10
+            },
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 1
+            },
+            {
+                "id": "itm_grumpkinFruit",
+                "quantity": 1
+            },
+            {
+                "id": "itm_scarrotFruit",
+                "quantity": 1
+            },
+            {
+                "id": "itm_egg",
+                "quantity": 1
+            },
+            {
+                "id": "itm_flour",
+                "quantity": 1
+            },
+            {
+                "id": "itm_honey",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_fertilizer",
+        "requiredItems": [
+            {
+                "id": "itm_turd",
+                "quantity": 20
+            }
+        ]
+    },
+    {
+        "item": "itm_coffeepod",
+        "requiredItems": [
+            {
+                "id": "itm_coffeefruit",
+                "quantity": 6
+            }
+        ]
+    },
+    {
+        "item": "itm_RoninChain",
+        "requiredItems": [
+            {
+                "id": "itm_RoninBlock",
+                "quantity": 10
+            }
+        ]
+    },
+    {
+        "item": "itm_scarecrow",
+        "requiredItems": [
+            {
+                "id": "itm_stick",
+                "quantity": 12
+            },
+            {
+                "id": "itm_scarrotFruit",
+                "quantity": 24
+            },
+            {
+                "id": "itm_hay",
+                "quantity": 12
+            },
+            {
+                "id": "itm_grumpkinFruit",
+                "quantity": 6
+            },
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 6
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_grumpkinLoaf",
+        "requiredItems": [
+            {
+                "id": "itm_bluegrumpkinpuree",
+                "quantity": 4
+            },
+            {
+                "id": "itm_flour",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_infiniportable",
+        "requiredItems": [
+            {
+                "id": "itm_pixel_8AD22E",
+                "quantity": 1
+            },
+            {
+                "id": "itm_pixel_E3FF37",
+                "quantity": 1
+            },
+            {
+                "id": "itm_pixel_B2A4FF",
+                "quantity": 1
+            },
+            {
+                "id": "itm_pixel_222044",
+                "quantity": 1
+            },
+            {
+                "id": "itm_pixel_622AFF",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_Shrapnel",
+        "requiredItems": [
+            {
+                "id": "itm_metalbar_03",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_speck_house",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_01",
+                "quantity": 12
+            }
+        ]
+    },
+    {
+        "item": "itm_dreamix",
+        "requiredItems": [
+            {
+                "id": "itm_angelite",
+                "quantity": 1
+            },
+            {
+                "id": "itm_builda",
+                "quantity": 1
+            },
+            {
+                "id": "itm_capneo",
+                "quantity": 1
+            },
+            {
+                "id": "itm_connexa",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_connexa",
+        "requiredItems": [
+            {
+                "id": "itm_angelite",
+                "quantity": 1
+            },
+            {
+                "id": "itm_builda",
+                "quantity": 1
+            },
+            {
+                "id": "itm_capneo",
+                "quantity": 1
+            },
+            {
+                "id": "itm_dreamix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_capneo",
+        "requiredItems": [
+            {
+                "id": "itm_angelite",
+                "quantity": 1
+            },
+            {
+                "id": "itm_builda",
+                "quantity": 1
+            },
+            {
+                "id": "itm_connexa",
+                "quantity": 1
+            },
+            {
+                "id": "itm_dreamix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_builda",
+        "requiredItems": [
+            {
+                "id": "itm_angelite",
+                "quantity": 1
+            },
+            {
+                "id": "itm_capneo",
+                "quantity": 1
+            },
+            {
+                "id": "itm_connexa",
+                "quantity": 1
+            },
+            {
+                "id": "itm_dreamix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_angelite",
+        "requiredItems": [
+            {
+                "id": "itm_builda",
+                "quantity": 1
+            },
+            {
+                "id": "itm_capneo",
+                "quantity": 1
+            },
+            {
+                "id": "itm_connexa",
+                "quantity": 1
+            },
+            {
+                "id": "itm_dreamix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_tangy_bbq_sauce",
+        "requiredItems": [
+            {
+                "id": "itm_beeswax",
+                "quantity": 1
+            },
+            {
+                "id": "itm_salt",
+                "quantity": 1
+            },
+            {
+                "id": "itm_hotato",
+                "quantity": 12
+            },
+            {
+                "id": "itm_tenta",
+                "quantity": 5
+            }
+        ]
+    },
+    {
+        "item": "itm_stick",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_01",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_archery",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 8
+            },
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 12
+            },
+            {
+                "id": "itm_scarrotFruit",
+                "quantity": 36
+            },
+            {
+                "id": "itm_grainbow",
+                "quantity": 12
+            },
+            {
+                "id": "itm_stick",
+                "quantity": 5
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_frontbench",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 24
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_barn",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 350
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 10
+            }
+        ]
+    },
+    {
+        "item": "itm_scarrotLoaf",
+        "requiredItems": [
+            {
+                "id": "itm_scarrotpuree",
+                "quantity": 3
+            },
+            {
+                "id": "itm_flour",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_4_leaf_cloveregano",
+        "requiredItems": [
+            {
+                "id": "itm_clover4LeafFruit",
+                "quantity": 1
+            },
+            {
+                "id": "itm_silkslugslime",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_scarrotPie",
+        "requiredItems": [
+            {
+                "id": "itm_scarrotpuree",
+                "quantity": 3
+            },
+            {
+                "id": "itm_flour",
+                "quantity": 4
+            },
+            {
+                "id": "itm_syrup",
+                "quantity": 4
+            }
+        ]
+    },
+    {
+        "item": "itm_axe_02",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 2
+            },
+            {
+                "id": "itm_metalbar_01",
+                "quantity": 2
+            },
+            {
+                "id": "itm_axe_01",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_axe_03",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_02",
+                "quantity": 4
+            },
+            {
+                "id": "itm_metalbar_02",
+                "quantity": 4
+            },
+            {
+                "id": "itm_axe_02",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_axe_04",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_03",
+                "quantity": 6
+            },
+            {
+                "id": "itm_metalbar_03",
+                "quantity": 6
+            },
+            {
+                "id": "itm_axe_03",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_metalworking_kit_01",
+        "requiredItems": [
+            {
+                "id": "itm_metalore_01",
+                "quantity": 3
+            },
+            {
+                "id": "itm_roughstone_01",
+                "quantity": 2
+            },
+            {
+                "id": "itm_screw",
+                "quantity": 1
+            },
+            {
+                "id": "itm_woodlog_01",
+                "quantity": 4
+            }
+        ]
+    },
+    {
+        "item": "itm_brick_04",
+        "requiredItems": [
+            {
+                "id": "itm_stonepowder04",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_metalbar_02",
+        "requiredItems": [
+            {
+                "id": "itm_metalore_02",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_screw",
+        "requiredItems": [
+            {
+                "id": "itm_metalore_01",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_woodplank_04",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_04",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_woodplank_03",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_03",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_woodplank_02",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_02",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_brick_03",
+        "requiredItems": [
+            {
+                "id": "itm_stonepowder03",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_brick_02",
+        "requiredItems": [
+            {
+                "id": "itm_stonepowder02",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_pickaxe_04",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_03",
+                "quantity": 4
+            },
+            {
+                "id": "itm_metalbar_03",
+                "quantity": 6
+            },
+            {
+                "id": "itm_pickaxe_03",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_pickaxe_03",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_02",
+                "quantity": 3
+            },
+            {
+                "id": "itm_metalbar_02",
+                "quantity": 4
+            },
+            {
+                "id": "itm_pickaxe_02",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_pickaxe_02",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 2
+            },
+            {
+                "id": "itm_metalbar_01",
+                "quantity": 2
+            },
+            {
+                "id": "itm_pickaxe_01",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_shears_04",
+        "requiredItems": [
+            {
+                "id": "itm_metalbar_03",
+                "quantity": 8
+            },
+            {
+                "id": "itm_screw",
+                "quantity": 3
+            },
+            {
+                "id": "itm_shears_03",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_shears_03",
+        "requiredItems": [
+            {
+                "id": "itm_metalbar_02",
+                "quantity": 6
+            },
+            {
+                "id": "itm_screw",
+                "quantity": 2
+            },
+            {
+                "id": "itm_shears_02",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_shears_02",
+        "requiredItems": [
+            {
+                "id": "itm_metalbar_01",
+                "quantity": 4
+            },
+            {
+                "id": "itm_screw",
+                "quantity": 1
+            },
+            {
+                "id": "itm_shears_01",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_metalworking_kit_03",
+        "requiredItems": [
+            {
+                "id": "itm_metalworking_kit_02",
+                "quantity": 1
+            },
+            {
+                "id": "itm_metalbar_02",
+                "quantity": 12
+            },
+            {
+                "id": "itm_brick_02",
+                "quantity": 8
+            },
+            {
+                "id": "itm_plaster",
+                "quantity": 4
+            },
+            {
+                "id": "itm_woodplank_02",
+                "quantity": 10
+            }
+        ]
+    },
+    {
+        "item": "itm_metalworking_kit_02",
+        "requiredItems": [
+            {
+                "id": "itm_metalworking_kit_01",
+                "quantity": 1
+            },
+            {
+                "id": "itm_metalbar_01",
+                "quantity": 6
+            },
+            {
+                "id": "itm_brick_01",
+                "quantity": 4
+            },
+            {
+                "id": "itm_screw",
+                "quantity": 2
+            },
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 6
+            }
+        ]
+    },
+    {
+        "item": "itm_metalbar_04",
+        "requiredItems": [
+            {
+                "id": "itm_metalore_04",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_coppermagnifyingglass",
+        "requiredItems": [
+            {
+                "id": "itm_metalbar_01",
+                "quantity": 3
+            },
+            {
+                "id": "itm_glass01",
+                "quantity": 3
+            },
+            {
+                "id": "itm_magnifying_glass",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_bronzemagnifyingglass",
+        "requiredItems": [
+            {
+                "id": "itm_metalbar_02",
+                "quantity": 6
+            },
+            {
+                "id": "itm_glass01",
+                "quantity": 6
+            },
+            {
+                "id": "itm_coppermagnifyingglass",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_ironmagnifyingglass",
+        "requiredItems": [
+            {
+                "id": "itm_metalbar_03",
+                "quantity": 12
+            },
+            {
+                "id": "itm_glass01",
+                "quantity": 12
+            },
+            {
+                "id": "itm_bronzemagnifyingglass",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_woodchest_01",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 12
+            },
+            {
+                "id": "itm_Glue",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_woodchest_02",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_02",
+                "quantity": 12
+            },
+            {
+                "id": "itm_Glue",
+                "quantity": 3
+            },
+            {
+                "id": "itm_woodchest_01",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_woodchest_04",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_04",
+                "quantity": 12
+            },
+            {
+                "id": "itm_Glue",
+                "quantity": 3
+            },
+            {
+                "id": "itm_woodchest_03",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_woodchest_03",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_03",
+                "quantity": 12
+            },
+            {
+                "id": "itm_Glue",
+                "quantity": 3
+            },
+            {
+                "id": "itm_woodchest_02",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_kiln_kit_01",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 4
+            },
+            {
+                "id": "itm_metalbar_01",
+                "quantity": 4
+            },
+            {
+                "id": "itm_Glue",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_kiln_kit_02",
+        "requiredItems": [
+            {
+                "id": "itm_metalbar_01",
+                "quantity": 8
+            },
+            {
+                "id": "itm_kiln_kit_01",
+                "quantity": 1
+            },
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 6
+            },
+            {
+                "id": "itm_Glue",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_kiln_kit_03",
+        "requiredItems": [
+            {
+                "id": "itm_metalbar_02",
+                "quantity": 12
+            },
+            {
+                "id": "itm_kiln_kit_02",
+                "quantity": 1
+            },
+            {
+                "id": "itm_woodplank_02",
+                "quantity": 10
+            },
+            {
+                "id": "itm_Glue",
+                "quantity": 5
+            }
+        ]
+    },
+    {
+        "item": "itm_kiln_kit_04",
+        "requiredItems": [
+            {
+                "id": "itm_metalbar_03",
+                "quantity": 24
+            },
+            {
+                "id": "itm_kiln_kit_03",
+                "quantity": 1
+            },
+            {
+                "id": "itm_woodplank_03",
+                "quantity": 18
+            },
+            {
+                "id": "itm_Glue",
+                "quantity": 10
+            }
+        ]
+    },
+    {
+        "item": "itm_woodwork_kit_03",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_02",
+                "quantity": 10
+            },
+            {
+                "id": "itm_woodwork_kit_02",
+                "quantity": 1
+            },
+            {
+                "id": "itm_metalbar_02",
+                "quantity": 12
+            },
+            {
+                "id": "itm_nail_01",
+                "quantity": 5
+            }
+        ]
+    },
+    {
+        "item": "itm_woodwork_kit_04",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_03",
+                "quantity": 20
+            },
+            {
+                "id": "itm_woodwork_kit_03",
+                "quantity": 1
+            },
+            {
+                "id": "itm_metalbar_03",
+                "quantity": 20
+            },
+            {
+                "id": "itm_nail_01",
+                "quantity": 10
+            }
+        ]
+    },
+    {
+        "item": "itm_woodwork_kit_02",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 8
+            },
+            {
+                "id": "itm_woodwork_kit_01",
+                "quantity": 1
+            },
+            {
+                "id": "itm_metalbar_01",
+                "quantity": 8
+            },
+            {
+                "id": "itm_nail_01",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_stove_kit_02",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 5
+            },
+            {
+                "id": "itm_stonepowder01",
+                "quantity": 4
+            },
+            {
+                "id": "itm_stove_kit_01",
+                "quantity": 1
+            },
+            {
+                "id": "itm_plaster",
+                "quantity": 2
+            },
+            {
+                "id": "itm_metalbar_01",
+                "quantity": 8
+            }
+        ]
+    },
+    {
+        "item": "itm_coffeefruitjam",
+        "requiredItems": [
+            {
+                "id": "itm_coffeefruit",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_butterberryjam",
+        "requiredItems": [
+            {
+                "id": "itm_butterberry",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_napricotfruitjam",
+        "requiredItems": [
+            {
+                "id": "itm_napricot",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_muckchuckfruitjam",
+        "requiredItems": [
+            {
+                "id": "itm_muckchuck",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_cloverfruitjam",
+        "requiredItems": [
+            {
+                "id": "itm_cloverFruit",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_orangegrumpkinpuree",
+        "requiredItems": [
+            {
+                "id": "itm_grumpFruit",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_orangegrumpkinpie",
+        "requiredItems": [
+            {
+                "id": "itm_orangegrumpkinpuree",
+                "quantity": 3
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_Vinegar",
+        "requiredItems": [
+            {
+                "id": "itm_grainbow",
+                "quantity": 2
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_grainbowtart",
+        "requiredItems": [
+            {
+                "id": "itm_flour",
+                "quantity": 2
+            },
+            {
+                "id": "itm_jam_popberry",
+                "quantity": 1
+            },
+            {
+                "id": "itm_grainbow",
+                "quantity": 8
+            }
+        ]
+    },
+    {
+        "item": "itm_syrup",
+        "requiredItems": [
+            {
+                "id": "itm_tree_sap",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_stove_kit_04",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_03",
+                "quantity": 15
+            },
+            {
+                "id": "itm_stonepowder03",
+                "quantity": 12
+            },
+            {
+                "id": "itm_stove_kit_03",
+                "quantity": 1
+            },
+            {
+                "id": "itm_plaster",
+                "quantity": 8
+            },
+            {
+                "id": "itm_metalbar_03",
+                "quantity": 14
+            }
+        ]
+    },
+    {
+        "item": "itm_grumpkinPie",
+        "requiredItems": [
+            {
+                "id": "itm_bluegrumpkinpuree",
+                "quantity": 3
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_magnifying_glass",
+        "requiredItems": [
+            {
+                "id": "itm_metalore_01",
+                "quantity": 4
+            },
+            {
+                "id": "itm_silicates_01",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_shears_01",
+        "requiredItems": [
+            {
+                "id": "itm_metalore_01",
+                "quantity": 2
+            },
+            {
+                "id": "itm_screw",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_pickaxe_01",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_nail_01",
+        "requiredItems": [
+            {
+                "id": "itm_metalore_01",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_metalbar_03",
+        "requiredItems": [
+            {
+                "id": "itm_metalore_03",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_sawdust",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_01",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_butterberrypie",
+        "requiredItems": [
+            {
+                "id": "itm_butterberryjam",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            },
+            {
+                "id": "itm_flour",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_metalworking_kit_04",
+        "requiredItems": [
+            {
+                "id": "itm_metalworking_kit_03",
+                "quantity": 1
+            },
+            {
+                "id": "itm_metalbar_03",
+                "quantity": 24
+            },
+            {
+                "id": "itm_plaster",
+                "quantity": 8
+            },
+            {
+                "id": "itm_brick_03",
+                "quantity": 16
+            },
+            {
+                "id": "itm_woodplank_03",
+                "quantity": 14
+            }
+        ]
+    },
+    {
+        "item": "itm_scarrotcake",
+        "requiredItems": [
+            {
+                "id": "itm_scarrotpuree",
+                "quantity": 2
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            },
+            {
+                "id": "itm_flour",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_slothmatopizza",
+        "requiredItems": [
+            {
+                "id": "itm_slothmatopaste",
+                "quantity": 2
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            },
+            {
+                "id": "itm_flour",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_slothmatopaste",
+        "requiredItems": [
+            {
+                "id": "itm_slothmato",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_cubecumberrelish",
+        "requiredItems": [
+            {
+                "id": "itm_cubecumber",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_coffeefruitpie",
+        "requiredItems": [
+            {
+                "id": "itm_coffeefruitjam",
+                "quantity": 2
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_napricotpie",
+        "requiredItems": [
+            {
+                "id": "itm_napricotfruitjam",
+                "quantity": 2
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_cloverfruitpie",
+        "requiredItems": [
+            {
+                "id": "itm_cloverfruitjam",
+                "quantity": 3
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_muckchuckpie",
+        "requiredItems": [
+            {
+                "id": "itm_muckchuckfruitjam",
+                "quantity": 2
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_tree_05",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_04",
+                "quantity": 24
+            },
+            {
+                "id": "itm_soil_04",
+                "quantity": 12
+            }
+        ]
+    },
+    {
+        "item": "itm_tree_04",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_03",
+                "quantity": 24
+            },
+            {
+                "id": "itm_soil_03",
+                "quantity": 12
+            }
+        ]
+    },
+    {
+        "item": "itm_tree_03",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_02",
+                "quantity": 12
+            },
+            {
+                "id": "itm_soil_02",
+                "quantity": 8
+            }
+        ]
+    },
+    {
+        "item": "itm_tree_02",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_01",
+                "quantity": 8
+            },
+            {
+                "id": "itm_soil_01",
+                "quantity": 4
+            }
+        ]
+    },
+    {
+        "item": "itm_tree_01",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_01",
+                "quantity": 4
+            },
+            {
+                "id": "itm_soil_01",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_soil_03",
+        "requiredItems": [
+            {
+                "id": "itm_stonepowder03",
+                "quantity": 6
+            },
+            {
+                "id": "itm_sawdust",
+                "quantity": 4
+            },
+            {
+                "id": "itm_syrup",
+                "quantity": 4
+            }
+        ]
+    },
+    {
+        "item": "itm_soil_04",
+        "requiredItems": [
+            {
+                "id": "itm_stonepowder04",
+                "quantity": 10
+            },
+            {
+                "id": "itm_sawdust",
+                "quantity": 8
+            },
+            {
+                "id": "itm_syrup",
+                "quantity": 8
+            }
+        ]
+    },
+    {
+        "item": "itm_soil_02",
+        "requiredItems": [
+            {
+                "id": "itm_stonepowder02",
+                "quantity": 4
+            },
+            {
+                "id": "itm_sawdust",
+                "quantity": 2
+            },
+            {
+                "id": "itm_syrup",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_soil_01",
+        "requiredItems": [
+            {
+                "id": "itm_stonepowder01",
+                "quantity": 2
+            },
+            {
+                "id": "itm_sawdust",
+                "quantity": 1
+            },
+            {
+                "id": "itm_syrup",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_glass01",
+        "requiredItems": [
+            {
+                "id": "itm_silicates_01",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_stonepowder04",
+        "requiredItems": [
+            {
+                "id": "itm_roughstone_04",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_stonepowder03",
+        "requiredItems": [
+            {
+                "id": "itm_roughstone_03",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_stonepowder02",
+        "requiredItems": [
+            {
+                "id": "itm_roughstone_02",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_axe_01",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_bluegrumpkinpuree",
+        "requiredItems": [
+            {
+                "id": "itm_grumpkinFruit",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_tatoscramble",
+        "requiredItems": [
+            {
+                "id": "itm_tatohash",
+                "quantity": 3
+            },
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 1
+            },
+            {
+                "id": "itm_grumpkinFruit",
+                "quantity": 1
+            },
+            {
+                "id": "itm_grumpFruit",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cloverFruit",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_tatohash",
+        "requiredItems": [
+            {
+                "id": "itm_tatofruit",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_mine_kit_03",
+        "requiredItems": [
+            {
+                "id": "itm_roughstone_02",
+                "quantity": 24
+            },
+            {
+                "id": "itm_metalore_02",
+                "quantity": 15
+            },
+            {
+                "id": "itm_silicates_01",
+                "quantity": 15
+            },
+            {
+                "id": "itm_mine_kit_02",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_stove_kit_01",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_01",
+                "quantity": 2
+            },
+            {
+                "id": "itm_roughstone_01",
+                "quantity": 2
+            },
+            {
+                "id": "itm_metalore_01",
+                "quantity": 2
+            },
+            {
+                "id": "itm_plaster",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_mine_kit_02",
+        "requiredItems": [
+            {
+                "id": "itm_roughstone_01",
+                "quantity": 10
+            },
+            {
+                "id": "itm_metalore_01",
+                "quantity": 8
+            },
+            {
+                "id": "itm_silicates_01",
+                "quantity": 8
+            },
+            {
+                "id": "itm_mine_kit_01",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_mine_kit_01",
+        "requiredItems": [
+            {
+                "id": "itm_roughstone_01",
+                "quantity": 3
+            },
+            {
+                "id": "itm_metalore_01",
+                "quantity": 3
+            },
+            {
+                "id": "itm_silicates_01",
+                "quantity": 4
+            }
+        ]
+    },
+    {
+        "item": "itm_mine_kit_04",
+        "requiredItems": [
+            {
+                "id": "itm_metalore_03",
+                "quantity": 36
+            },
+            {
+                "id": "itm_roughstone_03",
+                "quantity": 25
+            },
+            {
+                "id": "itm_silicates_01",
+                "quantity": 25
+            },
+            {
+                "id": "itm_mine_kit_03",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_mine_kit_05",
+        "requiredItems": [
+            {
+                "id": "itm_roughstone_04",
+                "quantity": 60
+            },
+            {
+                "id": "itm_metalore_04",
+                "quantity": 40
+            },
+            {
+                "id": "itm_silicates_01",
+                "quantity": 80
+            },
+            {
+                "id": "itm_mine_kit_04",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_stove_kit_03",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_02",
+                "quantity": 10
+            },
+            {
+                "id": "itm_stonepowder02",
+                "quantity": 8
+            },
+            {
+                "id": "itm_stove_kit_02",
+                "quantity": 1
+            },
+            {
+                "id": "itm_metalbar_02",
+                "quantity": 12
+            },
+            {
+                "id": "itm_plaster",
+                "quantity": 4
+            }
+        ]
+    },
+    {
+        "item": "itm_Shorelimeade_Drink",
+        "requiredItems": [
+            {
+                "id": "itm_shorelimeFruit",
+                "quantity": 36
+            }
+        ]
+    },
+    {
+        "item": "itm_silkslughutchblueprints",
+        "requiredItems": [
+            {
+                "id": "itm_woodenbeam",
+                "quantity": 10
+            },
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 32
+            },
+            {
+                "id": "itm_silkrope",
+                "quantity": 16
+            },
+            {
+                "id": "itm_silkcloth",
+                "quantity": 48
+            },
+            {
+                "id": "itm_brick_01",
+                "quantity": 24
+            },
+            {
+                "id": "itm_plaster",
+                "quantity": 42
+            }
+        ]
+    },
+    {
+        "item": "itm_slughutch_kit_04",
+        "requiredItems": [
+            {
+                "id": "itm_slughutch_kit_03",
+                "quantity": 1
+            },
+            {
+                "id": "itm_woodplank_03",
+                "quantity": 1
+            },
+            {
+                "id": "itm_metalbar_03",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_slughutch_kit_02",
+        "requiredItems": [
+            {
+                "id": "itm_silkslughutchblueprints",
+                "quantity": 1
+            },
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 1
+            },
+            {
+                "id": "itm_metalbar_01",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_woodplank_01",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_01",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_woodwork_kit_01",
+        "requiredItems": [
+            {
+                "id": "itm_woodlog_01",
+                "quantity": 8
+            },
+            {
+                "id": "itm_metalore_01",
+                "quantity": 5
+            },
+            {
+                "id": "itm_nail_01",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_jam_popberry",
+        "requiredItems": [
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_metalbar_01",
+        "requiredItems": [
+            {
+                "id": "itm_metalore_01",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_brick_01",
+        "requiredItems": [
+            {
+                "id": "itm_stonepowder01",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_stonepowder01",
+        "requiredItems": [
+            {
+                "id": "itm_roughstone_01",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_cubecumberloaf",
+        "requiredItems": [
+            {
+                "id": "itm_cubecumberrelish",
+                "quantity": 2
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            },
+            {
+                "id": "itm_flour",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_shorelime_breeze",
+        "requiredItems": [
+            {
+                "id": "itm_shorelimeFruit",
+                "quantity": 36
+            },
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 20
+            }
+        ]
+    },
+    {
+        "item": "itm_Wooden_Throne",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 12
+            },
+            {
+                "id": "itm_scarrotFruit",
+                "quantity": 12
+            },
+            {
+                "id": "itm_grumpkinFruit",
+                "quantity": 6
+            },
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 6
+            },
+            {
+                "id": "itm_grainbow",
+                "quantity": 3
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 4
+            }
+        ]
+    },
+    {
+        "item": "itm_cake_01",
+        "requiredItems": [
+            {
+                "id": "itm_roughstone_01",
+                "quantity": 10
+            },
+            {
+                "id": "itm_flour",
+                "quantity": 6
+            },
+            {
+                "id": "itm_honey",
+                "quantity": 6
+            },
+            {
+                "id": "itm_egg",
+                "quantity": 3
+            },
+            {
+                "id": "itm_syrup",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_scarrotpuree",
+        "requiredItems": [
+            {
+                "id": "itm_scarrotFruit",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_jam_popberry",
+        "requiredItems": [
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 2
+            }
+        ]
+    },
+    {
+        "item": "itm_flour",
+        "requiredItems": [
+            {
+                "id": "itm_grainbow",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_halloween_2024_lantern",
+        "requiredItems": [
+            {
+                "id": "itm_halloween_2024_pumpkin",
+                "quantity": 1
+            },
+            {
+                "id": "itm_halloween_2024_face",
+                "quantity": 1
+            },
+            {
+                "id": "itm_halloween_2024_knife",
+                "quantity": 1
+            },
+            {
+                "id": "itm_halloween_2024_candle",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_bones_hut_2",
+        "requiredItems": [
+            {
+                "id": "itm_silkcloth",
+                "quantity": 30
+            },
+            {
+                "id": "itm_silkrope",
+                "quantity": 30
+            },
+            {
+                "id": "itm_Glue",
+                "quantity": 4
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 15
+            },
+            {
+                "id": "itm_void",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_Trashcan",
+        "requiredItems": [
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 50
+            },
+            {
+                "id": "itm_Plastic",
+                "quantity": 12
+            },
+            {
+                "id": "itm_constructionPowder",
+                "quantity": 6
+            },
+            {
+                "id": "itm_Glue",
+                "quantity": 2
+            },
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 6
+            },
+            {
+                "id": "itm_void",
+                "quantity": 4
+            },
+            {
+                "id": "itm_metalbar_03",
+                "quantity": 6
+            }
+        ]
+    },
+    {
+        "item": "itm_mashNapricot",
+        "requiredItems": [
+            {
+                "id": "itm_napricot",
+                "quantity": 4
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 10
+            },
+            {
+                "id": "itm_honey",
+                "quantity": 8
+            },
+            {
+                "id": "itm_silkslugslime",
+                "quantity": 5
+            }
+        ]
+    },
+    {
+        "item": "itm_mashClover",
+        "requiredItems": [
+            {
+                "id": "itm_cloverFruit",
+                "quantity": 10
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 10
+            },
+            {
+                "id": "itm_honey",
+                "quantity": 6
+            },
+            {
+                "id": "itm_silkslugslime",
+                "quantity": 4
+            }
+        ]
+    },
+    {
+        "item": "itm_mashPopberry",
+        "requiredItems": [
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 10
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 10
+            },
+            {
+                "id": "itm_honey",
+                "quantity": 4
+            },
+            {
+                "id": "itm_silkslugslime",
+                "quantity": 3
+            }
+        ]
+    },
+    {
+        "item": "itm_glass_bottle",
+        "requiredItems": [
+            {
+                "id": "itm_glass01",
+                "quantity": 4
+            }
+        ]
+    },
+    {
+        "item": "itm_butterberry_butterbrew",
+        "requiredItems": [
+            {
+                "id": "itm_butterberry",
+                "quantity": 36
+            },
+            {
+                "id": "itm_mashNapricot",
+                "quantity": 1
+            },
+            {
+                "id": "itm_cubecumber",
+                "quantity": 5
+            },
+            {
+                "id": "itm_energy_01",
+                "quantity": 1
+            },
+            {
+                "id": "itm_glass_bottle",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_scarrotwine",
+        "requiredItems": [
+            {
+                "id": "itm_scarrotFruit",
+                "quantity": 36
+            },
+            {
+                "id": "itm_mashNapricot",
+                "quantity": 1
+            },
+            {
+                "id": "itm_slothmato",
+                "quantity": 5
+            },
+            {
+                "id": "itm_energy_01",
+                "quantity": 1
+            },
+            {
+                "id": "itm_glass_bottle",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_cubecumber_encumber_wine",
+        "requiredItems": [
+            {
+                "id": "itm_cubecumber",
+                "quantity": 36
+            },
+            {
+                "id": "itm_mashClover",
+                "quantity": 1
+            },
+            {
+                "id": "itm_muckchuck",
+                "quantity": 5
+            },
+            {
+                "id": "itm_energy_01",
+                "quantity": 1
+            },
+            {
+                "id": "itm_glass_bottle",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_slothmato_schnapps",
+        "requiredItems": [
+            {
+                "id": "itm_slothmato",
+                "quantity": 36
+            },
+            {
+                "id": "itm_mashClover",
+                "quantity": 1
+            },
+            {
+                "id": "itm_coffeefruit",
+                "quantity": 5
+            },
+            {
+                "id": "itm_energy_01",
+                "quantity": 1
+            },
+            {
+                "id": "itm_glass_bottle",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_napricot_toddy",
+        "requiredItems": [
+            {
+                "id": "itm_napricot",
+                "quantity": 12
+            },
+            {
+                "id": "itm_mashClover",
+                "quantity": 1
+            },
+            {
+                "id": "itm_tatofruit",
+                "quantity": 5
+            },
+            {
+                "id": "itm_energy_01",
+                "quantity": 1
+            },
+            {
+                "id": "itm_glass_bottle",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_muckchuck_mead",
+        "requiredItems": [
+            {
+                "id": "itm_muckchuck",
+                "quantity": 12
+            },
+            {
+                "id": "itm_mashPopberry",
+                "quantity": 1
+            },
+            {
+                "id": "itm_grainbow",
+                "quantity": 5
+            },
+            {
+                "id": "itm_energy_01",
+                "quantity": 1
+            },
+            {
+                "id": "itm_glass_bottle",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_hotato_hotka",
+        "requiredItems": [
+            {
+                "id": "itm_hotato",
+                "quantity": 16
+            },
+            {
+                "id": "itm_mashPopberry",
+                "quantity": 1
+            },
+            {
+                "id": "itm_grumpFruit",
+                "quantity": 5
+            },
+            {
+                "id": "itm_energy_01",
+                "quantity": 1
+            },
+            {
+                "id": "itm_glass_bottle",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_tentacactus_tequila",
+        "requiredItems": [
+            {
+                "id": "itm_tenta",
+                "quantity": 30
+            },
+            {
+                "id": "itm_mashPopberry",
+                "quantity": 1
+            },
+            {
+                "id": "itm_wintermintFruit",
+                "quantity": 40
+            },
+            {
+                "id": "itm_energy_01",
+                "quantity": 1
+            },
+            {
+                "id": "itm_glass_bottle",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_wintermint_whiskey",
+        "requiredItems": [
+            {
+                "id": "itm_wintermintFruit",
+                "quantity": 36
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 10
+            },
+            {
+                "id": "itm_honey",
+                "quantity": 3
+            },
+            {
+                "id": "itm_silkslugslime",
+                "quantity": 1
+            },
+            {
+                "id": "itm_glass_bottle",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_grumpkinwine",
+        "requiredItems": [
+            {
+                "id": "itm_grumpkinFruit",
+                "quantity": 16
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 10
+            },
+            {
+                "id": "itm_honey",
+                "quantity": 3
+            },
+            {
+                "id": "itm_silkslugslime",
+                "quantity": 1
+            },
+            {
+                "id": "itm_glass_bottle",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_grainbow_grainshine",
+        "requiredItems": [
+            {
+                "id": "itm_grainbow",
+                "quantity": 8
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 10
+            },
+            {
+                "id": "itm_honey",
+                "quantity": 3
+            },
+            {
+                "id": "itm_silkslugslime",
+                "quantity": 1
+            },
+            {
+                "id": "itm_glass_bottle",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_popberrywine",
+        "requiredItems": [
+            {
+                "id": "itm_popberryFruit",
+                "quantity": 36
+            },
+            {
+                "id": "itm_cookingMix",
+                "quantity": 10
+            },
+            {
+                "id": "itm_honey",
+                "quantity": 3
+            },
+            {
+                "id": "itm_silkslugslime",
+                "quantity": 1
+            },
+            {
+                "id": "itm_glass_bottle",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_Bomb_Shell",
+        "requiredItems": [
+            {
+                "id": "itm_eggsplosive",
+                "quantity": 2
+            },
+            {
+                "id": "itm_Shrapnel",
+                "quantity": 6
+            },
+            {
+                "id": "itm_Glue",
+                "quantity": 1
+            },
+            {
+                "id": "itm_beeswax",
+                "quantity": 4
+            }
+        ]
+    },
+    {
+        "item": "itm_xmasUgly_24_05",
+        "requiredItems": [
+            {
+                "id": "itm_woolyweedFruit",
+                "quantity": 3
+            },
+            {
+                "id": "itm_feather_01",
+                "quantity": 3
+            },
+            {
+                "id": "itm_sawdust",
+                "quantity": 12
+            }
+        ]
+    },
+    {
+        "item": "itm_xmasUgly_24_03",
+        "requiredItems": [
+            {
+                "id": "itm_woolyweedFruit",
+                "quantity": 3
+            },
+            {
+                "id": "itm_feather_01",
+                "quantity": 3
+            },
+            {
+                "id": "itm_stonepowder01",
+                "quantity": 6
+            }
+        ]
+    },
+    {
+        "item": "itm_xmasUgly_24_04",
+        "requiredItems": [
+            {
+                "id": "itm_woolyweedFruit",
+                "quantity": 3
+            },
+            {
+                "id": "itm_feather_01",
+                "quantity": 3
+            },
+            {
+                "id": "itm_silicates_01",
+                "quantity": 12
+            }
+        ]
+    },
+    {
+        "item": "itm_xmasUgly_24_02",
+        "requiredItems": [
+            {
+                "id": "itm_woolyweedFruit",
+                "quantity": 3
+            },
+            {
+                "id": "itm_feather_01",
+                "quantity": 3
+            },
+            {
+                "id": "itm_flour",
+                "quantity": 6
+            }
+        ]
+    },
+    {
+        "item": "itm_xmasUgly_24_01",
+        "requiredItems": [
+            {
+                "id": "itm_woolyweedFruit",
+                "quantity": 3
+            },
+            {
+                "id": "itm_feather_01",
+                "quantity": 3
+            },
+            {
+                "id": "itm_cloverFruit",
+                "quantity": 12
+            }
+        ]
+    },
+    {
+        "item": "itm_frostytoddy",
+        "requiredItems": [
+            {
+                "id": "itm_milk",
+                "quantity": 1
+            },
+            {
+                "id": "itm_popberrywine",
+                "quantity": 1
+            },
+            {
+                "id": "itm_silkslugslime",
+                "quantity": 1
+            },
+            {
+                "id": "itm_grumpkinFruit",
+                "quantity": 6
+            },
+            {
+                "id": "itm_uncut_gem_12",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_eggspresso",
+        "requiredItems": [
+            {
+                "id": "itm_milk",
+                "quantity": 1
+            },
+            {
+                "id": "itm_grainbow_grainshine",
+                "quantity": 1
+            },
+            {
+                "id": "itm_coffeepod",
+                "quantity": 2
+            },
+            {
+                "id": "itm_thanksgiving_turkeyegg",
+                "quantity": 1
+            },
+            {
+                "id": "itm_uncut_gem_12",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_toyteddy_01",
+        "requiredItems": [
+            {
+                "id": "itm_woolyweedFruit",
+                "quantity": 9
+            },
+            {
+                "id": "itm_silkcloth",
+                "quantity": 3
+            },
+            {
+                "id": "itm_feather_01",
+                "quantity": 1
+            },
+            {
+                "id": "itm_ornament_26",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_barrel03",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 24
+            },
+            {
+                "id": "itm_grumpkinFruit",
+                "quantity": 12
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_barrel01",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 12
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_barrel04",
+        "requiredItems": [
+            {
+                "id": "itm_woodplank_01",
+                "quantity": 24
+            },
+            {
+                "id": "itm_remover",
+                "quantity": 1
+            },
+            {
+                "id": "itm_shears_01",
+                "quantity": 2
+            },
+            {
+                "id": "itm_rustyWateringCan",
+                "quantity": 1
+            },
+            {
+                "id": "itm_craftingPowder",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "item": "itm_stdumpling",
+        "requiredItems": [
+            {
+                "id": "itm_seltsamEgg",
+                "quantity": 2
+            },
+            {
+                "id": "itm_cabbageFruit",
+                "quantity": 1
+            },
+            {
+                "id": "itm_lunaregg",
+                "quantity": 1
+            },
+            {
+                "id": "itm_thanksgiving_turkeyegg",
+                "quantity": 1
+            }
+        ]
+    }
+]
