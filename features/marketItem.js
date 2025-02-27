@@ -1,0 +1,5 @@
+let currentMarketItem=null;function addMarketItemData(){let e=document.querySelector(nodeNames.market_item_content);if(e&&currentMarketItem){let t=0,r=0;for(let i in storedItemCache)if(storedItemCache.hasOwnProperty(i)){let a=storedItemCache[i];for(let n in a)if(a.hasOwnProperty(n)){let m=a[n];if(m.items&&Array.isArray(m.items))for(let l of m.items)l.item===currentMarketItem&&(t+=l.count)}}if(sentInventory&&sentInventory.items)for(let o of sentInventory.items)o.item===currentMarketItem&&(r+=o.quantity);let f=document.querySelector(nodeNames.market_item_name);if(!f)return;let s=document.querySelector(".voxels-market-item-data");s||((s=document.createElement("div")).className="voxels-market-item-data",f.parentNode.insertBefore(s,f.nextSibling));let c=r+addMarketItemAmount;s.innerHTML=`
+            ${premium?`Storage: ${t>9999?nFormatter(t,1):t} | `:""}
+            Inventory: ${r>9999?nFormatter(r,1):r} 
+            ${addMarketItemAmount>0?`&#8594; ${c}`:""}
+        `}}

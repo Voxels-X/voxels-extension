@@ -165,11 +165,6 @@
         "display_name": "Bookshelf 2"
     },
     {
-        "item": "itm_mirror1",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//7f4a044e-c008-403e-ab99-909ae70f1126.png",
-        "display_name": "Mirror 1"
-    },
-    {
         "item": "itm_bed1",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//736935e1-c8d7-4e61-9cc6-6dc4940ee536.png",
         "display_name": "Bed 1"
@@ -840,54 +835,9 @@
         "display_name": "Christmas Gift"
     },
     {
-        "item": "itm_slab_grey",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//2beef737-02cc-411d-953e-234382d5043a.png",
-        "display_name": "Grey Slab"
-    },
-    {
-        "item": "itm_slab_light_grey",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//676a3853-988f-40ca-93d9-3cbc0eb200f4.png",
-        "display_name": "Light Slab"
-    },
-    {
         "item": "itm_Bed_Sideview",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//b202a40d-2a6b-44d7-a3c1-240dcadb2b6a.png",
         "display_name": "Bed (Sideview)"
-    },
-    {
-        "item": "itm_slab_black",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//98ea2cc6-a795-4803-ab2d-772b54fb72dc.png",
-        "display_name": "Black Slab"
-    },
-    {
-        "item": "itm_slab_light_blue",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//910ceacb-4dea-4eb4-9b62-3d29c5f0a856.png",
-        "display_name": "Light Blue Slab"
-    },
-    {
-        "item": "itm_slab_pink",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//b4230249-0ad7-4f89-9a8f-93357354f84e.png",
-        "display_name": "Pink Slab"
-    },
-    {
-        "item": "itm_slab_red",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//e8f34a94-8c48-4060-af76-4e6321889bd1.png",
-        "display_name": "Red Slab"
-    },
-    {
-        "item": "itm_slab_green",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//3da89742-7eb0-4a66-af0d-03dc2800e47a.png",
-        "display_name": "Green Slab"
-    },
-    {
-        "item": "itm_slab_blue",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//c4aab6ea-2bc2-4d1a-83e5-56cf12e6ccdb.png",
-        "display_name": "Blue Slab"
-    },
-    {
-        "item": "itm_brown_slab",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//5ac5f36f-c78b-4fbb-9926-ac2f6624cbb9.png",
-        "display_name": "Brown Slab"
     },
     {
         "item": "itm_candyCane3",
@@ -898,11 +848,6 @@
         "item": "itm_candyCane2",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//24c9de2a-63ac-4307-b243-bf9eac97af9c.png",
         "display_name": "Candy Cane"
-    },
-    {
-        "item": "itm_slab_orange",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//fcee1a03-b068-4d9a-807f-6c62a22bee22.png",
-        "display_name": "Orange Slab"
     },
     {
         "item": "itm_candyCane1",
@@ -1225,11 +1170,6 @@
         "display_name": "Yellow Yoga Mat"
     },
     {
-        "item": "itm_slab_yellow",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//f785bec7-657c-419e-a787-20a44edb1c0a.png",
-        "display_name": "Yellow Slab"
-    },
-    {
         "item": "itm_sleeping-bag-01-decoration",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//c8e91b40-fefe-4136-ab55-a4873e733e2d.png",
         "display_name": "Green Sleeping Bag"
@@ -1398,11 +1338,6 @@
         "item": "itm_Background_Land_Tree_03_V3",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//18317cc5-3ecb-4d4b-8cdc-4f9f3fc09b5c.png",
         "display_name": "Land Tree 9"
-    },
-    {
-        "item": "itm_loveGrub",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//a4296bd8-33ce-43f7-9067-c16663385315.png",
-        "display_name": "Love Grub"
     },
     {
         "item": "itm_OrganicBomb",
@@ -2440,11 +2375,6 @@
         "display_name": "Painting"
     },
     {
-        "item": "itm_clay",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_clay/b166ba3f-6fe4-439a-b2ce-20985633fb13.png",
-        "display_name": "Clayum Matrix"
-    },
-    {
         "item": "itm_shareInteriorM",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_shareInteriorM/3f6c68c4-89cb-473b-b9f6-4ed863b41632.png",
         "display_name": "Medium Speck House Upgrade"
@@ -2458,11 +2388,6 @@
         "item": "itm_hen",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_hen/3bd5cd69-7961-4136-97f1-e12d26211273.png",
         "display_name": "Chicken"
-    },
-    {
-        "item": "itm_rustyWateringCan",
-        "image": "https://d31ss916pli4td.cloudfront.net/items/v2/inventory_icon_rustywateringcan.png",
-        "display_name": "Rusty Watering Can"
     },
     {
         "item": "itm_soil_03",
@@ -2530,11 +2455,6 @@
         "display_name": "Refined Metalworking Kit"
     },
     {
-        "item": "itm_wood",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_wood/5b4b97ab-c557-4f9e-b822-6a88ed9071ab.png",
-        "display_name": "Whittlewood Log"
-    },
-    {
         "item": "itm_metalbar_01",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_metalbar_01/c0b61e98-684c-4c78-86dc-c7e9c1fec088.png",
         "display_name": "Copperite Bar"
@@ -2600,11 +2520,6 @@
         "display_name": "Unobtainium Shears"
     },
     {
-        "item": "itm_roughstone_01",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_roughstone_01/acd2ae66-2eb7-4e95-9cc8-f4831cf9a2ed.png",
-        "display_name": "Clayum Matrix"
-    },
-    {
         "item": "itm_roughstone_05",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_roughstone_05/866b46a3-6a02-407c-8e70-a3d00e23db39.png",
         "display_name": "Voidite Matrix"
@@ -2628,11 +2543,6 @@
         "item": "itm_roughstone_04",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_roughstone_04/aae86759-bedd-4e03-aed1-313a5440eb1d.png",
         "display_name": "Claricite Matrix"
-    },
-    {
-        "item": "itm_woodlog_01",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_woodlog_01/598c4297-4b90-40af-9cbf-36f04eb4641d.png",
-        "display_name": "Whittlewood Log"
     },
     {
         "item": "itm_woodlog_04",
@@ -2683,11 +2593,6 @@
         "item": "itm_woodchest_05",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_woodchest_05/e2e9d50f-191e-4a10-b1c9-737ab560b6bc.png",
         "display_name": "Colossal Hammeroot Chest"
-    },
-    {
-        "item": "itm_screw",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_screw/544172a9-5279-4bf3-9bc7-3dd232b518b7.png",
-        "display_name": "Copperite Screw"
     },
     {
         "item": "itm_metalore_02",
@@ -3355,11 +3260,6 @@
         "display_name": "Shorelime Shades"
     },
     {
-        "item": "itm_shirt_ronin_01",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_shirt_ronin_01/7bae391d-6ae1-4b37-9c09-a9029476d623.png",
-        "display_name": "Ronin Shirt"
-    },
-    {
         "item": "itm_fertilizer",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//69988081-24ad-442a-ac44-511c3db53760.png",
         "display_name": "Fertilizer"
@@ -3383,11 +3283,6 @@
         "item": "itm_clover4LeafFruit",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//63f9d9a1-7f38-45df-afc5-865d0509adf0.png",
         "display_name": "4-Leaf Clover"
-    },
-    {
-        "item": "itm_egg_01",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_egg_01/15f82ae5-72da-45e0-852d-d5a72a212244.png",
-        "display_name": "Egg"
     },
     {
         "item": "itm_goldenPopberrySeeds",
@@ -5225,26 +5120,6 @@
         "display_name": "Dom Pixelgnon"
     },
     {
-        "item": "itm_mushroomSeeds_01",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomSeeds_01/b645faa2-7f34-47d7-96d7-73e3dc58718d.png",
-        "display_name": "+1 Spores (Blue Bolete)"
-    },
-    {
-        "item": "itm_mushroomSeeds_02",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomSeeds_02/d94b0d91-89fc-4987-98e4-371da15c6720.png",
-        "display_name": "+3 Spores (Purple Parasol)"
-    },
-    {
-        "item": "itm_mushroomSeeds_03",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomSeeds_03/86086e9c-78c8-42d7-96f8-481c1b366d93.png",
-        "display_name": "+30 Spores (Green Gomphus)"
-    },
-    {
-        "item": "itm_mushroomSeeds_04",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomSeeds_04/89447fed-63aa-4154-97a9-621d54f9783a.png",
-        "display_name": "+120 Spores (Red Reezulu)"
-    },
-    {
         "item": "itm_mushroomFruit_01",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomFruit_01/d659a079-6eca-4a7c-9735-f07cbe4d27b8.png",
         "display_name": "Blue Bolete"
@@ -5263,26 +5138,6 @@
         "item": "itm_mushroomFruit_04",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomFruit_04/237d5adb-0bac-496c-9ecf-66be8dd2d1aa.png",
         "display_name": "Red Reezulu"
-    },
-    {
-        "item": "itm_cave_fertilizer_01",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cave_fertilizer_01/bb347621-15ea-4a6e-9686-cd422e9a185a.png",
-        "display_name": "Voidbat Guano (Basic)"
-    },
-    {
-        "item": "itm_cave_fertilizer_02",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cave_fertilizer_02/66583cc2-eb5b-4ac8-996d-8df7684e4663.png",
-        "display_name": "Voidbat Guano (Enhanced)"
-    },
-    {
-        "item": "itm_cave_fertilizer_03",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cave_fertilizer_03/0975244b-532b-4d91-a7a7-f611229e70f1.png",
-        "display_name": "Voidbat Guano (Super)"
-    },
-    {
-        "item": "itm_cave_fertilizer_04",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cave_fertilizer_04/6551f0d6-a4d9-4fc8-8b5d-ac049a6290f1.png",
-        "display_name": "Voidbat Guano (Ultimate)"
     },
     {
         "item": "itm_cow_01",
@@ -5318,26 +5173,6 @@
         "item": "itm_iamrich",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//ffcc7f13-1c08-4ce2-bb51-a05932dfc62a.png",
         "display_name": "Flex Master 3000"
-    },
-    {
-        "item": "itm_soilDryer",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_soilDryer/6c944bc0-949c-419c-8ae9-cad1c797eb96.png",
-        "display_name": "Evil Goo (Super)"
-    },
-    {
-        "item": "itm_soilDryer_01",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_soilDryer_01/0caeb6cd-e4de-404c-a0d4-2f04ae707876.png",
-        "display_name": "Evil Goo (Basic)"
-    },
-    {
-        "item": "itm_soilDryer_02",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_soilDryer_02/9f63321f-dabf-4813-b2a9-f9d0ef34c2fa.png",
-        "display_name": "Evil Goo (Enhanced)"
-    },
-    {
-        "item": "itm_soilDryer_04",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_soilDryer_04/02968589-461f-4a51-8a7d-7438c6fa5382.png",
-        "display_name": "Evil Goo (Ultimate)"
     },
     {
         "item": "itm_blacksmith_blueprint",
@@ -5413,11 +5248,6 @@
         "item": "itm_pixelplumFruit",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_pixelplumFruit/310d5dba-9ff2-43fa-abee-854cf795f7cc.png",
         "display_name": "Pixelplum"
-    },
-    {
-        "item": "itm_woolyweedFruit",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_woolyweedFruit/cbbcab4f-cef5-4569-bc5d-6f3d39b0306d.png",
-        "display_name": "Wool Wad"
     },
     {
         "item": "itm_tatofruit",
@@ -5515,21 +5345,6 @@
         "display_name": "Yarnyam Seeds"
     },
     {
-        "item": "itm_pixelplumSeeds",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_pixelplumSeeds/698b9646-c841-4237-839d-cd72197272ba.png",
-        "display_name": "Pixelplum Seeds"
-    },
-    {
-        "item": "itm_woolyweedSeeds",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_woolyweedSeeds/19b1c941-6862-46fb-b8de-dd26e8c51ae6.png",
-        "display_name": "Woolyweed Seeds"
-    },
-    {
-        "item": "itm_tatoseeds",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_tatoseeds/f3bacb7b-ea78-419c-ae96-33d41d83f2bc.png",
-        "display_name": "Tato Seeds"
-    },
-    {
         "item": "itm_coffeeseed",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_coffeeseed/f32ccc8d-8108-464d-9ec0-5722e5927815.png",
         "display_name": "Java Seeds"
@@ -5560,11 +5375,6 @@
         "display_name": "Watermint Seeds"
     },
     {
-        "item": "itm_heartbeetSeeds",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//f1af2e48-8ccc-4306-b49c-d12bbc7c3675.png",
-        "display_name": "Heartbeet Seeds"
-    },
-    {
         "item": "itm_perfectPopberrySeeds",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//54f7f64e-4e16-400a-a5aa-509a49b23383.png",
         "display_name": "Beginner's Popberry Seeds"
@@ -5578,11 +5388,6 @@
         "item": "itm_butterberryseeds",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//8fe276db-4704-469a-af13-21d74b09cdf3.png",
         "display_name": "Butterberry Seeds"
-    },
-    {
-        "item": "itm_hotatoseed",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//0809fb08-5d5f-4b2b-bd75-6802236e9371.png",
-        "display_name": "Hotato Seeds"
     },
     {
         "item": "itm_tentacactus",
@@ -5615,16 +5420,6 @@
         "display_name": "Scarrot Seeds"
     },
     {
-        "item": "itm_grumpkinSeeds",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//c5ea32c4-d292-46d3-a7fb-bfa1781e6c7a.png",
-        "display_name": "Blue Grumpkin Seeds"
-    },
-    {
-        "item": "itm_lunarenergy",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_lunarenergy/40ec465d-fd09-4fad-b015-eebfa0171038.png",
-        "display_name": "Lunar Energy Treat"
-    },
-    {
         "item": "itm_lunarcosmetic1",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_lunarcosmetic1/a862607c-8d22-4560-83a5-6813cbcf1693.png",
         "display_name": "2025 Lunar New Year's Guanmao"
@@ -5655,21 +5450,6 @@
         "display_name": "Lunar Egg"
     },
     {
-        "item": "itm_stdumpling",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_stdumpling/15a13d2d-0c31-4e81-952b-3f72c05796fa.png",
-        "display_name": "Steamed Dumplings"
-    },
-    {
-        "item": "itm_cabbageSeeds",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cabbageSeeds/d49f7ac1-e7b8-423f-8e0f-3f9478ca48dd.png",
-        "display_name": "Cababbage Seeds"
-    },
-    {
-        "item": "itm_cabbageFruit",
-        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cabbageFruit/add23236-cb08-40b3-a69e-9fff26df67a5.png",
-        "display_name": "Cababbage"
-    },
-    {
         "item": "itm_lunarenvelope1",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_lunarenvelope1/89278431-7678-4617-bb18-94da3ba22815.png",
         "display_name": "Red Envelope"
@@ -5688,6 +5468,321 @@
         "item": "itm_bstB16",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_bstB16/7c2dfbbb-4d54-44ef-b4fc-0cadafceddee.png",
         "display_name": "Red Snake Sculpture"
+    },
+    {
+        "item": "itm_woodlog_01",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_woodlog_01/598c4297-4b90-40af-9cbf-36f04eb4641d.png",
+        "display_name": "Whittlewood Log"
+    },
+    {
+        "item": "itm_roughstone_01",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_roughstone_01/acd2ae66-2eb7-4e95-9cc8-f4831cf9a2ed.png",
+        "display_name": "Clayum Matrix"
+    },
+    {
+        "item": "itm_lunarenergy",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_lunarenergy/40ec465d-fd09-4fad-b015-eebfa0171038.png",
+        "display_name": "Lunar Energy Treat"
+    },
+    {
+        "item": "itm_hotatoseed",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//0809fb08-5d5f-4b2b-bd75-6802236e9371.png",
+        "display_name": "Hotato Seeds"
+    },
+    {
+        "item": "itm_grumpkinSeeds",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//c5ea32c4-d292-46d3-a7fb-bfa1781e6c7a.png",
+        "display_name": "Blue Grumpkin Seeds"
+    },
+    {
+        "item": "itm_pixelplumSeeds",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_pixelplumSeeds/698b9646-c841-4237-839d-cd72197272ba.png",
+        "display_name": "Pixelplum Seeds"
+    },
+    {
+        "item": "itm_lunarlights",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_lunarlights/05f65081-b18a-4fac-a14b-eda4e8d4ab02.png",
+        "display_name": "2025 Lunar Lights"
+    },
+    {
+        "item": "itm_soilDryer_01",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_soilDryer_01/0caeb6cd-e4de-404c-a0d4-2f04ae707876.png",
+        "display_name": "Evil Goo (Basic)"
+    },
+    {
+        "item": "itm_soilDryer_02",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_soilDryer_02/9f63321f-dabf-4813-b2a9-f9d0ef34c2fa.png",
+        "display_name": "Evil Goo (Enhanced)"
+    },
+    {
+        "item": "itm_soilDryer",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_soilDryer/6c944bc0-949c-419c-8ae9-cad1c797eb96.png",
+        "display_name": "Evil Goo (Super)"
+    },
+    {
+        "item": "itm_soilDryer_04",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_soilDryer_04/02968589-461f-4a51-8a7d-7438c6fa5382.png",
+        "display_name": "Evil Goo (Ultimate)"
+    },
+    {
+        "item": "itm_cave_fertilizer_01",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cave_fertilizer_01/bb347621-15ea-4a6e-9686-cd422e9a185a.png",
+        "display_name": "Voidbat Guano (Basic)"
+    },
+    {
+        "item": "itm_cave_fertilizer_02",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cave_fertilizer_02/66583cc2-eb5b-4ac8-996d-8df7684e4663.png",
+        "display_name": "Voidbat Guano (Enhanced)"
+    },
+    {
+        "item": "itm_cave_fertilizer_03",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cave_fertilizer_03/0975244b-532b-4d91-a7a7-f611229e70f1.png",
+        "display_name": "Voidbat Guano (Super)"
+    },
+    {
+        "item": "itm_cave_fertilizer_04",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_cave_fertilizer_04/6551f0d6-a4d9-4fc8-8b5d-ac049a6290f1.png",
+        "display_name": "Voidbat Guano (Ultimate)"
+    },
+    {
+        "item": "itm_rustyWateringCan",
+        "image": "https://d31ss916pli4td.cloudfront.net/items/v2/inventory_icon_rustywateringcan.png",
+        "display_name": "Rusty Watering Can"
+    },
+    {
+        "item": "itm_mushroomSeeds_01",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomSeeds_01/b645faa2-7f34-47d7-96d7-73e3dc58718d.png",
+        "display_name": "+1 Spores (Blue Bolete)"
+    },
+    {
+        "item": "itm_mushroomSeeds_02",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomSeeds_02/d94b0d91-89fc-4987-98e4-371da15c6720.png",
+        "display_name": "+3 Spores (Purple Parasol)"
+    },
+    {
+        "item": "itm_mushroomSeeds_03",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomSeeds_03/86086e9c-78c8-42d7-96f8-481c1b366d93.png",
+        "display_name": "+30 Spores (Green Gomphus)"
+    },
+    {
+        "item": "itm_mushroomSeeds_04",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_mushroomSeeds_04/89447fed-63aa-4154-97a9-621d54f9783a.png",
+        "display_name": "+120 Spores (Red Reezulu)"
+    },
+    {
+        "item": "itm_screw",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_screw/544172a9-5279-4bf3-9bc7-3dd232b518b7.png",
+        "display_name": "Copperite Screw"
+    },
+    {
+        "item": "itm_woolyweedFruit",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_woolyweedFruit/cbbcab4f-cef5-4569-bc5d-6f3d39b0306d.png",
+        "display_name": "Wool Wad"
+    },
+    {
+        "item": "itm_woolyweedSeeds",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_woolyweedSeeds/19b1c941-6862-46fb-b8de-dd26e8c51ae6.png",
+        "display_name": "Woolyweed Seeds"
+    },
+    {
+        "item": "itm_kikosPancakes",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_kikosPancakes/ec317180-f162-4b71-925b-80f885bc8243.png",
+        "display_name": "Kiko's Popberry Pancakes"
+    },
+    {
+        "item": "itm_tatoseeds",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_tatoseeds/f3bacb7b-ea78-419c-ae96-33d41d83f2bc.png",
+        "display_name": "Tato Seeds"
+    },
+    {
+        "item": "itm_mirror1",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//7f4a044e-c008-403e-ab99-909ae70f1126.png",
+        "display_name": "Mirror 1"
+    },
+    {
+        "item": "itm_loveGrub",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//a4296bd8-33ce-43f7-9067-c16663385315.png",
+        "display_name": "Love Grub"
+    },
+    {
+        "item": "itm_heartbeetSeeds",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//f1af2e48-8ccc-4306-b49c-d12bbc7c3675.png",
+        "display_name": "Heartbeet Seeds"
+    },
+    {
+        "item": "itm_vdayflowervase",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_vdayflowervase/8bd1b17f-aa82-441d-aff0-873a4a60b752.png",
+        "display_name": "2025 Valentine's Flower Vase"
+    },
+    {
+        "item": "itm_vdayfountain",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_vdayfountain/3f7de435-ce99-4bbd-8a5a-6ad15bc68b68.png",
+        "display_name": "2025 Valentine's Fountain"
+    },
+    {
+        "item": "itm_vdaybear",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_vdaybear/bbbb5628-669a-4284-ab3d-4b2c693845c9.png",
+        "display_name": "2025 Valentine's Teddy"
+    },
+    {
+        "item": "itm_heartbeettoken",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_heartbeettoken/2cafad5e-c834-4762-ba4f-00b7d6b797a3.png",
+        "display_name": "Heartbeet Hoedown Token"
+    },
+    {
+        "item": "itm_loverboy_suit",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_loverboy_suit/a588b865-8ee8-4937-afa1-a7317119b9c0.png",
+        "display_name": "Loverboy Suit"
+    },
+    {
+        "item": "itm_lovergirl_gown",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_lovergirl_gown/f74450af-7dba-458b-938a-669b095ba6fb.png",
+        "display_name": "Lovergirl Gown"
+    },
+    {
+        "item": "itm_heartwallpaper",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_heartwallpaper/aa965a0b-32e2-4df9-984a-2b2824b0fc3e.png",
+        "display_name": "Heart Wallpaper"
+    },
+    {
+        "item": "itm_heartcarpet",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_heartcarpet/177f2e4a-a59b-465c-8ecc-7c19af0700f5.png",
+        "display_name": "Heart Carpet"
+    },
+    {
+        "item": "itm_hbeetchocobox",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_hbeetchocobox/1c3cf00c-d5e5-4bcc-8505-55765d81acf4.png",
+        "display_name": "Heartbeet Box of Chocolates"
+    },
+    {
+        "item": "itm_heartbeetroses",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_heartbeetroses/98c89dd7-756b-4bc4-9674-09dd83eeeead.png",
+        "display_name": "Heartbeet Rose Bouquet"
+    },
+    {
+        "item": "itm_hbeetsugarcube",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_hbeetsugarcube/16bd89cb-458e-4520-8730-d583dfd66a9b.png",
+        "display_name": "Heartbeet Sugar Cube"
+    },
+    {
+        "item": "itm_heartbeetrose",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_heartbeetrose/184bcec6-147c-43c7-861a-fe0fb37caa1b.png",
+        "display_name": "Heartbeet Rose"
+    },
+    {
+        "item": "itm_slab_salmon",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_slab_salmon/dc9b898c-eabf-42fe-830d-98388324bdae.png",
+        "display_name": "Salmon Slab"
+    },
+    {
+        "item": "itm_slab_lime",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_slab_lime/14c9797b-b558-42fc-bebb-a4e209bfb8cc.png",
+        "display_name": "Lime Slab"
+    },
+    {
+        "item": "itm_slab_purple",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_slab_purple/939695ab-87af-446b-9b5a-3b742af2cf3a.png",
+        "display_name": "Purple Slab"
+    },
+    {
+        "item": "itm_slab_l_purple",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_slab_l_purple/5febb73b-c8f3-47ba-922d-8cf1323a3c92.png",
+        "display_name": "Light Purple Slab"
+    },
+    {
+        "item": "itm_slab_l_brown",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_slab_l_brown/3c43016c-5564-460f-a4fc-3cf98c910361.png",
+        "display_name": "Light Brown Slab"
+    },
+    {
+        "item": "itm_slab_beige",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_slab_beige/62007c34-dfda-4117-a524-e14298e580a9.png",
+        "display_name": "Beige Slab"
+    },
+    {
+        "item": "itm_slab_deep_red",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_slab_deep_red/7c283eb5-6474-436e-8c92-411580ffe7e4.png",
+        "display_name": "Deep Red Slab"
+    },
+    {
+        "item": "itm_slab_amber",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_slab_amber/b985c5d5-a1dc-42c1-976a-e23b2eb677ec.png",
+        "display_name": "Amber Slab"
+    },
+    {
+        "item": "itm_slab_red",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_slab_red/6f97401e-f6fa-4fd2-ac21-1e20ac67ca6c.png",
+        "display_name": "Red Slab"
+    },
+    {
+        "item": "itm_slab_black",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//98ea2cc6-a795-4803-ab2d-772b54fb72dc.png",
+        "display_name": "Black Slab"
+    },
+    {
+        "item": "itm_slab_grey",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//2beef737-02cc-411d-953e-234382d5043a.png",
+        "display_name": "Grey Slab"
+    },
+    {
+        "item": "itm_slab_yellow",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//f785bec7-657c-419e-a787-20a44edb1c0a.png",
+        "display_name": "Yellow Slab"
+    },
+    {
+        "item": "itm_slab_pink",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//b4230249-0ad7-4f89-9a8f-93357354f84e.png",
+        "display_name": "Pink Slab"
+    },
+    {
+        "item": "itm_slab_green",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//3da89742-7eb0-4a66-af0d-03dc2800e47a.png",
+        "display_name": "Green Slab"
+    },
+    {
+        "item": "itm_slab_blue",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//c4aab6ea-2bc2-4d1a-83e5-56cf12e6ccdb.png",
+        "display_name": "Blue Slab"
+    },
+    {
+        "item": "itm_brown_slab",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//5ac5f36f-c78b-4fbb-9926-ac2f6624cbb9.png",
+        "display_name": "Brown Slab"
+    },
+    {
+        "item": "itm_slab_orange",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//fcee1a03-b068-4d9a-807f-6c62a22bee22.png",
+        "display_name": "Orange Slab"
+    },
+    {
+        "item": "itm_slab_light_grey",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//676a3853-988f-40ca-93d9-3cbc0eb200f4.png",
+        "display_name": "Light Slab"
+    },
+    {
+        "item": "itm_slab_light_blue",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//910ceacb-4dea-4eb4-9b62-3d29c5f0a856.png",
+        "display_name": "Light Blue Slab"
+    },
+    {
+        "item": "itm_ronincap",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_ronincap/fa075737-35b8-4e49-8da0-81f65344b293.png",
+        "display_name": "Ronin Cap"
+    },
+    {
+        "item": "itm_shirt_ronin_01",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_shirt_ronin_01/7bae391d-6ae1-4b37-9c09-a9029476d623.png",
+        "display_name": "Ronin Shirt"
+    },
+    {
+        "item": "itm_neonsign_ronin",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_neonsign_ronin/08408591-a90d-4be6-ac26-64f56acacd69.png",
+        "display_name": "Ronin Neon Sign"
+    },
+    {
+        "item": "itm_neonsign_pixel",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets/i/itm_neonsign_pixel/f8c75fa6-94ba-413d-ab4a-7a0c0323a828.png",
+        "display_name": "Pixels Neon Sign"
     },
     {
         "item": "itm_ugc-onement-vi-62b5002182349264a24ad8b6_1686870826738",
@@ -6358,6 +6453,11 @@
         "item": "itm_ugc-ygg-clock-634e6e315cec73f71e81f6cf",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-ygg-clock-634e6e315cec73f71e81f6cf.png",
         "display_name": "Ygg Clock"
+    },
+    {
+        "item": "itm_ugc-evergreen-tree-house-Jy4WzKVC",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-evergreen-tree-house-Jy4WzKVC.png",
+        "display_name": "Evergreen Tree House"
     },
     {
         "item": "itm_ugc-moai-face-statue-634ee7eb5cec73f71e92cbaf",
@@ -7575,6 +7675,11 @@
         "display_name": "Baby Dragon Statue"
     },
     {
+        "item": "itm_ugc-slug-graffiti-character--cgrUGP0h",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-slug-graffiti-character--cgrUGP0h.png",
+        "display_name": "Slug graffiti character "
+    },
+    {
         "item": "itm_ugc-ygg-monument-64d34ff623966ffe6ba268ce",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-ygg-monument-64d34ff623966ffe6ba268ce.png",
         "display_name": "Ygg Monument"
@@ -7680,9 +7785,19 @@
         "display_name": "Clover Guild Land Banner"
     },
     {
+        "item": "itm_ugc-kind-lights-wcRWDDEZ",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-kind-lights-wcRWDDEZ.png",
+        "display_name": "KIND Lights"
+    },
+    {
         "item": "itm_ugc-dizzy-gold-soap-poster-6532c7298162f0dca7cbc5cd",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-dizzy-gold-soap-poster-6532c7298162f0dca7cbc5cd.png",
         "display_name": "Dizzy Gold Soap Poster"
+    },
+    {
+        "item": "itm_ugc-golden-bathtub-dizzy-5ljD0oTe",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-golden-bathtub-dizzy-5ljD0oTe.png",
+        "display_name": "Golden Bathtub Dizzy"
     },
     {
         "item": "itm_ugc-moku-gacha-machine-653bec358162f0dca7b8b269",
@@ -7973,6 +8088,16 @@
         "item": "itm_ugc-ronin-hovercraft-6RxubZnT",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-ronin-hovercraft-6RxubZnT.png",
         "display_name": "Ronin Hovercraft"
+    },
+    {
+        "item": "itm_ugc-mecha-foxytron--0Kvfcu8h",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-mecha-foxytron--0Kvfcu8h.png",
+        "display_name": "Mecha Foxytron "
+    },
+    {
+        "item": "itm_ugc-astral-mecha-piggy-tW4kNXOz",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-astral-mecha-piggy-tW4kNXOz.png",
+        "display_name": "Astral Mecha Piggy"
     },
     {
         "item": "itm_ugc-miners-zone-6546b18ae4b98175b4d5e815",
@@ -8670,6 +8795,11 @@
         "display_name": "Farm Hands Statue"
     },
     {
+        "item": "itm_ugc-mine-FebQLoQX",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-mine-FebQLoQX.png",
+        "display_name": "Mine"
+    },
+    {
         "item": "itm_ugc-ced-statue-65566b10e4b98175b4270b61",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-ced-statue-65566b10e4b98175b4270b61.png",
         "display_name": "Ced Statue"
@@ -8758,6 +8888,11 @@
         "item": "itm_ugc-veil-of-shadows-655e7a041cd025b311a75897",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-veil-of-shadows-655e7a041cd025b311a75897.png",
         "display_name": "Veil Of Shadows"
+    },
+    {
+        "item": "itm_ugc-starrymooncakegaming-r9dySdJK",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-starrymooncakegaming-r9dySdJK.png",
+        "display_name": "StarryMooncakeGaming"
     },
     {
         "item": "itm_ugc-follow-bidaman-gaming-65609d011cd025b311b933f3",
@@ -8855,6 +8990,11 @@
         "display_name": "R2kittens"
     },
     {
+        "item": "itm_ugc-bonk-keeper-statue-YTw5pyGE",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-bonk-keeper-statue-YTw5pyGE.png",
+        "display_name": "Bonk Keeper Statue"
+    },
+    {
         "item": "itm_ugc-mysticats-spirit-6566ba124bba74cc552f21b4",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-mysticats-spirit-6566ba124bba74cc552f21b4.png",
         "display_name": "MystiCats Spirit"
@@ -8925,6 +9065,11 @@
         "display_name": "Pumpjack"
     },
     {
+        "item": "itm_ugc-no-bot-zone-sign-bS6P5N8q",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-no-bot-zone-sign-bS6P5N8q.png",
+        "display_name": "No Bot Zone Sign"
+    },
+    {
         "item": "itm_ugc-stone-statue-of-deer-65705e6f4bba74cc555a48ae",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-stone-statue-of-deer-65705e6f4bba74cc555a48ae.png",
         "display_name": "Stone Statue of deer"
@@ -8963,6 +9108,11 @@
         "item": "itm_ugc-nerd-guild-wall-art-65750df14bba74cc55189454",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-nerd-guild-wall-art-65750df14bba74cc55189454.png",
         "display_name": "Nerd Guild Wall Art"
+    },
+    {
+        "item": "itm_ugc-glacius-armored-griffin-M492nz5b",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-glacius-armored-griffin-M492nz5b.png",
+        "display_name": "Glacius Armored Griffin"
     },
     {
         "item": "itm_ugc-memelordz-banner-657934e04bba74cc55c98362",
@@ -9128,6 +9278,16 @@
         "item": "itm_ugc-croco-chair-phWcKkiz",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-croco-chair-phWcKkiz.png",
         "display_name": "Croco chair"
+    },
+    {
+        "item": "itm_ugc-snake-plant-nLWXGFNx",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-snake-plant-nLWXGFNx.png",
+        "display_name": "Snake plant"
+    },
+    {
+        "item": "itm_ugc-monstera-pot-GgEwJHLr",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-monstera-pot-GgEwJHLr.png",
+        "display_name": "Monstera pot"
     },
     {
         "item": "itm_ugc-pxp-banner-6596ff1a29f26c3a5b351a35",
@@ -9350,6 +9510,11 @@
         "display_name": "Popizza Shop"
     },
     {
+        "item": "itm_ugc-door-neon-H1HmyxLB",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-door-neon-H1HmyxLB.png",
+        "display_name": "Door Neon"
+    },
+    {
         "item": "itm_ugc-christmas-wreath-0qm6RuaL",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-christmas-wreath-0qm6RuaL.png",
         "display_name": "Christmas Wreath"
@@ -9440,6 +9605,16 @@
         "display_name": "Ghost Christmas"
     },
     {
+        "item": "itm_ugc-caldron-ghostmania-VNhidIyK",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-caldron-ghostmania-VNhidIyK.png",
+        "display_name": "Caldron Ghostmania"
+    },
+    {
+        "item": "itm_ugc-ghost-ship-8tgCtKJQ",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-ghost-ship-8tgCtKJQ.png",
+        "display_name": "Ghost Ship"
+    },
+    {
         "item": "itm_ugc-van-car-nGINkOkw",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-van-car-nGINkOkw.png",
         "display_name": "Van Car"
@@ -9453,6 +9628,11 @@
         "item": "itm_ugc-robokopter-65d1621b09c3e70f198dc6eb",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-robokopter-65d1621b09c3e70f198dc6eb.png",
         "display_name": "Robokopter"
+    },
+    {
+        "item": "itm_ugc-wizard-frog-wdusVx2y",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-wizard-frog-wdusVx2y.png",
+        "display_name": "Wizard Frog"
     },
     {
         "item": "itm_ugc-dj-martini-system-65d2adf3eec72343ab079bf7",
@@ -9493,6 +9673,11 @@
         "item": "itm_ugc-maria-doll-ugc-65d34708eec72343abb651b7",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-maria-doll-ugc-65d34708eec72343abb651b7.png",
         "display_name": "Maria Doll UGC"
+    },
+    {
+        "item": "itm_ugc-the-boss-of-anata-Weaw2LEf",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-the-boss-of-anata-Weaw2LEf.png",
+        "display_name": "The boss of Anata"
     },
     {
         "item": "itm_ugc-cursed-pumpkin-statue-65d3bf24eec72343abe1adfc",
@@ -9605,9 +9790,29 @@
         "display_name": "Lukes Legacy"
     },
     {
+        "item": "itm_ugc-bear-rug-TW1AnXIv",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-bear-rug-TW1AnXIv.png",
+        "display_name": "Bear rug"
+    },
+    {
         "item": "itm_ugc-vietnamese-red-flag-iogv6tNY",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-vietnamese-red-flag-iogv6tNY.png",
         "display_name": "Vietnamese red flag"
+    },
+    {
+        "item": "itm_ugc-katana-sword-susanoo-qjUdgCUa",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-katana-sword-susanoo-qjUdgCUa.png",
+        "display_name": "Katana Sword Susanoo"
+    },
+    {
+        "item": "itm_ugc-snikxel-2025-hP6MBbS9",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-snikxel-2025-hP6MBbS9.png",
+        "display_name": "Snikxel 2025"
+    },
+    {
+        "item": "itm_ugc-annapikxel-2ONKurni",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-annapikxel-2ONKurni.png",
+        "display_name": "Annapikxel"
     },
     {
         "item": "itm_ugc-cg-flag-65d72a3deec72343abe8774a",
@@ -9733,6 +9938,16 @@
         "item": "itm_ugc-pixelcatclub-snowglobe-Bj2g3cUG",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-pixelcatclub-snowglobe-Bj2g3cUG.png",
         "display_name": "PixelCatClub Snowglobe"
+    },
+    {
+        "item": "itm_ugc-pixul-party-table-1HwhIlhg",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-pixul-party-table-1HwhIlhg.png",
+        "display_name": "Pixul Party Table"
+    },
+    {
+        "item": "itm_ugc-gold-cat-FYerem3Z",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-gold-cat-FYerem3Z.png",
+        "display_name": "Gold cat"
     },
     {
         "item": "itm_ugc-magic-farm-fountain-65da9caab3fcbc4b7b84c523",
@@ -9960,6 +10175,16 @@
         "display_name": "Mecha Lion"
     },
     {
+        "item": "itm_ugc-katsuuu-sakura-tree-ur8MQYm6",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-katsuuu-sakura-tree-ur8MQYm6.png",
+        "display_name": "Katsuuu Sakura Tree"
+    },
+    {
+        "item": "itm_ugc-mecha-bear-7xt6s6cI",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-mecha-bear-7xt6s6cI.png",
+        "display_name": "Mecha Bear"
+    },
+    {
         "item": "itm_ugc-angry-miner-moo-deng-65db5e92b3fcbc4b7b5e25a7",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-angry-miner-moo-deng-65db5e92b3fcbc4b7b5e25a7.png",
         "display_name": "Angry Miner Moo Deng"
@@ -10060,6 +10285,11 @@
         "display_name": "Magmair"
     },
     {
+        "item": "itm_ugc--incubator-coin-5XLTwN6M",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc--incubator-coin-5XLTwN6M.png",
+        "display_name": " Incubator coin"
+    },
+    {
         "item": "itm_ugc-dexs-chibi-65dde394b8f8646a60b403f7",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//a046b1a1-1816-4891-b375-2601aa8b20fd.png",
         "display_name": "DEXs CHIBI"
@@ -10098,6 +10328,11 @@
         "item": "itm_ugc-classic-streetlight-65df34c0b8f8646a607b6d69",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//e0b83a44-ca76-4370-926a-1b8bada67b03.png",
         "display_name": "Classic Streetlight"
+    },
+    {
+        "item": "itm_ugc-flamin-hot-sleeping-dragon-QFzxD3cV",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-flamin-hot-sleeping-dragon-QFzxD3cV.png",
+        "display_name": "Flamin Hot Sleeping Dragon"
     },
     {
         "item": "itm_ugc-throne-king-skull-mankku255-65df7ddfebdfdac2781212b9",
@@ -10370,6 +10605,21 @@
         "display_name": "Paws Animatronics Collection Nero"
     },
     {
+        "item": "itm_ugc-eternal-garden-WaMRA1vV",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-eternal-garden-WaMRA1vV.png",
+        "display_name": "Eternal Garden"
+    },
+    {
+        "item": "itm_ugc-nerd-hud-next-decoration-fMhxpasI",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-nerd-hud-next-decoration-fMhxpasI.png",
+        "display_name": "Nerd HUD Next Decoration"
+    },
+    {
+        "item": "itm_ugc-red-dragon-statue-kESRXifn",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-red-dragon-statue-kESRXifn.png",
+        "display_name": "red dragon statue"
+    },
+    {
         "item": "itm_ugc-demon-head-65e288ebebdfdac27803a2e0",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-demon-head-65e288ebebdfdac27803a2e0.png",
         "display_name": "Demon Head"
@@ -10393,6 +10643,11 @@
         "item": "itm_ugc-pixluls-box-luke-WxdIMlCi",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-pixluls-box-luke-WxdIMlCi.png",
         "display_name": "Pixluls Box Luke"
+    },
+    {
+        "item": "itm_ugc-squad-4-painting-ScsZKEcv",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-squad-4-painting-ScsZKEcv.png",
+        "display_name": "Squad 4 Painting"
     },
     {
         "item": "itm_ugc-arc-snow-tree-zBfgkq6b",
@@ -10475,6 +10730,11 @@
         "display_name": "HappyGlizzyPortrait"
     },
     {
+        "item": "itm_ugc-nightmare-painting--dWjr6oWE",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-nightmare-painting--dWjr6oWE.png",
+        "display_name": "Nightmare painting "
+    },
+    {
         "item": "itm_ugc-its-me-the-goat-wall-art-65f54c44ca1af871f125be80",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-its-me-the-goat-wall-art-65f54c44ca1af871f125be80.png",
         "display_name": "Its Me The Goat Wall Art"
@@ -10553,6 +10813,16 @@
         "item": "itm_ugc-zelles-doll-Ak7UokTi",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-zelles-doll-Ak7UokTi.png",
         "display_name": "Zelles doll"
+    },
+    {
+        "item": "itm_ugc-lwkys-doll-44vfjIKg",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-lwkys-doll-44vfjIKg.png",
+        "display_name": "LWKYs doll"
+    },
+    {
+        "item": "itm_ugc-larras-doll-A96VbvNg",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-larras-doll-A96VbvNg.png",
+        "display_name": "LARRAs doll"
     },
     {
         "item": "itm_ugc-energy-rune-6602cc4eca1af871f1438fd7",
@@ -10688,6 +10958,16 @@
         "item": "itm_ugc-vz-hotel-KZFndnNe",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//e5550868-2f91-4b44-bd46-6624f774bde2.png",
         "display_name": "vz Hotel"
+    },
+    {
+        "item": "itm_ugc-pixels-from-galaxy-LElQOGrv",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-pixels-from-galaxy-LElQOGrv.png",
+        "display_name": "pixels from galaxy"
+    },
+    {
+        "item": "itm_ugc-pixels-ancient-statue-Oz88DG3Q",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-pixels-ancient-statue-Oz88DG3Q.png",
+        "display_name": "pixels ancient statue"
     },
     {
         "item": "itm_ugc-amethyst-the-juicer-6606c22b6afcbf827f4f3c40",
@@ -10845,6 +11125,11 @@
         "display_name": "Snowman"
     },
     {
+        "item": "itm_ugc-contained-brush-of-creation-0XE1DtgY",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-contained-brush-of-creation-0XE1DtgY.png",
+        "display_name": "Contained Brush of Creation"
+    },
+    {
         "item": "itm_ugc-pixel-hunter-6614b7dd6afcbf827f0e2be5",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-pixel-hunter-6614b7dd6afcbf827f0e2be5.png",
         "display_name": "PIXEL HUNTER"
@@ -10920,6 +11205,26 @@
         "display_name": "Durabox"
     },
     {
+        "item": "itm_ugc-calamares-cart-u3RxZvCw",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-calamares-cart-u3RxZvCw.png",
+        "display_name": "Calamares Cart"
+    },
+    {
+        "item": "itm_ugc-atlantis-trident-is6e9HzI",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-atlantis-trident-is6e9HzI.png",
+        "display_name": "Atlantis Trident"
+    },
+    {
+        "item": "itm_ugc-love-sign-9i2ZQHgy",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-love-sign-9i2ZQHgy.png",
+        "display_name": "Love Sign"
+    },
+    {
+        "item": "itm_ugc-earth-a5WgJZmT",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-earth-a5WgJZmT.png",
+        "display_name": "Earth"
+    },
+    {
         "item": "itm_ugc-poppin-popcorn-IAZKM72X",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-poppin-popcorn-IAZKM72X.png",
         "display_name": "Poppin Popcorn"
@@ -10985,6 +11290,11 @@
         "display_name": "Bronze Doonz Statue"
     },
     {
+        "item": "itm_ugc-cuadro-kyMILIFc",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-cuadro-kyMILIFc.png",
+        "display_name": "cuadro"
+    },
+    {
         "item": "itm_ugc-tribal-spear-display-66342ed654c3ca9674b09c26",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-tribal-spear-display-66342ed654c3ca9674b09c26.png",
         "display_name": "Tribal Spear Display"
@@ -11030,6 +11340,11 @@
         "display_name": "No Wine Bots Allowed Poster"
     },
     {
+        "item": "itm_ugc-magic-mirror-mirror-h3aUp7iB",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-magic-mirror-mirror-h3aUp7iB.png",
+        "display_name": "Magic Mirror Mirror"
+    },
+    {
         "item": "itm_ugc-treadmill-66600190efa41e6e82050bed",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-treadmill-66600190efa41e6e82050bed.png",
         "display_name": "Treadmill 234"
@@ -11070,6 +11385,16 @@
         "display_name": "Agricultural Drone 234"
     },
     {
+        "item": "itm_ugc-standing-lamp-234-kO9vMzUP",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-standing-lamp-234-kO9vMzUP.png",
+        "display_name": "Standing Lamp 234"
+    },
+    {
+        "item": "itm_ugc-small-table-lamp-234-NRkI2pu4",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-small-table-lamp-234-NRkI2pu4.png",
+        "display_name": "Small Table Lamp 234"
+    },
+    {
         "item": "itm_ugc-summer-window-pink-66621a0babe3b00e648ae80d",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-summer-window-pink-66621a0babe3b00e648ae80d.png",
         "display_name": "Summer Window Pink"
@@ -11093,6 +11418,11 @@
         "item": "itm_ugc-bunny-chibi-harvest-sign-dQX2U8bq",
         "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//9ed46d5f-3db6-45a1-9665-4497ac6f051d.png",
         "display_name": "Bunny Chibi Harvest Sign"
+    },
+    {
+        "item": "itm_ugc-valentine-heart-balloons-7CcLrKRR",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-valentine-heart-balloons-7CcLrKRR.png",
+        "display_name": "Valentine Heart Balloons"
     },
     {
         "item": "itm_ugc-ancient-crystal-666a908babe3b00e648540fd",
@@ -11153,6 +11483,11 @@
         "item": "itm_ugc-jekessel-hologram-6685628c0f8d94f60a413a93",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-jekessel-hologram-6685628c0f8d94f60a413a93.png",
         "display_name": "JEKESSEL HOLOGRAM"
+    },
+    {
+        "item": "itm_ugc-blue-flying-island-07705D41",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-blue-flying-island-07705D41.png",
+        "display_name": "Blue Flying Island"
     },
     {
         "item": "itm_ugc-skateboard-display-66a7f9d225bf39b80b0810d9",
@@ -11235,6 +11570,16 @@
         "display_name": "Slothmato Schnapps Neon Sign"
     },
     {
+        "item": "itm_ugc-butterbrew-pints-neon-sign-xENm0133",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-butterbrew-pints-neon-sign-xENm0133.png",
+        "display_name": "Butterbrew Pints Neon Sign"
+    },
+    {
+        "item": "itm_ugc-little-white-mailbox-V9CXGoYE",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-little-white-mailbox-V9CXGoYE.png",
+        "display_name": "Little White Mailbox"
+    },
+    {
         "item": "itm_ugc-flower-66b42cc825bf39b80b5ae2a5",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-flower-66b42cc825bf39b80b5ae2a5.png",
         "display_name": "flower"
@@ -11278,6 +11623,21 @@
         "item": "itm_ugc-shiba-inu-floor-mat-3brIR3nR",
         "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-shiba-inu-floor-mat-3brIR3nR.png",
         "display_name": "Shiba Inu floor mat"
+    },
+    {
+        "item": "itm_ugc-i-love-farmhub-aLUpN5OZ",
+        "image": "https://d31ss916pli4td.cloudfront.net/uploadedAssets//fd9b8338-8448-44b6-a5b1-99ebe3329875.png",
+        "display_name": "I love Farmhub"
+    },
+    {
+        "item": "itm_ugc-farmhub-banner-flag-FWqPl334",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-farmhub-banner-flag-FWqPl334.png",
+        "display_name": "Farmhub Banner Flag"
+    },
+    {
+        "item": "itm_ugc-mysterious-merchant-statue-84eWJBFz",
+        "image": "https://mesh-online-assets.s3.us-east-2.amazonaws.com/uploadedAssets/ugc/items/itm_ugc-mysterious-merchant-statue-84eWJBFz.png",
+        "display_name": "Mysterious Merchant Statue"
     },
     {
         "item": "itm_ugc-dancing-cactus-2fLCgamu",

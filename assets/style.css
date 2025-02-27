@@ -1876,8 +1876,8 @@
 }
 
 .voxels-toggle-voxels-button-icon img {
-  height: 95%;
-  width: 95%;
+  max-height: 20px;
+  width: 20px;
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(314deg)
     brightness(105%) contrast(103%);
 }
@@ -2114,6 +2114,25 @@
 .voxels-sub-nav-button:nth-child(8) .voxels-sub-nav-button-icon img {
   transform: rotate(30deg);
   transition-delay: 0.8s;
+}
+
+.voxels-sub-nav-button:nth-child(8)::after {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--green.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.voxels-sub-nav-button:nth-child(9),
+.voxels-sub-nav-button:nth-child(9)::after,
+.voxels-sub-nav-button:nth-child(9) .voxels-sub-nav-button-icon img {
+  transform: rotate(60deg);
+  transition-delay: 0.9s;
+}
+
+.voxels-sub-nav-button:nth-child(9)::after {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/hud/sprite__sub-nav-button--orange.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #voxels-main-modal {
@@ -3480,39 +3499,50 @@ Full page styling
 
 .voxels-sub-nav-button:nth-child(1) {
   transform: rotate(-175deg);
+  z-index: 100;
 }
 
 .voxels-sub-nav-button:nth-child(2) {
   transform: rotate(-140deg);
+  z-index: 100;
 }
 
 .voxels-sub-nav-button:nth-child(3) {
   transform: rotate(-105deg);
+  z-index: 100;
 }
 
 .voxels-sub-nav-button:nth-child(4) {
   transform: rotate(-80deg);
+  z-index: 100;
 }
 
 .voxels-sub-nav-button:nth-child(5) {
   transform: rotate(-45deg);
+  z-index: 100;
 }
 
 .voxels-sub-nav-button:nth-child(6) {
   transform: rotate(-5deg);
+  z-index: 100;
 }
 
 .voxels-sub-nav-button:nth-child(7) {
+  transform: rotate(0deg);
   height: calc(var(--r) * 1.2 + 50px);
+  z-index: 99;
 }
 
 .voxels-sub-nav-button:nth-child(8) {
   transform: rotate(-60deg);
   height: calc(var(--r) * 1.2 + 50px);
+  z-index: 99;
 }
 
-.voxels-sub-nav-button:nth-child(7) {
-  transform: rotate(0deg);
+.voxels-sub-nav-button:nth-child(9) {
+  transform: rotate(-90deg);
+  height: calc(var(--r) * 1.2 + 50px);
+  z-index: 99;
 }
 
 .js-voxels-active .voxels-sub-nav-button:nth-child(1) {
@@ -3545,6 +3575,10 @@ Full page styling
 
 .js-voxels-active .voxels-sub-nav-button:nth-child(8) {
   transform: rotate(-30deg);
+}
+
+.js-voxels-active .voxels-sub-nav-button:nth-child(9) {
+  transform: rotate(-60deg);
 }
 
 /* Main modal animation */
@@ -4107,6 +4141,7 @@ Full page styling
   border-radius: 5px;
   z-index: 20000;
   width: max-content;
+  pointer-events: none;
 }
 
 .voxels-networth-hover-name {
@@ -4147,19 +4182,54 @@ Full page styling
 */
 .voxels-tooltip-recipe-container,
 .voxels-networth-hover-recipe-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
+  display: block;
   margin: 7px 0;
 }
 
+.voxels-networth-hover-graph-container {
+  display: flex;
+  flex-direction: column;
+  margin: 7px 0;
+  position: relative;
+  padding: 9px 7px;
+  background: var(--pixel-bg);
+  border: 1px solid var(--pixel-border-2);
+  border-radius: 12px;
+  width: 270px;
+}
+
 .voxels-tooltip-recipe-header,
-.voxels-networth-hover-recipe-header {
+.voxels-networth-hover-recipe-header,
+.voxels-networth-hover-graph-header {
   display: flex;
   width: 100%;
-  color: var(--main-new-bg);
   font-size: 9px;
   font-family: "Press Start 2P", sans-serif;
+  color: var(--main-new-bg);
+  align-items: center;
+}
+
+.voxels-tooltip-recipe-span {
+  display: flex;
+  align-items: center;
+}
+
+.voxels-tooltip-recipe-header .voxels-tooltip-energy-icon {
+  height: 14px;
+  margin-right: 3px;
+  margin-left: 5px;
+}
+
+.voxels-tooltip-recipe-header .voxels-tooltip-timer-icon {
+  height: 18px;
+  margin-left: 10px;
+  margin-right: 3px;
+}
+
+.voxels-tooltip-recipe-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 
 .voxels-tooltip-recipe-item,
@@ -4191,12 +4261,46 @@ Full page styling
   bottom: 2px;
 }
 
-.voxels-networth-hover-recipe-image {
+.voxels-networth-hover .voxels-tooltip-recipe-image {
   width: 24px;
 }
 
-.voxels-networth-hover-recipe-count {
+.voxels-networth-hover .voxels-tooltip-recipe-count {
   font-size: 6px;
+}
+
+/**
+* Creator code:
+*/
+
+.voxels-creator-reminder {
+  margin: -0.8rem 0 0.5rem 0;
+  padding: 0.2rem 0.5rem;
+  background: var(--pixel-bg);
+  border: 2px solid var(--pixel-border-2);
+  color: var(--main-new-bg);
+  text-shadow: 2px 2px var(--pixel-border);
+  border-radius: 0.3rem;
+}
+
+/**
+* Market item:
+*/
+.voxels-market-item-data {
+  margin: 10px auto 0;
+  padding: 5px 10px;
+  width: auto;
+  max-width: 100%;
+  font-size: 12px;
+  word-spacing: -7px;
+  background: var(--pixel-bg);
+  border: 2px solid var(--pixel-border-2);
+  color: var(--main-new-bg);
+  text-shadow: 1px 1px var(--pixel-border);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /**
@@ -4216,12 +4320,14 @@ Full page styling
 .voxels-stats-header,
 .voxels-gw-header {
   display: flex;
-  width: 90%; /* Default width for both headers */
+  width: 90%;
+  /* Default width for both headers */
   align-items: center;
 }
 
 .voxels-gw-header {
-  width: 100%; /* Override to 100% for gw-header */
+  width: 100%;
+  /* Override to 100% for gw-header */
 }
 
 .voxels-stats-navigator,
@@ -4229,7 +4335,8 @@ Full page styling
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%; /* Default width for stats navigator */
+  width: 90%;
+  /* Default width for stats navigator */
   height: auto;
   border: 2px solid var(--main-new-bg);
   border-radius: 12px;
@@ -4238,7 +4345,8 @@ Full page styling
 }
 
 .voxels-gw-navigator {
-  width: 100%; /* Override to 100% for gw-navigator */
+  width: 100%;
+  /* Override to 100% for gw-navigator */
 }
 
 .voxels-stats-update {
@@ -4719,16 +4827,21 @@ Full page styling
 /* Container for the leaderboard entry */
 .voxels-gw-leaderboard-entry {
   display: flex;
-  width: 100%; /* Ensure the entry takes up the full available width */
-  padding: 5px 0; /* Optional: Add some spacing for readability */
-  box-sizing: border-box; /* To include padding in the width calculation */
+  width: 100%;
+  /* Ensure the entry takes up the full available width */
+  padding: 5px 0;
+  /* Optional: Add some spacing for readability */
+  box-sizing: border-box;
+  /* To include padding in the width calculation */
 }
 
 /* Rank: Takes up 5% of the available width */
 .voxels-gw-rank {
   width: 10%;
-  text-align: left; /* Center the rank text */
-  font-weight: bold; /* Make the rank bold */
+  text-align: left;
+  /* Center the rank text */
+  font-weight: bold;
+  /* Make the rank bold */
 }
 
 /* Username: Takes up 45% of the available width, with ellipsis for overflow */
@@ -4736,15 +4849,18 @@ Full page styling
   width: 50%;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; /* Ensure the text does not wrap */
-  padding-left: 5px; /* Optional: Some space between rank and username */
+  white-space: nowrap;
+  /* Ensure the text does not wrap */
+  padding-left: 5px;
+  /* Optional: Some space between rank and username */
   text-transform: none;
   color: var(--main-new-bg);
 }
 
 .voxels-gw-score {
   width: 30%;
-  text-align: right; /* Center the score text */
+  text-align: right;
+  /* Center the score text */
 }
 
 /* Seasonal points: Takes up 20% of the available width */
@@ -4864,6 +4980,260 @@ Full page styling
   height: 100%;
   top: 0px;
   right: 0px;
+}
+
+/**
+* Industry Search
+*/
+
+.voxels-industry-dropdown-container {
+  display: flex;
+}
+
+.voxels-industry-dropdown-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    133.71deg,
+    rgb(50, 56, 62) -30.53%,
+    rgb(23, 25, 28) 126.55%
+  );
+  border-radius: 4px;
+  transition: 0.14sease-out;
+  border: 1px solid rgb(60, 60, 60);
+  color: white;
+  font-size: 10px;
+  padding: 5px 10px;
+}
+
+.voxels-industry-dropdown-button:hover,
+.voxels-industry-dropdown-button.active {
+  border: 1px solid var(--pixel-border-2);
+}
+
+.voxels-industry-dropdown-button .voxels-industry-select-image {
+  width: 3%;
+  margin-right: 15px;
+}
+
+.voxels-industry-dropdown-button .voxels-industry-select-image img {
+  height: 20px;
+}
+
+.voxels-industry-select-landtype-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid rgb(60, 60, 60);
+  background: var(--panel-bg);
+  margin-left: 10px;
+}
+
+.voxels-industry-select-landtype {
+  padding: 1px 7px 3px;
+  border-right: 1px solid rgb(60, 60, 60);
+}
+
+.voxels-industry-select-landtype:last-child {
+  border-right: none;
+}
+
+.voxels-industry-select-landtype.selected {
+  background: var(--pixel-border-2);
+}
+
+.voxels-industry-select-landtype img {
+  width: 18px;
+  height: auto;
+}
+
+.voxels-industry-select-reload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid rgb(60, 60, 60);
+  background: linear-gradient(
+    133.71deg,
+    rgb(50, 56, 62) -30.53%,
+    rgb(23, 25, 28) 126.55%
+  );
+  padding: 5px 7px;
+  margin-left: auto;
+}
+
+.voxels-industry-select-reload:hover {
+  border: 1px solid var(--pixel-border-2);
+}
+
+.voxels-industry-select-reload img {
+  width: 14px;
+  filter: invert(100%) sepia(23%) saturate(5954%) hue-rotate(14deg)
+    brightness(107%) contrast(104%);
+}
+
+.voxels-industry-select-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 35px;
+  gap: 10px;
+  padding: 10px 5px;
+  background: var(--panel-bg);
+  border: 1px solid var(--pixel-border-2);
+  border-radius: 4px;
+  max-height: 70%;
+  width: 90%;
+  overflow-y: auto;
+}
+
+.voxels-industry-select-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.voxels-industry-select-container::-webkit-scrollbar-thumb {
+  background-color: #e3ff36;
+}
+
+.voxels-industry-select-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 10px;
+}
+
+.voxels-industry-select-image {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.voxels-industry-select-image img {
+  height: 25px;
+}
+
+.voxels-industry-select-name {
+  padding-left: 10px;
+  flex-grow: 1;
+}
+
+.voxels-industry-select-tiers {
+  display: flex;
+  margin-left: auto;
+  width: 120px;
+}
+
+.voxels-industry-select-tier {
+  border: 1px solid var(--pixel-border-2);
+  background: var(--pixel-bg);
+  padding: 2px 5px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Left-most button */
+.voxels-industry-select-tier:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* Right-most button */
+.voxels-industry-select-tier:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.voxels-industry-select-tier.selected {
+  background-color: var(--pixel-border-2);
+}
+
+.voxels-industry-search-table {
+  color: #fff;
+  border: 2px solid #676767;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.voxels-industry-search-row {
+  width: 100%;
+  border-collapse: collapse;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  border-bottom: 1px solid #676767;
+}
+
+.voxels-industry-search-header {
+  flex-direction: row;
+}
+
+.voxels-industry-search-column {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.voxels-industry-search-row-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.voxels-industry-search-row .voxels-industry-search-column:nth-child(1) {
+  width: 35%;
+  margin: 8px 10px;
+}
+
+.voxels-industry-search-row .voxels-industry-search-column:nth-child(2) {
+  width: 30%;
+  margin: 8px 10px;
+}
+
+.voxels-industry-search-row .voxels-industry-search-column:nth-child(3) {
+  width: 35%;
+  justify-content: flex-end;
+  margin: 8px 10px;
+}
+
+/* Even row styles */
+.voxels-industry-search-table .voxels-industry-search-row:nth-child(even) {
+  background-color: #2a2a3d;
+}
+
+/* Odd row styles */
+.voxels-industry-search-table .voxels-industry-search-row:nth-child(odd) {
+  background-color: #23233a;
+}
+
+.voxels-industry-search-row img {
+  width: auto;
+  height: 20px;
+}
+
+.voxels-industry-search-details {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.voxels-industry-search-detail-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0px;
+}
+
+.voxels-industry-search-no-results {
+  color: var(--main-new-bg);
+  padding: 10px;
+  font-size: 12px;
 }
 
 /**
