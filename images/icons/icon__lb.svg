@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="80" viewBox="0 0 100 80">
+    <!-- Podium Bars (full height range) -->
+    <rect x="0" y="20" width="30" height="60" fill="#e3ff36" />
+    <rect x="35" y="0" width="30" height="80" fill="#e3ff36" />
+    <rect x="70" y="40" width="30" height="40" fill="#e3ff36" />
+</svg>

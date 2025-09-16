@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <!-- Background with rounded corners and border -->
+    <rect x="1.2" y="1.2" width="21.6" height="21.6" rx="4" fill="#6626ff" stroke="#e3ff36"
+        stroke-width="2" />
+
+    <!-- Downward arrow (stalk + tip) -->
+    <path d="M12 6v10M8 14l4 4 4-4" stroke="#e3ff36" stroke-width="2" fill="none"
+        stroke-linecap="round" stroke-linejoin="round" />
+</svg>

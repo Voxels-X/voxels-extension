@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 32" fill="none">
+  <!-- Bookmark shape with no clipping -->
+  <path d="M1 1h22v30l-11-6-11 6V1z"
+        fill="#6626ff" stroke="#6626ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Larger star, slightly elevated -->
+  <path d="M12 6l2 4 4.5.6-3.2 3 0.9 4.3L12 16l-4.2 1.9 0.9-4.3-3.2-3 4.5-.6 2-4z"
+        fill="#e3ff36" stroke="#e3ff36" stroke-width="0.8" stroke-linejoin="round"/>
+</svg>
