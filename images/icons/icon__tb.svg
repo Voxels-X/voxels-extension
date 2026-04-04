@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <filter id="neon">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="64" height="64" fill="none"/>
+  <text x="53%" y="56%"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        font-family="Arial Black, sans-serif"
+        font-size="40"
+        font-weight="700"
+        fill="#76FF03"
+        stroke="#ADFF2F"
+        stroke-width="0.8"
+        letter-spacing="3"
+        filter="url(#neon)">TB</text>
+</svg>

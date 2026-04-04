@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Voxels - The Pixels Extension",
   "description": "The Pixels Extension is a tool made for every pixels enthusiast. Essential and easy to use for every Web3 Gamer.",
-  "version": "5.0.1",
+  "version": "5.0.9",
   "icons": {
     "128": "icons/icon128.png"
   },
@@ -20,6 +20,7 @@
         "assets/style.css"
       ],
       "js": [
+        "features/bookmarks.js",
         "features/canvas.js",
         "features/gw.js",
         "features/itemHighlight.js",
@@ -44,11 +45,12 @@
         "pages/stats_page.js",
         "pages/gw_page.js",
         "pages/ms_page.js",
-        "pages/land_page.js",
+        "pages/tools_page.js",
         "pages/search_page.js",
         "full_pages/guilds_page.js",
         "full_pages/pass_page.js",
         "full_pages/player_page.js",
+        "full_pages/crafting_page.js",
         "full_pages/settings_page.js"
       ],
       "type": "module"
